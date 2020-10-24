@@ -1,0 +1,106 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 8:19:21 Jan 13, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:09:57 Jul 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.EmotifyDropdown span,
+.Emoticon span { display: none; }
+.EmotifyDropdown,
+.Emoticon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 15px;
+    width: 15px;
+    vertical-align: top;
+}
+.Emoticonwinky { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/winky.gif'); }
+.Emoticonicon_twisted { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_twisted.gif'); }
+.Emoticonicon_evil { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_evil.gif'); }
+.Emoticonicon_cry { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_cry.gif'); }
+.Emoticonicon_redface { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_redface.gif'); }
+.Emoticonicon_razz { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_razz.gif'); }
+.Emoticonicon_mad { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_mad.gif'); }
+.Emoticonicon_lol { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_lol.gif'); }
+.Emoticonicon_cool { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_cool.gif'); }
+.Emoticonicon_confused { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_confused.gif'); }
+.Emoticonicon_eek { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_eek.gif'); }
+.Emoticonicon_surprised { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_surprised.gif'); }
+.Emoticonicon_sad { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_sad.gif'); }
+.Emoticonicon_smile { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_smile.gif'); }
+.Emoticonicon_biggrin { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_biggrin.gif'); }
+.Emoticonicon_wink { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_wink.gif'); }
+.Emoticonsleepy { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sleepy.gif'); width:18px; }
+.Emoticonellipses { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/ellipses.gif'); width:18px; }
+.Emoticonwhistle { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/whistle.gif'); width: 18px; }
+.Emoticonexclamation { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/exclamation.gif'); width:18px; }
+.Emoticonicon_eh2 { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_eh2.gif'); }
+.Emoticonicon_heartbeat { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_heartbeat.gif'); width:16px; height:16px; }
+.Emoticonicon_down { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_down.gif'); }
+.Emoticonicon_up { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_up.gif'); }
+.Emoticonicon_rotate { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_rotate.gif'); }
+.Emoticonicon_mrgreen { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_mrgreen.gif'); }
+.Emoticonicon_eh { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_eh.gif'); }
+.Emoticonicon_arrow { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_arrow.gif'); }
+.Emoticonicon_question { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_question.gif'); }
+.Emoticonicon_exclaim { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/icon_exclaim.gif'); }
+.Emoticonbigfrown { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bigfrown.gif'); }
+.Emoticon115 { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/115.gif'); width: 29px; height: 22px; }
+.Emoticonpirate { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pirate.gif'); width: 20px; height: 20px; }
+.Emoticon105 { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/105.gif'); width: 23px; height:18px; }
+.Emoticon79 { background-image: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/79.gif'); width: 18px; height: 18px;}
+
+.EmotifyWrapper {
+    text-align: right;
+    position: relative;
+}
+.EmotifyDropdown {
+    display: block;
+    height: 23px;
+    width: 29px;
+    background: url('/web/20120113081921/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/emotify_arrow.png') 0 0 no-repeat;
+    position: absolute;
+    text-align: left;
+    top: 1px;
+    right: -7px;
+    cursor: pointer;
+}
+.EmotifyDropdownActive {
+    background-color: #eee;
+}
+.EmoticonContainer {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-right: 0;
+    width: 391px;
+    text-align: left;
+    float: right;
+    box-shadow: 2px 2px 4px #777;
+    -moz-box-shadow: 2px 2px 4px #777;
+    -webkit-box-shadow: 2px 2px 4px #777;
+    z-index: 1000;
+}
+.EmoticonBox {
+    background-color: #fff;
+    background-position: center center;
+    border: 1px solid #aaa;
+    border-top: 0;
+    border-left: 0;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 22px;
+    overflow: hidden;
+    cursor: pointer;
+}

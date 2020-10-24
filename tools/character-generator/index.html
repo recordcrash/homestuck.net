@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Homestuck Character Generator - Amateur Topologist</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-10465087-6']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <link rel="stylesheet" href="chargen.css">
+    <script src="chargen.js"></script>
+    <script src="jquery.cookie.js"></script>
+</head>
+
+<body></body>
+<div class="container">
+    <div class="content">
+        <div class="page-header">
+            <h1>Homestuck Character Generator - HOMESTUCK.NET</h1></div>
+    </div>
+</div>
+<div class="container">
+    <div class="content">
+        <div class="row">
+            <div class="span9">
+                <div class="mspa-box" id="description">You are the <span id="title"></span> OF <span id="quality"></span>, or you will be once you awake on <span id="planet"></span>. Once you enter the game, you will start in the LAND OF <span id="land_1"></span> AND <span id="land_2"></span>, which is inhabited by <span id="consorts"></span>. There, the enemies drop <span id="material"></span> GRIST and serve the feared Denizen <span id="denizen"></span>, but you'll surely be able to overcome them with your trusty <span id="specibus"></span>KIND strife specibus. Your username is <span id="prefix"></span><span id="suffix"></span>, and you use the <span id="modus"></span> fetch modus.</div>
+                <p>Unhappy with a particular word? Click it. Press R to reload everything; your interests will still be kept if you leave and come back.</p>
+            </div>
+            <div class="span3">
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend style="padding-left: 40px">Interests</legend>
+                            </legend>
+                            <div class="control-group">
+                                <div class="controls" id="genres" style="margin-left: 40px"></div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <p>Code is licensed under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT license</a>, and is available on <a href="https://github.com/veinor/amateurtopologist-code">github</a>.</p>
+            </p>
+            <p>Uses the <a href="http://www.yesodweb.com/">Yesod web framework</a> for serving and HTML templating, and <a href="http://jquery.com/">jQuery</a> and <a href="http://jashkenas.github.com/coffee-script/">CoffeeScript</a> for the client-side AJAX.</p>
+        </footer>
+    </div>
+</div>
+
+</html>

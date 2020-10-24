@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    background-color: #535353;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+#wrapper {
+    width: 95vw;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #7b7b7b;
+}
+
+#main {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border-radius: 0 0 5px 5px;
+}
+
+header {
+    background-color: #c6c6c6;
+    width: 100%;
+    display: flex;
+    border-radius: 0 0 5px 5px;
+}
+
+header img {
+    width: 48.5%;
+    padding-right: 3%;
+}
+
+header div {
+    width: 49%;
+    padding-right: 1%;
+}
+
+a[href*="mspaforums.com"], .missing {
+    color: red !important;
+}
+
+.album {
+    background-color: #c6c6c6;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 438px; /* the flexbox takes care of any concerns about things not fitting :) */
+}
+
+.album.open img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+img {
+    border-radius: 3px;
+}
+
+.album p, .album a, .album ul {
+    display: none;
+}
+
+.album img {
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.open {
+    height: 100%;
+}
+
+.open p, .open ul {
+    display: block;
+    margin: 1em;
+}
+
+.open ul {
+    padding-left: 1em; /* space for the bullets that isn't massive */
+}
+
+.open a {
+    display: inline;
+}
+
+.official {
+    font-weight: bold;
+}
+
+.comic-sans {
+    font-family: 'Comic Sans', 'Comic Sans MS', fantasy;
+}

@@ -1,0 +1,43 @@
+div.mspa-box {
+    color: black;
+    background-color: #EEEEEE;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: courier, monospace;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div.genre {
+    width: 150px;
+    text-align: left
+}
+
+
+a.word_link:link {
+    color: black;
+    text-decoration: none;
+}
+/*
+     FILE ARCHIVED ON 23:48:39 Feb 15, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:37:05 Jan 26, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 136.927
+  esindex: 0.014
+  PetaboxLoader3.datanode: 195.34 (4)
+  exclusion.robots: 1162.72
+  CDXLines.iter: 11.556 (3)
+  RedisCDXSource: 45.624
+  xauthn.identify: 1161.879
+  captures_list: 1394.804
+  exclusion.robots.policy: 1162.705
+  xauthn.chkprivs: 0.038
+  LoadShardBlock: 170.146 (3)
+  load_resource: 165.329
+*/

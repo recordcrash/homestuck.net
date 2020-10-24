@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="An Instant Messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck.">
+    <meta name="Makin" content="">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homestuck.net/pesterchum.html" />
+    <meta property="og:site_name" content="HOMESTUCK.NET" />
+    <meta property="og:title" content="Pesterchum Chat Application" />
+    <meta property="og:description" content="An Instant Messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck.">
+    <meta property="og:keywords" content="chat, instant messaging, program, app, application, download, homestuck, hiveswap, community, andrew hussie, hussie, resources, games, music, news, information" />
+    <meta property="og:image" content="https://homestuck.net/img/tools/pesterchum.png" />
+    <meta property="og:locale" content="en-US" />
+
+      <meta name="msapplication-TileColor" content="#00CC00">
+      <meta name="theme-color" content="#00CC00">
+    <title>Pesterchum Chat Application - HOMESTUCK.NET</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon.png">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+        
+        html {
+            background-image: url("/img/background.png");
+            background-repeat: repeat;
+        }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-spiro py-2" href="/index.html" aria-label="Homestuck.net">
+     
+    <img class="bd-placeholder-img mr-2 rounded" height="25" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" src="img/templogowhite.png">
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="/games">Games</a>
+    <a class="py-2 d-none d-md-inline-block" href="/music">Music</a>
+    <a class="py-2 d-none d-md-inline-block" href="/resources">Resources</a>
+    <a class="py-2 d-none d-md-inline-block" href="/tools">Tools</a>
+    <a class="py-2 d-none d-md-inline-block" href="/meta">Meta</a>
+    <a class="py-2 d-none d-md-inline-block" href="/fanworks">Fanworks</a>
+    <a class="py-2 d-none d-md-inline-block" href="/official">Official</a>
+  </div>
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row"><div class="col-md-12">
+            <p><h1 class="my-4">Pesterchum Chat Application</h1></div></div>
+        <div class="row"><div class="col-md-12"><img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum.png"></div></div>
+        <div class="row"><div class="col-md-12">
+            <h3>What is this?</h3>
+            <p>Pesterchum is an Instant Messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck. The latest version of the program is 3.41, and while the original developer has vanished, the program and underlying server still work.</p>
+            <h3>How do I download it?</h3>
+            <ul><li>Windows: Click <a href="https://app.box.com/s/3hjd3f8r4b9aa9ea6lyn" title="Pesterchum for Windows">here</a> to download Pesterchum, then install. If you want a portable but slightly buggy version, click <a href="https://app.box.com/s/s9ugib87uydayx1nps7i">here</a>.</li>
+            <li>Mac: Click <a href="https://app.box.com/s/1zu9c4zli5z07w8ah9mx" title="Pesterchum for Mac">here</a> to download Pesterchum, then install.</li>
+            <li>Linux: Click <a href="https://app.box.com/s/2hbt2136ndpd4iu9gsae" title="Pesterchum for Linux">here</a> to download Pesterchum, then install.</li>
+            <li>Android: Click <a href="/tools/chumdroid.apk">here</a> to download Chumdroid, a 2013 Pesterchum port for Android.</li></ul>
+            <h3>Pesterchum Rules</h3>
+            <p>Since Pesterchum allows you access to a proprietary server, the Pesterchum administrators have instated a set of rules for anyone who uses the program, from general niceties to rules on grabbing canonical handles. People who break them might find themselves banned. </p>
+            <p>The full list of rules is available <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">here</a>.</p>
+            <h3>Frequently Asked Questions</h3>
+            <p>Q: Pesterchum doesn't open!<br>A: Post in the <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">official thread</a> and someone will help you out.</p>
+            <p>Q: When I run Pesterchum, it starts loading but then quits and nothing happens!<br>
+            A: Make sure your default profile is in the profiles directory (go to your local app directory; you can get there by typing %LOCALAPPDATA% in your file explorer address bar). If it isn't, check your pesterchum backup directory for it. If it's not there, you'll have to go into pesterchum.js file and remove your profile as the default.</p>
+            <p>Q: How do I change my themes??<br>A: "Options" under the "Client" menu.</p>
+            <p>Q: When a toast pops up, it interrupts whatever I'm typing or doing and it's really annoying!<br>A: This is a known bug, unfortunately. You can turn the notifications off in the "Options" menu under "Clients" if this really bugs you.</p>
+            <p>Q: I keep getting the error message "The application has failed to start because the application configuration is incorrect"!<br>A: Try downloading and installing both <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26347">Microsoft Visual C++ 2005</a> and <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26368">2008 SP1</a>.</p>
+            <p>Q: I opened up PC, closed it, and now it says my user name is taken!<br>A: The "X" doesn't close the program, just minimizes it to your system tray. To exit the program you must go to Client -> Exit.</p>
+            <h3>How do I use it?</h3>
+            <h5>Creating a profile</h5>
+            <p>If this is your first time running Pesterchum 3.41, you need to create a new profile. Just type in your chum handle in the box and click the color swatch to pick your color. Check the "Set This Profile As Default" checkbox to make this your default profile.</p>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-1.png">
+            <h5>Basic Pestering</h5>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-2.png">
+            <p>To begin pestering, first click the "ADD CHUM" button and type in their pester handle. The handle must be all lower case except for one capital letter. Once you've added that person, they will appear on your chumroll. You can double click to begin pestering them, or right-click to bring up a menu where you can pester them, block them, or remove them from your chumroll. (Or you can select them and hit "enter" OR hit the "PESTER" button.)</p>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-3.png">
+            <p> Once you begin pestering somebody (or they begin pestering you), it will bring up the conversation window. Here you can type to your chum.</p>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-4.png">
+            <p>Also remember that if you right-click on the area just above the Pesterlog, it will bring up a list of options: Quirks Off will turn your quirks off, Add Chum will add this chum to your list, and Block will block them. (Those last two options are useful if you are being pestered by someone you don't have on your list yet!)</p>
+            <p>While pestering your chum, here are some useful features:</p>
+                <ul>
+                <li>Type /me to create a system message. "/me facepalms." will generate:
+                    <br>-- arcaneAgilmente [AA] facepalms. --<br></li>
+                <li>You can also append 's after /me like so: "/me's computer exploded."<br>
+                    -- arcaneAgilmente's [AA'S] computer exploded. --</li>
+                <li>In fact, any characters you type after a /me before the space will be added: "/meing is the Arcane Nation's official pastime."<br>
+                -- arcaneAgilmenteing [AAING] is the Arcane Nation's official pastime. --</li></ul>
+            <h5>Memos</h5>
+            <p> One of the most interesting features to make was the memos, and make them as close to the comic as ghostDunk could without actually inventing time travel. So here is the TIME TUTORIAL:</p>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-5.png">
+            <p>Joining: When you go CLIENT->MEMOS, you'll see a list of memos pop up -- those are memos people already have open. To join one, just highlight one of them. If you want to make a new memo, just type it in the input. If you'd like to make it secret, so that it doesn't appear in the list, check "HIDDEN CHANNEL". If you want it so that people can only enter if you invite them, choose "INVITATION ONLY." Then, choose what timeframe you want to appear to be in. So if you wanted to be in the future, you could move the slider to the right. You can also enter the time manually. Then hit JOIN.</p>
+            <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-6.png">
+            <p>Explaining time: Time in memos, unlike Homestuck, will not be relative to your position. That is, if you choose 4:13 in the future, you will not see someone who has set their time as "current" (or "0") in the past: you will see them as "current" and yourself as "future." This is because we do not have time travel! Memo time setting is basically an RP mechanic: you are pretending to be from the future! It will also help keep everyone straight: everyone will see the same thing!</p>
+            <p>The time slider: The slider shows your current position in the time stream. If you want to change your time frame, simply move the slider (or type a time in) and hit GO. This will open a new time frame, and the next time you type a message, the memo will show that you've responded to it in that time frame. You can now switch between your time frames simply by clicking the arrows in the right hand corner. (THIS COMES IN HANDY IF YOU WANT TO ARGUE WITH YOURSELF.) You can have any number of open time frames, and the program will number them in the order in which you open them (like in the comic). You can have one of your time frames cease responding to the memo by hitting "CLOSE." If you open that time frame again, the program will remember the number it originally gave it. If you want to be mysteeeeeeeerious, you can type in "?" and you will appear as ???.</p>
+            <p>The memo viewer list: To the right is a list of people currently browsing the memo. A shade icon next to their name means they are the "operator" of the memo: meaning they can kick ("ban") people from the memo and make other people operators as well. A "ban" is not permanent (like in the comic, they function like "kicks" instead), and the program will ask if you want to reconnect to the memo. You kick and op people by right clicking their name in the window. You can also add them to your chumroll!</p>
+            <p>Inviting people to your memo: You can link to a memo by simply typing "#nameofmemo" in any conversation or memo window.</p>
+            <h5>Further features</h5>
+            <p>For guides on the use of the Quirks system, the Help, Client and Profile menus please go to <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">the official Pesterchum thread</a>. This page is already big enough.</p>
+            <h3>List of Emotes</h3>
+            <p style="column-count: 2;">:rancorous:
+                <br>:apple:
+                <br>:bathearst:
+                <br>:cathearst:
+                <br>:woeful:
+                <br>:pleasant:
+                <br>:blueghost:
+                <br>:slimer:
+                <br>:candycorn:
+                <br>:cheer:
+                <br>:duhjohn:
+                <br>:datrump:
+                <br>:facepalm:
+                <br>:bonk:
+                <br>:mspa:
+                <br>:gun:
+                <br>:cal:
+                <br>:amazedfirman:
+                <br>:amazed:
+                <br>:chummy:
+                <br>:cool:
+                <br>:smooth:
+                <br>:distraughtfirman
+                <br>:distraught:
+                <br>:insolent:
+                <br>:bemused:
+                <br>:3:
+                <br>:mystified:
+                <br>:pranky:
+                <br>:tense:
+                <br>:record:
+                <br>:squiddle:
+                <br>:tab:
+                <br>:beetip:
+                <br>:flipout:
+                <br>:befuddled:
+                <br>:pumpkin:
+                <br>:trollcool:
+                <br>:jadecry:
+                <br>:ecstatic:
+                <br>:relaxed:
+                <br>:discontent:
+                <br>:devious:
+                <br>:sleek:
+                <br>:detestful:
+                <br>:mirthful:
+                <br>:manipulative:
+                <br>:vigorous:
+                <br>:perky:
+                <br>:acceptant:
+                <br>:olliesouty:
+                <br>:billiards:
+                <br>:billiardslarge:
+                <br>:whatdidyoudo:</p>
+            <h3>Credits and thanks</h3>
+            <p>Thanks to ghostDunk, wherever he is. Additionally, thanks to <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">arcaneAgilmente</a> for keeping the program alive in a new thread, as well as providing most of the tutorials and assets.</p>
+        <hr>
+
+
+
+        <!-- Project Four -->
+        <!--<div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-fluid rounded mb-3 mb-md-0" src="https://placehold.it/700x300" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Project Four</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" href="#">View Project</a>
+            </div>
+        </div>-->
+        <!-- /.row -->
+
+        <!--<hr>-->
+
+        <!-- Pagination -->
+        
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <img class="logo" src="/img/templogo.png">
+      <small class="d-block mb-3 text-muted">Public Domain 2020 - ∞</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Analysis and Meta</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/meta/analysis.html">Homestuck analysis</a></li>
+        <li><a class="text-muted" href="/meta/stats.html">Homestuck stats</a></li>
+        <li><a class="text-muted" href="/meta/surveys.html">Surveys and censuses</a></li>
+        <li><a class="text-muted" href="/meta/liveblogs.html">Liveblogs</a></li>
+        <li><a class="text-muted" href="/meta/other.html">Other meta</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Music Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/music/references.html">Music references</a></li>
+        <li><a class="text-muted" href="/music/visualizer.html">Reference visualizer</a></li>
+        <li><a class="text-muted" href="/music/sheetmusic">Sheet music and MIDIs</a></li>
+        <li><a class="text-muted" href="/music/albums.html">Fan albums</a></li>
+        <li><a class="text-muted" href="/music/misc.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Fan Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/resources/cosplay.html">Cosplay guides</a></li>
+        <li><a class="text-muted" href="/resources/roleplaying.html">Roleplaying guides</a></li>
+        <li><a class="text-muted" href="/resources/assets.html">Art assets</a></li>
+        <li><a class="text-muted" href="/resources/other.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Other</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/fanworks">Homestuck fanworks</a></li>
+        <li><a class="text-muted" href="/games">Homestuck games</a></li>
+        <li><a class="text-muted" href="/tools">Software and tools</a></li>
+        <li><a class="text-muted" href="/official">Official content</a></li>
+        <li><a class="text-dark" href="/archives.html">Homestuck Archives</a></li>
+        <li><a class="text-muted" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>

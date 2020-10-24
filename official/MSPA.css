@@ -1,0 +1,35 @@
+﻿body {
+	font-family: "Courier New", Courier, monospace;
+	text-align: center;
+	background-color: #535353;
+}
+div {
+	border-style: solid;
+	border-width: thin;
+	background-color: #EFEFEF;
+	text-align: center;
+	padding-right: 16pt;
+	padding-bottom: 16pt;
+	padding-left: 16pt;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+.banner {
+	padding: 16pt;
+}
+table {
+	border: medium solid #0000FF;
+	padding: 3px;
+}
+td {
+	border: thin solid #0000FF;
+	padding: 3px;
+
+}
+.parent {
+	padding: 0px;
+	margin: 0px;
+	border-style: none;
+	background-color: #535353;
+	text-align: inherit;
+}

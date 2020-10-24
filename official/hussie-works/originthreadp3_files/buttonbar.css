@@ -1,0 +1,80 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 0:19:08 Nov 21, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:10:59 Jul 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.ButtonBar {
+   padding-top: 4px;
+   height: 24px;
+}
+
+.ButtonBarMarkupHint {
+   color: black;
+   font-size: 11px;
+}
+
+#DiscussionForm .ButtonBar {
+   margin-bottom: -6px;
+}
+
+#DiscussionForm .ButtonBarMarkupHint {
+   margin-top: -6px;
+}
+
+.ButtonBar div {
+    background-color: white;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    border-color: #AAA;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: 0px;
+
+   -webkit-border-top-left-radius: 3px;
+   -webkit-border-top-right-radius: 3px;
+   -moz-border-radius-topleft: 3px;
+   -moz-border-radius-topright: 3px;
+   border-top-left-radius: 3px;
+   border-top-right-radius: 3px;
+
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    z-index: 50;
+}
+
+.ButtonBar div:hover {
+   background-color: #E9E9E9;
+   cursor: pointer;
+}
+
+.ButtonBar div span {
+   display: none;
+}
+
+.ButtonBar div.ButtonOff {
+   display: none;
+   cursor: auto;
+   opacity: 0.3;
+}
+.ButtonBar div.ButtonOff:hover {
+   background-color: white;
+}
+
+.ButtonBar .ButtonBarBold { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/bold.png'); }
+.ButtonBar .ButtonBarItalic { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/italic.png'); }
+.ButtonBar .ButtonBarUnderline { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/underline.png'); }
+.ButtonBar .ButtonBarStrike { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/strike.png'); }
+.ButtonBar .ButtonBarCode { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/code.png'); }
+.ButtonBar .ButtonBarImage { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/image.png'); }
+.ButtonBar .ButtonBarUrl { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/url.png'); }
+.ButtonBar .ButtonBarQuote { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/quote.png'); }
+.ButtonBar .ButtonBarSpoiler { background-image: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/ButtonBar/design/images/spoiler.png'); }

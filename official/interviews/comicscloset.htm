@@ -1,0 +1,878 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="true" name="MSSmartTagsPreventParsing">
+    <meta content="blogger" name="generator">
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Comic Book Closet: Andrew Hussie of MS Paint Adventures</title>
+    <style id="page-skin-1" type="text/css">
+    /*
+    -----------------------------------------------------
+    Blogger Template Style Sheet
+    Nombre:          Old News
+    Diseño original: Studio.st para Bitacoras.com
+    Adaptación:      horaciofederico@gmail.com
+    URL:             www.metadiario.bitacoras.com
+    ------------------------------------------------------ */
+    /*
+    Variable definitions
+    ====================
+    <Variable name="textColor" description="Text Color" type="color"
+    default="#29303b">
+    <Variable name="postTitleColor" description="Post Title Color" type="color"
+    default="#4E4033">
+    <Variable name="linkColor" description="Link Color" type="color"
+    default="#504030">
+    <Variable name="visitedLinkColor" description="Visited Link Color" type="color"
+    default="#385070">
+    <Variable name="pageHeaderColor" description="Blog Title Color" type="color"
+    default="#354E6C">
+    <Variable name="blogDescriptionColor" description="Blog Description Color"
+    type="color" default="#29303B">
+    <Variable name="sidebarHeaderColor" description="Sidebar Title Color"
+    type="color"
+    default="#4E4033">
+    <Variable name="bodyFont" description="Text Font"
+    type="font"
+    default="normal normal 100% verdana,Sans-Serif;">
+    <Variable name="headerFont" description="Sidebar Title Font"
+    type="font"
+    default="normal normal 150% Georgia, Times New Roman,serif">
+    <Variable name="pageTitleFont" description="Blog Title Font"
+    type="font"
+    default="normal normal 350% Times New Roman,serif">
+    <Variable name="blogDescriptionFont" description="Blog Description Font"
+    type="font" default="italic normal 100% Georgia, Times New Roman, sans-serif">
+    */
+    #navbar, #navbar-iframe {
+        height: 0px;
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Defaults
+    ----------------------------------------------- */
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: small;
+        text-align: center;
+        color: #000033;
+        line-height: 1.3em;
+        background: #FFFFFF;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    abbr, acronym {
+        cursor: help;
+        font-style: normal;
+    }
+
+    code {
+        font-size: 90%;
+        white-space: normal;
+        color: #666;
+    }
+
+    hr {
+        display: none;
+    }
+
+    img {
+        border: 0;
+    }
+
+    /* Link styles */
+    a:link {
+        color: #504030;
+    }
+
+    a:visited {
+        color: #385070;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: #BCB2A8;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #385070;
+    }
+
+    /* Layout
+    ----------------------------------------------- */
+    #outer-wrapper {
+        background-color: #FFFFFF;
+        border-left: 1px solid #FFFFFF;
+        border-right: 1px solid #FFFFFF;
+        width: 760px;
+        margin: 0px auto;
+        padding: 8px;
+        text-align: center;
+        font: normal normal 100% verdana, Sans-Serif;;
+    }
+
+    #main-top {
+        width: 760px;
+        height: 88px;
+        background: #FFFFFF url("images/cabecera2zk4.jpg") no-repeat top left;
+        margin: 0px;
+        padding: 0px;
+        display: block;
+    }
+
+    #main-bot {
+        width: 760px;
+        height: 21px;
+        background: #FFFFFF url("images/pie2ue9.jpg") no-repeat top left;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    #wrap2 {
+        width: 760px;
+        background: #FFFFFF url("images/cntbg2vq5.gif") repeat-y;
+        margin: 0px 0px 0px 0px;
+        text-align: left;
+        display: block;
+    }
+
+    #wrap3 {
+        padding: 0 17px 0 35px;
+    }
+
+    .Header {
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0 0 6px 0;
+        font: normal normal 350% Times New Roman, serif;
+        font-weight: bold;
+        text-align: center;
+        color: #354E6C;
+    }
+
+    h1 a:link {
+        text-decoration: none;
+        color: #354E6C;
+    }
+
+    h1 a:visited {
+        text-decoration: none;
+        color: #354E6C;
+    }
+
+    h1 a:hover {
+        border: 0;
+        color: #354E6C;
+        background: #BCB2A8;
+        text-decoration: none;
+    }
+
+    .Header .description {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5em;
+        text-align: right;
+        color: #29303B;
+        font: italic normal 100% Georgia, Times New Roman, sans-serif;
+    }
+
+    #sidebar-wrapper {
+        clear: left;
+    }
+
+    #main {
+        width: 430px;
+        float: left;
+        padding: 8px 0;
+        margin: 0;
+        word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+        overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+    }
+
+    #sidebar {
+        width: 214px;
+        float: right;
+        padding: 0px 0px 10px 20px;
+        margin: 30px 0 0 0;
+        word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+        overflow: hidden; /* fix for long non-text content breaking IE sidebar float */
+    }
+
+    #footer {
+        clear: both;
+        padding-top: 10px;
+        _padding-top: 6px; /* IE Windows target */
+    }
+
+    #footer p {
+        line-height: 1.5em;
+        font-size: 75%;
+    }
+
+    /* Typography :: Main entry
+    ----------------------------------------------- */
+    h2.date-header {
+        text-align: right;
+        letter-spacing: .1em;
+        font-size: 90%;
+        font-weight: normal;
+        color: #504030;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #BCB2A8;
+    }
+
+    .post {
+        margin: 8px 0 24px 0;
+    }
+
+    .post h3 {
+        font-family: "Times New Roman", Serif;
+        font-weight: bold;
+        font-size: 200%;
+        color: #003366;
+        margin: 0;
+        padding: 0;
+    }
+
+    .post h3 a {
+        color: #003366;
+    }
+
+    .post h3 a:hover {
+        color: #ffffff;
+        background: #BCB2A8;
+        text-decoration: none;
+    }
+
+    .post-body p {
+        line-height: 1.5em;
+        margin: 0 0 .6em 0;
+    }
+
+    .post-footer {
+        font-family: Verdana, sans-serif;
+        font-size: 86%;
+        border-top: 1px solid #BFB186;
+        padding-top: 6px;
+    }
+
+    .post-footer a {
+        margin-right: 6px;
+    }
+
+    .post ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .post li {
+        line-height: 1.5em;
+        list-style: none;
+        background: url("images/bullet2wu1.gif") no-repeat 0px .3em;
+        vertical-align: top;
+        padding: 0 0 .6em 17px;
+        margin: 0;
+    }
+
+    .feed-links {
+        clear: both;
+        line-height: 2.5em;
+    }
+
+    #blog-pager-newer-link {
+        float: left;
+    }
+
+    #blog-pager-older-link {
+        float: right;
+    }
+
+    #blog-pager {
+        text-align: center;
+    }
+
+    /* Typography :: Sidebar
+    ----------------------------------------------- */
+    .sidebar h2 {
+        margin: 10px 0 0 0;
+        padding: 0;
+        color: #4E4033;
+        font: normal normal 150% Georgia, Times New Roman, serif;
+        font-weight: bold;
+    }
+
+    .sidebar h2 img {
+        margin-bottom: -4px;
+    }
+
+    .sidebar .widget {
+        font-size:86%;
+        margin:10px 0 12px 0;
+        padding:20px;
+        line-height: 1.4em;
+        background: url("images/ribg2ve5.jpg") no-repeat top left;
+    }
+
+    .sidebar ul li {
+        line-height: 1.5em;
+        list-style: none;
+        background: url("images/bullet2wu1.gif") no-repeat 0px .3em;
+        vertical-align: top;
+        padding: 0 0 .6em 17px;
+        margin: 0;
+    }
+
+    .sidebar ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    /* Comments
+    ----------------------------------------------- */
+    #comments {
+    }
+
+    #comments h4 {
+        font-weight: normal;
+        font-size: 120%;
+        color: #29303B;
+        margin: 0;
+        padding: 0;
+    }
+
+    #comments-block {
+        line-height: 1.5em;
+    }
+
+    .comment-author {
+        background: url("images/bullet2wu1.gif") no-repeat 2px .35em;
+        margin: .5em 0 0;
+        padding: 0 0 0 20px;
+        font-weight: bold;
+    }
+
+    .comment-body {
+        margin: 0;
+        padding: 0 0 0 20px;
+    }
+
+    .comment-body p {
+        font-size: 100%;
+        margin: 0 0 .2em 0;
+    }
+
+    .comment-footer {
+        color: #29303B;
+        font-size: 74%;
+        margin: 0 0 10px;
+        padding: 0 0 .75em 20px;
+    }
+
+    .comment-footer a:link {
+        color: #473624;
+        text-decoration: none;
+    }
+
+    .comment-footer a:visited {
+        color: #716E6C;
+        text-decoration: none;
+    }
+
+    .comment-footer a:hover {
+        color: #ffffff;
+        background: #BCB2A8;
+        text-decoration: none;
+    }
+
+    .comment-footer a:active {
+        color: #BCB2A8;
+        text-decoration: none;
+    }
+
+    .deleted-comment {
+        font-style: italic;
+        color: gray;
+    }
+
+    /* Profile
+    ----------------------------------------------- */
+    #main .profile-data {
+        display: inline;
+    }
+
+    .profile-datablock, .profile-textblock {
+        margin: 0 0 4px 0;
+    }
+
+    .profile-data {
+        margin: 0;
+        padding: 0 8px 0 0;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: 90%;
+        color: #211104;
+    }
+
+    .profile-img {
+        float: left;
+        margin: 0 5px 5px 0;
+        border: 1px solid #A2907D;
+        padding: 2px;
+    }
+    #header {
+        background: url("images/h12bgln3.jpg") no-repeat bottom left;
+    }
+
+    /** Page structure tweaks for layout editor wireframe */
+    body#layout #outer-wrapper {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    body#layout #wrap2,
+    body#layout #wrap3 {
+        margin-top: 0;
+    }
+
+    body#layout #main-top {
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+<div id="outer-wrapper">
+    <div id="main-top"></div>
+    <!-- placeholder for image -->
+    <div id="wrap2">
+        <div id="wrap3">
+            <div class="header section" id="header">
+                <div class="widget Header" id="Header1">
+                    <div id="header-inner">
+                        <a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/"
+                           style="display: block">
+                            <img alt="Comic Book Closet" id="Header1_headerimg" src="images/header.jpg"
+                                 style="display: block" height="460px; " width="708px; ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="crosscol-wrapper" style="text-align:center">
+                <div class="crosscol section" id="crosscol"></div>
+            </div>
+            <div id="sidebar-wrapper">
+                <div class="sidebar section" id="sidebar">
+                    <div class="widget HTML" id="HTML5">
+                        <div class="widget-content">
+                            <font size="4"><span style="font-weight:bold;">Let's just assume there are spoilers.</span></font>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="widget Image" id="Image4">
+                        <div class="widget-content">
+                            <img style="visibility: visible;" alt="" id="Image4_img"
+                                 src="images/051309_scottpilgrim-tm.jpg" height="105" width="140">
+                            <br>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="widget LinkList" id="LinkList1">
+                        <h2>Comic Collection</h2>
+                        <div class="widget-content">
+                            <ul>
+                                <li><a href="http://www.achewood.com/">Achewood</a>
+                                </li>
+                                <li><a href="http://alienlovespredator.com/">Alien
+                                    Loves Predator</a></li>
+                                <li>
+                                    <a href="http://www.tencentticker.com/butterflycomics/">Butterfly</a>
+                                </li>
+                                <li><a href="http://www.explosm.net/comics/">Cyanide
+                                    and Happiness</a></li>
+                                <li><a href="http://www.daisyowl.com/">Daisy
+                                    Owl</a></li>
+                                <li><a href="http://www.dieselsweeties.com/">Diesel
+                                    Sweeties</a></li>
+                                <li><a href="http://www.qwantz.com/">Dinosaur
+                                    Comics</a></li>
+                                <li>
+                                    <a href="http://www.daniellecorsetto.com/gws.html">Girls
+                                        With Slingshots</a></li>
+                                <li><a href="http://www.katebeaton.com/">Hark!
+                                    A Vagrant!</a></li>
+                                <li><a href="http://www.menagea3.net/">Menage
+                                    A 3</a></li>
+                                <li><a href="http://www.montgrave.com/">Montgrave</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.mspaintadventures.com/">MS
+                                        Paint Adventures</a></li>
+                                <li><a href="http://nedroid.com/">Nedroid</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.overcompensating.com/">Overcompensating</a>
+                                </li>
+                                <li>
+                                    <a href="http://questionablecontent.net/">Questionable
+                                        Content</a></li>
+                                <li>
+                                    <a href="http://www.snowflakescomic.com/">Snowflakes</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.thedevilspanties.com/">The
+                                        Devil's Panties</a></li>
+                                <li><a href="http://pbfcomics.com/">The Perry
+                                    Bible Fellowship</a></li>
+                                <li><a href="http://www.rosscottinc.com/">The
+                                    System</a></li>
+                                <li>
+                                    <a href="http://www.jsayers.com/thingpart/thingpart.html">thingpart</a>
+                                </li>
+                                <li><a href="http://www.wapsisquare.com/">Wapsi
+                                    Square</a></li>
+                                <li><a href="http://www.nonadventures.com/">Wonderella</a>
+                                </li>
+                                <li><a href="http://wondermark.com/">Wondermark</a>
+                                </li>
+                                <li><a href="http://www.xkcd.com/">xkcd</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="widget Image" id="Image2">
+                        <div class="widget-content">
+                            <img style="visibility: visible;" alt="" id="Image2_img" src="images/ABLC201b.jpg"
+                                 height="47" width="150">
+                            <br>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main section" id="main">
+                <div class="widget Blog" id="Blog1">
+                    <div class="blog-posts hfeed">
+                        <!-- google_ad_section_start -->
+                        <h2 class="date-header">Sunday, March 22, 2009</h2>
+                        <div class="post hentry">
+                            <a name="5439123812382819930"></a>
+                            <h3 class="post-title entry-title">
+                                <a href="#main">Andrew
+                                    Hussie of MS Paint Adventures</a>
+                            </h3>
+                            <div class="post-header-line-1"></div>
+                            <div class="post-body entry-content">
+                                <p><em>If you haven't read through MS Paint Adventures already then go
+                                    do so. This article will still be here. MS Paint Adventures is something
+                                    of a comic experiment in comics and animation using elements of
+                                    old-school text based adventure games. Every move of the characters
+                                    through the imaginative and complicated worlds is dictated by reader
+                                    suggestions (although many events take on an unexpected turn when they
+                                    play out). Problem Sleuth is the longest-running story so far and Andrew
+                                    wrapped the series up pretty much one year from its beginning. The
+                                    adventure is massive, with so many characters and convoluted puzzles
+                                    they had to put a wiki together just to keep track of it all. I thought
+                                    that it would be a good time to catch up with Andrew as he was putting
+                                    the finishing touches on the site's current project and planning his
+                                    next
+                                    move.</em><br><br>--------------------------------------------------------<br><br><br><br><strong>CC:</strong>
+                                    How does it feel to be finished with Problem Sleuth?<br><br><strong>Andrew
+                                        Hussie:</strong> As of this moment, I'm working on epilogue pages, and still
+                                    have some "extras" to get to as well.<br><br>But
+                                    even if I were totally finished, and exhaling upon the completion of
+                                    this unusual magnum opus, I'm pretty sure it would feel weird. I would
+                                    just start on something else right away rather than let whatever that
+                                    feeling was sink in.<br><br>I guess I don't really consider rest or
+                                    vacations as things which apply to creativity. Always working on
+                                    projects is sort of my year-round vacation from the awkward feeling of
+                                    not producing anything. Even now I've been working on plans for the next
+                                    story, before I've totally wrapped up PS.<br><br><strong>CC:</strong> For the
+                                    uninitiated, how did MS Paint Adventures get started?<br><br><strong>AH:</strong>
+                                    It started on an internet forum. It worked very much the same way as it
+                                    does now, but replies to the thread served as suggestions. The entire <a
+                                            href="http://www.mspaintadventures.com/?s=1">Jail
+                                        Break</a> story was made in a forum.<br><br><strong>CC:</strong>
+                                    While I know the adventure was written with fan input how much of the
+                                    “weird puzzle shit” did you work out in advance of commands? It seems to
+                                    fit pretty well.<br><br><strong>AH:</strong> Pretty much every puzzle
+                                    was worked out in advance. I guess some of the following could be
+                                    "spoilers" for anyone who hasn't finished reading [Problem Sleuth].
+                                    Albeit a very silly kind of spoiler.<br><br>For instance, the moment I
+                                    drew the Snoop bust, I knew it was going to be the thing to deal the
+                                    final hit to the boss. Also I put the giant fan on the island knowing it
+                                    would be the thing to finally blow the bust off whatever it was sitting
+                                    on (which turned out to be a pair of mecha legs). And then I knew
+                                    they'd have to go on a sort of puzzle adventure through the brothel to
+                                    plug in the fan, which I only bothered to design once the plug had
+                                    landed in there. I let the pace of the story dictate how complicated the
+                                    puzzle was. Since it looked like I needed to buy them some time to beat
+                                    DMK, I made it fairly complicated with all the peepshow windows and
+                                    food trucks and such. And then later I bought even more time by
+                                    stretching the cord across the universe. The delay tactics got pretty
+                                    flagrant and ridiculous actually.<br><br>But even though I did the planning, I
+                                    always let the reader supply the actions to get us there.<br><br>The
+                                    earlier puzzle to dislodge the oboe was the same way. It even involved
+                                    the same elements: supplying power to a fan to blow a large bust across a
+                                    room so it could fall through the floor on a piano. And even earlier
+                                    than that a fan was used to blow a heavy safe door shut. Various puzzle
+                                    themes have been established throughout, and were adhered to somewhat.
+                                    It was sort of obvious when you think about it, that the big fan would
+                                    be used to blow a heavy bust to kill the boss at the end (as insane as
+                                    that sentence just sounded). Yet I don't think many people saw it
+                                    coming. This is possibly because I established patterns of
+                                    unpredictability in other ways.<br><br><strong>CC:</strong> Were there any PC
+                                    adventure games in particular you would say influenced MSPA? Did you play a lot of
+                                    them?<br><br><strong>AH:</strong>
+                                    The only ones I can recall playing all the way through were Maniac
+                                    Mansion and Day of the Tentacle. But I wouldn't say any specific
+                                    adventure game influenced it - only the conceptual framework, and a lot
+                                    of the quirks and foibles common to those games.<br><br>Other types of
+                                    games had their influence too, like fighting games and RPGs, especially
+                                    when it came to certain gags, as well as visual styles in the animated
+                                    frames.<br><br><strong>CC:</strong> How crazy did the suggestions get?
+                                    Were there any you were tempted to indulge that would have derailed the
+                                    project or made things more difficult?<br><br><strong>AH:</strong>
+                                    Almost all of them were pretty crazy, and almost all of them did derail
+                                    the project, in a way. The entire plot is really an elaborate series of
+                                    derailings. That's mostly why it went on for so long. Crazy suggestions
+                                    lend themselves to tangents. The whole story is composed of these
+                                    tangents, which I did my best to weave together cohesively. But how it
+                                    did sprawl.<br><br>But there were plenty that were "crazy" in the sense
+                                    that I would read it, and then reread it, and say "Wow, I have no idea
+                                    what this guy is talking about." Especially toward the end when the
+                                    universe was becoming particularly unhinged. I think some readers were
+                                    taking cues from those outlandish events, and then tried to advance the
+                                    story on those terms, usually concocting fanciful ways to increase the
+                                    speed of light, and often writing paragraphs in the process. Even though
+                                    there was no way I would, or could possibly, use an entire paragraph as
+                                    a command.<br><br>But I think in those cases they were using the
+                                    suggestion box as a sort of whiteboard to just think out loud about some
+                                    wild stuff, which was cool and all part of the fun. The suggestion box
+                                    often made for some enjoyable reads. And many times even though I didn't
+                                    explicitly use someone's suggestion, I would take what they were
+                                    getting at and work it into the story in a less direct way. If there are
+                                    readers who think I never used their suggestions, there is a decent
+                                    chance I just might have without them realizing it!<br><br><strong>CC:</strong> What
+                                    has the response from the community been on seeing Problem Sleuth
+                                    finish?<br><br><strong>AH:</strong>
+                                    It has been an incredible response, far beyond my expectations. I've
+                                    always managed to respond to just about ever letter I get from a reader,
+                                    but when the story ended, not only could I not respond to everything, I
+                                    had trouble keeping up with just reading it all. I'm quite grateful to
+                                    everyone who's stuck with me through this story, and to those who voiced
+                                    appreciation for it in whatever way.<br><br>The sense I've come away
+                                    with is that people actually like it when things have a proper ending.
+                                    It's not uncommon for things on the internet to end, but it seems more
+                                    usually to be characterized by a petering out, which is less well
+                                    received. Tying up the loose ends makes all the difference. It's a model
+                                    of storytelling I will strive to repeat.<br><br><strong>CC:</strong> Do you plan on
+                                    revisiting <a
+                                            href="http://www.mspaintadventures.com/?s=2">Bard
+                                        Quest</a> now?<br><br><strong>AH:</strong>
+                                    I'm going to put a very brief cap on both unfinished stories, just so
+                                    neither one is left hanging. I won't spend much time on that though.<br><br><strong>CC:</strong>
+                                    Then what?<br><br><strong>AH:</strong> There will be a story following PS very shortly. It will be very
+                                    different.<br><br><strong>CC:</strong> Some people might not know about the <a
+                                            href="https://mrcheeze.github.io/andrewhussie/">comics </a>you
+                                    drew before MSPA began. What prompted you to put out your own webcomic?
+                                    Is a more traditional, semi-daily strip something you might return to
+                                    again?<br><br><strong>AH:</strong> I started a webcomic because it was
+                                    what I was doing anyway: making comics. So like many others, I put them
+                                    online. I doubt I'll get into it again though. I still like comics, but
+                                    after doing MSPA for a while, I think it would seem awfully static and
+                                    rigid. It's a medium I've already personally explored quite a bit, with a
+                                    good variety of styles and approaches. I'd rather keep feeling out new
+                                    boundaries, as long as it's possible.<br><br>This is even true with the
+                                    next adventure. If you're thinking it's going to look like Problem
+                                    Sleuth 2, but with new characters and a different genre setting, you'll
+                                    be in for a surprise.<br><br><strong>CC:</strong> You had a book released through
+                                    Slave Labor Graphics, right?<br><br><strong>AH:</strong> Yes, it was called <a
+                                            href="https://mrcheeze.github.io/andrewhussie/comic.html?comic=whistles">Whistles</a>.
+                                    It was supposed to be the first of two books, and I have yet to finish
+                                    the second. A fully rendered graphic novel is of course vastly more
+                                    time-consuming than something like MSPA, page for page. But maybe that's
+                                    one of the things I like about this format. The efficiency in conveying
+                                    a complete story - the bang for the buck metric, I guess - seems to be
+                                    very high.<br><br>I'll still finish it though, per what I was saying before about
+                                    finishing stories.<br><br><strong>CC:</strong> Something else you’re involved with
+                                    that has been burning up the ‘net has been your<span
+                                            style="text-decoration: underline;"></span> video editing project. How did
+                                    that come about?<br><br><strong>AH:</strong>
+                                    My internet friend, Jan, who I've known for quite some time, wrote to
+                                    me about a project he was thinking of, involving re-editing episodes of
+                                    Star Trek TNG. I of course thought this was a fantastic idea, and we
+                                    made about a dozen short episodes very quickly. He is a brilliant
+                                    editor, and they wouldn't work even remotely as well if not for his
+                                    technical expertise. My role was to write "scripts" and come up with
+                                    funny ideas, but of course he comes up with a lot of great ideas too.<br><br>It's
+                                    a very fun exercise, and I probably laugh at them as much as any fan of
+                                    the "gazzora" youtube channel, since they're fresh to my eyes after
+                                    he's finished crafting them over in Belgium. I had a feeling they would
+                                    be the sort of thing to make the viral rounds across the internet. I
+                                    thought there was a chance they'd take off when I got around to showing
+                                    them to the MSPA audience, but as it turned out, they took off before I
+                                    even had the chance.<br><br><strong>CC:</strong> You’ve talked about
+                                    expanding beyond Star Trek with these and we’ve already seen some Back
+                                    to the Future. Any clues as to what we can look forward to
+                                    next?<br><br><strong>AH:</strong>
+                                    The plan was to do even more Back to the Future, possibly giving it as
+                                    much attention as we gave Star Trek. But we've been pretty whimsical
+                                    about it, working on whatever we happen to feel like at the moment.
+                                    We've also talked about doing some shows like Fresh Prince and ALF. I
+                                    feel like we could probably make just about anything work. Such is the
+                                    power of editing.<br><br>But it's tough moving off of Star Trek, just because
+                                    there's so much material there. We haven't really tapped even 1% of
+                                    it.<br><br><strong>CC:</strong> Well, I appreciate your time. Before you go, though,
+                                    I have to ask…am <em><strong>I</strong></em> a winner?<br><br><strong>AH:</strong> I
+                                    don't know. Have you managed to escape your office yet?<br><br><br><br><em>Shit, I
+                                        just got BACK to the office. Sigh...</em><a
+                                            href="http://www.mspaintadventures.com/"><em>MS
+                                        Paint Adventures</em></a><em>
+                                        is putting the finishing touches on its epilogues before starting up
+                                        another project and usually updates with several new pages at once.
+                                        Watch for new Star Trek videos <a
+                                            href="https://www.youtube.com/user/gazorra/videos">here</a>.</em>
+                                </p>
+                                <div style="clear: both;"></div>
+                            </div>
+                            <div class="post-footer">
+                                <p class="post-footer-line post-footer-line-1"><span class="post-author vcard">
+Posted by
+<span class="fn">Daniel Dean</span>
+</span>
+<span class="post-timestamp">
+at
+<a class="timestamp-link"
+   href="#main"
+   rel="bookmark" title="permanent link"><abbr class="published" title="2009-03-22T08:03:00-07:00">8:03 AM</abbr></a>
+</span>
+<span class="post-comment-link">
+</span>
+<span class="post-icons">
+<span class="item-action">
+</span>
+</span>
+<span class="post-backlinks post-comment-link">
+</span>
+                                </p>
+                                <p class="post-footer-line post-footer-line-2"><span class="post-labels">
+Labels:
+<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/search/label/comics" rel="tag">comics</a>,
+<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/search/label/community" rel="tag">community</a>,
+<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/search/label/interview" rel="tag">interview</a>,
+<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/search/label/technology" rel="tag">technology</a>,
+<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/search/label/webcomics" rel="tag">webcomics</a>
+</span>
+                                </p>
+                                <p class="post-footer-line post-footer-line-3"></p>
+                            </div>
+                        </div>
+                        <div class="comments" id="comments">
+                            <a name="comments"></a>
+                            <h4>
+
+                                1 comments:
+
+                            </h4>
+                            <dl id="comments-block">
+                                <dt class="comment-author " id="c9156723137812476072">
+                                    <a name="c9156723137812476072"></a>
+                                    <a href="https://web.archive.org/web/20120301192324/http://www.blogger.com/profile/14047852023484580251"
+                                       rel="nofollow">voodooKobra</a>
+                                    said...
+                                </dt>
+                                <dd class="comment-body">
+                                    <p>"CC: Well, I appreciate your time. Before you go, though, I have to ask…am I a
+                                        winner?<br><br>AH: I don't know. Have you managed to escape your office
+                                        yet?"<br><br>Aside from the humorous context, that could be actual advice.</p>
+                                </dd>
+                                <dd class="comment-footer">
+<span class="comment-timestamp">
+    March 23, 2009 5:26 AM
+</span>
+                                </dd>
+                            </dl>
+                            <div id="backlinks-container">
+                                <div id="Blog1_backlinks-container">
+                                    <a name="links"></a><h4>
+                                </h4>
+                                    <p class="comment-footer">
+                                        <a class="comment-link" href="" id="Blog1_backlinks-create-link"
+                                           target="_blank">
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- google_ad_section_end -->
+                    </div>
+                    <div class="blog-pager" id="blog-pager">
+<span id="blog-pager-newer-link">
+<a class="blog-pager-newer-link"
+   href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/2009/03/fan-art-feature-5.html"
+   id="Blog1_blog-pager-newer-link" title="Newer Post">Newer Post</a>
+</span>
+<span id="blog-pager-older-link">
+<a class="blog-pager-older-link"
+   href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/2009/03/im-back.html"
+   id="Blog1_blog-pager-older-link" title="Older Post">Older Post</a>
+</span>
+                        <a class="home-link"
+                           href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/">Home</a>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="post-feeds">
+                        <div class="feed-links">
+                            Subscribe to:
+                            <a class="feed-link"
+                               href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/feeds/5439123812382819930/comments/default"
+                               target="_blank" type="application/atom+xml">Post Comments (Atom)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-wrapper">
+                <div class="footer section" id="footer"></div>
+                <!-- Esto es un pequeño reconocimiento al trabajo empleado en realizar la plantilla, no te ha costado nada bajarla, no te cuesta nada dejarlo. Gracias! -->
+                <!-- This is a small credit for the work done building the template, you just have had to download it, you could just leave it, Thanks! -->
+                <div style="text-align:center; font-size:10px;">
+                    ~<a href="https://web.archive.org/web/20120301192324/http://comicscloset.blogspot.com/">Comic Book
+                    Closet</a>. Old News es una plantilla original de <b><a
+                        href="http://studio.st/">Studio.st</a></b> para <b><a
+                        href="http://bitacoras.com/">Bitacoras.com</a></b>,
+                    adaptada para <b><a
+                        href="http://blogger.com/">Blogger</a></b> por <b><a
+                        href="https://web.archive.org/web/20120301192324/http://metadiario.bitacoras.com/">Horacio
+                    Federico</a></b>~
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main-bot"></div>
+    <!-- placeholder for image -->
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 19:23:24 Mar 1, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:13:33 Jul 13, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->

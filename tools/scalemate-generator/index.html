@@ -1,0 +1,331 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Scalemate Name Generator</title>
+
+<style>
+body {background-color: F1FF8F;}
+
+#home {
+	position: absolute;
+	top: 0;
+	right: 5;
+}
+
+#bg {
+	width: 500px;
+	height: 700px;
+	background-image: url('scalemate.png');
+	background-position: top left;
+	background-repeat: no-repeat;
+	margin-top: -100px;
+	position: absolute;
+}
+
+textarea.results {
+	background-color: F1FF8F;
+	color: #00AE96;
+	border:none;
+	font-family: Verdana;
+	font-size: 40px;
+	text-align:center;
+	border: 1px dashed EC003B;
+}
+
+#results {
+	width: 525px;
+	height: 100px;
+	bgcolor: blue;
+	position: absolute;
+	left: 50%;
+	top: 40%
+}
+
+#credits {
+	position: absolute;
+	right: 10;
+	bottom: 10;
+	font-size: 11px;
+	font-family: verdana;
+	color: EC003B;
+	border: 1px dotted 7A0407;
+	padding: 5px;
+}
+
+input.go
+{
+   color:#7A0407;
+   background-color:#DCFA00;
+   border: 1px dashed 7A0407;
+}
+
+</style>
+
+<script language="JAVASCRIPT">
+<!--
+var aVocab = new Array();
+
+var intIncr
+var intCat
+
+intCat =0
+intIncr=0
+
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="FIRST"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="<TITLE> <ONE><TWO>"
+
+intCat++
+intIncr=0
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="TITLE"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="Duke"
+aVocab[intCat][1][intIncr++]="Senator"
+aVocab[intCat][1][intIncr++]="Liasion"
+aVocab[intCat][1][intIncr++]="Doctor"
+aVocab[intCat][1][intIncr++]="Professor"
+aVocab[intCat][1][intIncr++]="President"
+aVocab[intCat][1][intIncr++]="Congressman"
+aVocab[intCat][1][intIncr++]="Vice President"
+aVocab[intCat][1][intIncr++]="Sir"
+aVocab[intCat][1][intIncr++]="Madame"
+aVocab[intCat][1][intIncr++]="Executive"
+aVocab[intCat][1][intIncr++]="Commander"
+aVocab[intCat][1][intIncr++]="General"
+aVocab[intCat][1][intIncr++]="Officer"
+aVocab[intCat][1][intIncr++]="Private"
+aVocab[intCat][1][intIncr++]="Lieutenant"
+aVocab[intCat][1][intIncr++]="Nurse"
+aVocab[intCat][1][intIncr++]="Miss"
+aVocab[intCat][1][intIncr++]="Mister"
+aVocab[intCat][1][intIncr++]="Magister"
+aVocab[intCat][1][intIncr++]="King"
+aVocab[intCat][1][intIncr++]="Queen"
+aVocab[intCat][1][intIncr++]="Prince"
+aVocab[intCat][1][intIncr++]="Princess"
+aVocab[intCat][1][intIncr++]="Sovereign"
+aVocab[intCat][1][intIncr++]="Emperor"
+aVocab[intCat][1][intIncr++]="Caesar"
+aVocab[intCat][1][intIncr++]="Archduke"
+aVocab[intCat][1][intIncr++]="Count"
+aVocab[intCat][1][intIncr++]="Viscount"
+aVocab[intCat][1][intIncr++]="Baron"
+aVocab[intCat][1][intIncr++]="Baroness"
+aVocab[intCat][1][intIncr++]="Marquise"
+aVocab[intCat][1][intIncr++]="Esquire"
+
+intCat++
+intIncr=0
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="ONE"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="Apple"
+aVocab[intCat][1][intIncr++]="Honey"
+aVocab[intCat][1][intIncr++]="Lemon"
+aVocab[intCat][1][intIncr++]="Puce"
+aVocab[intCat][1][intIncr++]="Berry"
+aVocab[intCat][1][intIncr++]="Lime"
+aVocab[intCat][1][intIncr++]="Kiwi"
+aVocab[intCat][1][intIncr++]="Vanilla"
+aVocab[intCat][1][intIncr++]="Lavender"
+aVocab[intCat][1][intIncr++]="Teal"
+aVocab[intCat][1][intIncr++]="Cobalt"
+aVocab[intCat][1][intIncr++]="Zaffre"
+aVocab[intCat][1][intIncr++]="Pine"
+aVocab[intCat][1][intIncr++]="Melon"
+aVocab[intCat][1][intIncr++]="Cherry"
+aVocab[intCat][1][intIncr++]="Lilac"
+aVocab[intCat][1][intIncr++]="Citrus"
+aVocab[intCat][1][intIncr++]="Peach"
+aVocab[intCat][1][intIncr++]="Orange"
+aVocab[intCat][1][intIncr++]="Melon"
+aVocab[intCat][1][intIncr++]="Peach"
+aVocab[intCat][1][intIncr++]="Rose"
+aVocab[intCat][1][intIncr++]="Victory"
+aVocab[intCat][1][intIncr++]="Glory"
+aVocab[intCat][1][intIncr++]="Pumpkin"
+aVocab[intCat][1][intIncr++]="Green"
+aVocab[intCat][1][intIncr++]="Plum"
+aVocab[intCat][1][intIncr++]="Amber"
+aVocab[intCat][1][intIncr++]="Azure"
+aVocab[intCat][1][intIncr++]="Blossom"
+aVocab[intCat][1][intIncr++]="Ash"
+aVocab[intCat][1][intIncr++]="Azalea"
+aVocab[intCat][1][intIncr++]="Banana"
+aVocab[intCat][1][intIncr++]="Barley"
+aVocab[intCat][1][intIncr++]="Leaf"
+aVocab[intCat][1][intIncr++]="Bean"
+aVocab[intCat][1][intIncr++]="Birch"
+aVocab[intCat][1][intIncr++]="Olive"
+aVocab[intCat][1][intIncr++]="Bronze"
+aVocab[intCat][1][intIncr++]="Rum"
+aVocab[intCat][1][intIncr++]="Milk"
+aVocab[intCat][1][intIncr++]="Coffee"
+aVocab[intCat][1][intIncr++]="Candy"
+aVocab[intCat][1][intIncr++]="Corn"
+aVocab[intCat][1][intIncr++]="Carrot"
+aVocab[intCat][1][intIncr++]="Cedar"
+aVocab[intCat][1][intIncr++]="Lily"
+aVocab[intCat][1][intIncr++]="Cinnamon"
+aVocab[intCat][1][intIncr++]="Cocoa"
+aVocab[intCat][1][intIncr++]="Coconut"
+aVocab[intCat][1][intIncr++]="Bean"
+aVocab[intCat][1][intIncr++]="Copper"
+aVocab[intCat][1][intIncr++]="Cotton"
+aVocab[intCat][1][intIncr++]="Daisy"
+aVocab[intCat][1][intIncr++]="Fern"
+aVocab[intCat][1][intIncr++]="Nut"
+aVocab[intCat][1][intIncr++]="Wine"
+aVocab[intCat][1][intIncr++]="Ruby"
+aVocab[intCat][1][intIncr++]="Lilac"
+aVocab[intCat][1][intIncr++]="Gin"
+aVocab[intCat][1][intIncr++]="Golden"
+aVocab[intCat][1][intIncr++]="Grape"
+aVocab[intCat][1][intIncr++]="Holly"
+aVocab[intCat][1][intIncr++]="Iron"
+aVocab[intCat][1][intIncr++]="Jade"
+aVocab[intCat][1][intIncr++]="Maple"
+aVocab[intCat][1][intIncr++]="Laurel"
+aVocab[intCat][1][intIncr++]="Blush"
+aVocab[intCat][1][intIncr++]="Ginger"
+aVocab[intCat][1][intIncr++]="Mint"
+aVocab[intCat][1][intIncr++]="Mango"
+aVocab[intCat][1][intIncr++]="Rust"
+aVocab[intCat][1][intIncr++]="Moss"
+aVocab[intCat][1][intIncr++]="Tulip"
+aVocab[intCat][1][intIncr++]="Mist"
+aVocab[intCat][1][intIncr++]="Mocha"
+aVocab[intCat][1][intIncr++]="Onion"
+aVocab[intCat][1][intIncr++]="Mustard"
+aVocab[intCat][1][intIncr++]="Parsley"
+aVocab[intCat][1][intIncr++]="Orchid"
+aVocab[intCat][1][intIncr++]="Pewter"
+aVocab[intCat][1][intIncr++]="Pickle"
+aVocab[intCat][1][intIncr++]="Pine"
+
+
+intCat++
+intIncr=0
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="TWO"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="breath"
+aVocab[intCat][1][intIncr++]="snout"
+aVocab[intCat][1][intIncr++]="legs"
+aVocab[intCat][1][intIncr++]="tongue"
+aVocab[intCat][1][intIncr++]="foot"
+aVocab[intCat][1][intIncr++]="toe"
+aVocab[intCat][1][intIncr++]="claw"
+aVocab[intCat][1][intIncr++]="nose"
+aVocab[intCat][1][intIncr++]="face"
+aVocab[intCat][1][intIncr++]="back"
+aVocab[intCat][1][intIncr++]="tooth"
+aVocab[intCat][1][intIncr++]="tail"
+aVocab[intCat][1][intIncr++]="ears"
+aVocab[intCat][1][intIncr++]="scale"
+aVocab[intCat][1][intIncr++]="finger"
+aVocab[intCat][1][intIncr++]="horn"
+aVocab[intCat][1][intIncr++]="snort"
+aVocab[intCat][1][intIncr++]="eye"
+aVocab[intCat][1][intIncr++]="brow"
+aVocab[intCat][1][intIncr++]="wing"
+aVocab[intCat][1][intIncr++]="flame"
+aVocab[intCat][1][intIncr++]="sniffle"
+aVocab[intCat][1][intIncr++]="mouth"
+aVocab[intCat][1][intIncr++]="fang"
+aVocab[intCat][1][intIncr++]="cough"
+aVocab[intCat][1][intIncr++]="sneeze"
+aVocab[intCat][1][intIncr++]="bite"
+aVocab[intCat][1][intIncr++]="sprite"
+aVocab[intCat][1][intIncr++]="roar"
+aVocab[intCat][1][intIncr++]="fire"
+aVocab[intCat][1][intIncr++]="thorn"
+aVocab[intCat][1][intIncr++]="rump"
+aVocab[intCat][1][intIncr++]="bottom"
+aVocab[intCat][1][intIncr++]="belly"
+aVocab[intCat][1][intIncr++]="smoke"
+aVocab[intCat][1][intIncr++]="neck"
+aVocab[intCat][1][intIncr++]="side"
+aVocab[intCat][1][intIncr++]="flank"
+aVocab[intCat][1][intIncr++]="flare"
+aVocab[intCat][1][intIncr++]="belch"
+
+
+	function GenNumber(nRange)
+	{
+                var iNumGen
+		iNumGen = Math.round((Math.random() * nRange));
+
+                return iNumGen;
+	}
+
+        function GetFrom(aArray)
+	{
+		var undefined
+		var sReturn
+		sReturn = aArray[GenNumber(aArray.length)];
+		if (sReturn == undefined)
+		{
+			sReturn = GetFrom(aArray)
+		}
+		return sReturn
+	}
+
+
+	function GetArray(sArrayName)
+	{
+		for (var intLooper=0;intLooper <aVocab.length;intLooper++)
+		{
+			if (aVocab[intLooper][0]==sArrayName)
+			{
+				return aVocab[intLooper][1];
+				break;
+			}
+		}
+	}
+
+	function ScanLine(sLine)
+	{
+		var iTagStart, iTagEnd
+		var sKey
+
+		if (sLine.indexOf("<") > -1)
+		{
+			iTagStart = sLine.indexOf("<");
+			iTagEnd = sLine.indexOf(">");
+			
+			sKey = sLine.substr(iTagStart+1, iTagEnd-(iTagStart+1));
+
+			sKey = GetFrom(GetArray(sKey))
+			sLine = sLine.substr(0, iTagStart) + sKey + sLine.substr(iTagEnd+1, (sLine.length - iTagEnd))
+
+		}
+		
+
+		if (sLine.indexOf("<") > - 1)
+		{
+			sLine = ScanLine(sLine)
+		}
+
+		return sLine;
+	}
+
+
+	function GenPlot()
+	{
+		sLine = GetFrom(GetArray("FIRST"));
+		sLine = ScanLine(sLine)
+		document.GENFORM.STORY.value = sLine;
+	}
+//-->
+</script>
+
+</head><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><body><div id="bg"><i></i></div>
+
+<div id="results"><form name="GENFORM">
+               <textarea class="results" name="STORY" rows="1" cols="25" spellcheck="false"></textarea>
+               <br><center><input type="button" class="go" name="BGENERATE" value="Call Your Next Witness" onclick="GenPlot();"></center>
+     </form></div>
+	 
+<div id="credits">Scalemate art by <a href="http://zyuz.tumblr.com/">Zilly</a>, used with permission.</div>
+</body></html>

@@ -1,0 +1,300 @@
+.container {
+  max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header a img{
+  opacity: 0.5;
+  transition: ease-in-out opacity .15s;
+}
+.site-header a img:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+#redditdiv{
+    background-image: url("/img/redditshot.png");
+    background-repeat: no-repeat;
+}
+
+#otherdiv{
+    background-image: url("/img/othershot.jpg");
+    background-repeat: no-repeat;
+}
+
+#discorddiv{
+    background-image: url("/img/discordshot.png");
+    background-repeat: no-repeat; 
+}
+
+#browserdiv{
+    background-image: url("/img/onlineshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#wikidiv{
+    background-image: url("/img/music/wiki.jpg");
+    background-repeat: no-repeat; 
+}
+
+#oldworksdiv{
+    background-image: url("/img/oldworksshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#answersdiv{
+    background-image: url("/img/answersshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#analysisdiv{
+    background-image: url("/img/analysisshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#otherofficialdiv{
+    background-image: url("/img/otherofficialshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#officialworksdiv{
+    background-image: url("/img/officialworksshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#statsdiv{
+    background-image: url("/img/statsshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#surveysdiv{
+    background-image: url("/img/surveysshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#liveblogsdiv{
+    background-image: url("/img/liveblogsshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+.btn-primary {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+}
+
+.btn-secondary {
+    position: absolute;
+    bottom: 0;
+}
+
+.sbahj{
+  font-family: "Comic Sans", "Comic Sans MS", Comic Sans, Times, serif;
+}
+
+#archivediv{
+    background-image: url("/img/archiveshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#tabletopdiv{
+    background-image: url("/img/tabletopshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#modsdiv{
+    background-image: url("/img/modsshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#recsdiv{
+    background-image: url("/img/recsshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#desktopdiv{
+    background-image: url("/img/desktopshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#desktopsoftwarediv{
+    background-image: url("/img/desktopsoftwareshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#browsersoftwarediv{
+    background-image: url("/img/browsersoftwareshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#gamediv{
+    background-image: url("/img/gameshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#musicdiv{
+    background-image: url("/img/musicshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#resourcediv{
+    background-image: url("/img/resourceshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#companiondiv{
+    background-image: url("/img/tools/companionshot.png");
+    background-repeat: no-repeat; 
+}
+
+#toolsdiv{
+    background-image: url("/img/toolsshot.jpg");
+    background-repeat: no-repeat; 
+}
+#officialdiv{
+    background-image: url("/img/officialshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#metadiv{
+    background-image: url("/img/metashot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#pesterchumdiv{
+    background-image: url("/img/tools/pesterchum.png");
+    background-repeat: no-repeat; 
+}
+
+#fansdiv{
+    background-image: url("/img/music/fanalbums.jpg");
+    background-repeat: no-repeat; 
+}
+
+#assetsdiv{
+    background-image: url("/img/assetsshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#cosplaydiv{
+    background-image: url("/img/cosplayshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#roleplayingdiv{
+    background-image: url("/img/roleplayingshot.jpg");
+    background-repeat: no-repeat; 
+}
+
+#sheetdiv{
+    background-image: url("/img/music/sheetmusic.jpg");
+    background-repeat: no-repeat; 
+}
+
+#referencesdiv{
+    background-image: url("/img/music/references.jpg");
+    background-repeat: no-repeat; 
+}
+
+#miscdiv{
+    background-image: url("/img/music/misc.jpg");
+    background-repeat: no-repeat; 
+}
+
+#visualizerdiv{
+    background-image: url("/img/music/visualizer.jpg");
+    background-repeat: no-repeat; 
+}
+
+
+.workdiv{
+    background-image: url("/img/construction.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    width: 100%;
+    height: auto;
+}
+
+.bg-light a{
+    text-decoration: none;
+    color: black;
+}
+
+.bg-dark a{
+    text-decoration: none;
+    color: white;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  -ms-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }

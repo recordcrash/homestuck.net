@@ -1,0 +1,186 @@
+The Shipping Game
+=================
+(this was original posted to MSPAForums 2011-04-25 by Armada, but
+the Android app was lost.)
+
+This game was inspired by a Japanese game know as the King's Game (or
+Ousama).  Here's how you play: Take a chopstick for each player, write
+"Osama" on one of them, and number the others from 1 upwards. Then
+someone holds the chopsticks in their fist, so the numbers are concealed,
+and everybody draws a stick, without telling anyone their number. The
+lucky guy or gal with the "Osama" chopstick gets to be the King. The
+Osama decides on a task and then states the numbers of the players
+who must perform it, (without knowing who they are). For example:
+"number two must kiss number five!" or "number three has to do
+the Macarena!" or "numbers seven and eight must down their drinks!"
+This inevitably leads to a succession of pant-pissingly funny antics
+(as long as you're not the person performing the embarrassing acts.)
+
+After each deed is done, the chopsticks are gathered again, and the
+process is repeated. Usually everybody gets a chance to be the King,
+and players relish the chance to exact revenge on those who tormented
+them in previous rounds of the game.
+
+So with the two weeks I had between Tekkoshocon and the Pittsburghstuck
+meetup, I came up with a "shipping" styled version of this with a
+Homestuck theme. "Cards" were used instead of just "free" commands so
+that there would four distinct quardants, but this could easily be played
+the original way.
+
+How To Play:
+-----
+To start, get a random way to select everyone's number and the
+Shipper (basically the king from the original game with a different
+name. They give the orders). Use cards, draw straws, use a random
+number generator. Anything will work pretty much. Just make sure you
+have something directly designated for the shipper (it could be the
+highest number or the letter S).
+
+Randomly assign a number to everyone (draw you straws or cards). DON'T
+TELL ANYONE WHAT YOU GOT UNLESS YOU ARE THE SHIPPER.
+
+The shipper draws a card from the pile. In the Android app, press the
+menu button and press new card. If you're using your own physical cards,
+just pick one off the top. If you feel like freestyling, go ahead and
+make something up. The shipper replaces X, Y, and Z on the card with
+numbers. The numbers then do whatever that card said. (The shipper
+places the card on the bottom of the pile if you are playing with
+physical cards.)
+
+Gather up you cards or straws or whatever from the players. Randomize
+again and repeat the whole process. Now you're cooking with gas!
+
+Example of play
+-----
+8 players are playing. They have 8 playing cards, 1 through 7 and
+a king card, to assign numbers. The cards are shuffled and everyone
+picks one. Nepeta is the shipper. Nepeta draws a new card that reads:
+"X and Y have a hate filled rap-off". She chooses numbers 1 and 5. John
+and Karkat are those numbers, and they proceed to have the shittiest
+rap-off in the history of love raps. Everyone has a good laugh!
+
+Downloads
+-----
+The original Android app was hosted on [Armada's website at
+lostsignalweb]( http://armada.lostsignalweb.com/apk/shipping.apk)
+
+These are the 104 cards that were used in the game; one could use
+a double-deck of playing cards, 26 of each suit.
+
+Calignious <3< 
+
+- X and Y have a hatefilled rap-off
+- X, write Y a hate note
+- X and Y, draw a hate romance novel cover featuring you
+- X, give Y an especially vicious noogie
+- X and Y, strife!
+- X, pull Y's hair
+- X, deploy your pickup line!
+- X, propose to Y
+- X, sing Y's ears off and melt their brain
+- X and Y, do a hateful courting dance
+- X, be a vampire and bite Y
+- X, kill everyone else and present trophies to Y
+- X, scope out Y's choice ass. WE HAVE LIFDOFF.
+- X, insult Y's mother/lusus
+- Shit, let's play telephone. X, transmit a message to Y through all the other trolls.
+- X and Y, make a <3< symbol with your arms/bodies
+- X, arrest Y.
+- X and Y, armwrestle
+- X and Y, thumb war
+- X, make derogatory comments about Y's behind.
+- X, mock Y behind their back (mimic what they're doing)
+- X and Y, gaze deeply into each others eyes and exclaim how much you just FUCKING HATE THEM
+- X and Y, whisper sweet nothings to your kismesis
+- X, mind control Y.
+- X and Y, pose for a kismetic photo
+- X and Y, do your best BLUH pose
+
+
+Flushed <3
+
+- X and Y have a romantic rap-off
+- X, stalk Y (?)
+- X, write Y a love note
+- X, fondle Y's horns. If Y has no horns, fondle Y's face.
+- X, give Y a present
+- X, serenade Y
+- X and Y, draw a love romance novel cover featuring you
+- X and Y, reenact the balcony scene from Romeo and Juliet, as badly as possible
+- X, use a pickup line on Y
+- X, propose to Y
+- X, kiss Y's hand like the gentleman/troll/lady you are
+- X and Y, be cute and wear each others' accessories
+- X and Y, do a mating dance
+- X, be a romantic vampire and bite Y
+- X, scope out Y's choice ass. WE HAVE LIFDOFF.
+- X, sing How Do I Live with Y
+- X, beatbox a love message to Y
+- Shit, let's play telephone. X, send a message to Y through all the other trolls.
+- X, Captain Morgan pose. Y, swoon.
+- X and Y, make a <3 symbol with your arms/bodies
+- X and Y, pose for a photo
+- X and Y, dramatic slow motion hug
+- X and Y, pretend to kiss
+- X and Y, recite horrible love poetry
+- X, mourn over Y's dead body
+- X and Y, skip around the room hand in hand
+
+Moirails <>
+
+- X and Y get your flow on and bro-rap.
+- X and Y must pose for a photo
+- X, attempt the climb Y
+- X, do something dumb. Y, try to prevent it.
+- X, wheelbarrow walk with Y
+- X, give Y a noogie
+- X and Y, LARP
+- X and Y, wear each others' accessories
+- X and Y, dance-off!
+- Shit, let's be fashion designers. X and Y, make lovely accessories for each other.
+- X, play pattycake with Y
+- X and Y sing the chorus from Take on Me
+- X and Y: CARMELDANSEN
+- X, explain babby making to Y (it can be totally inaccurate)
+- X, piggyback ride Y
+- X, offer Y a towel
+- X and Y: stand back to back, link arms, lift each other up
+- X and Y, make a <> symbol with your arms/bodies
+- X, catch Y in a trust fall
+- X and Y, fistbunp!
+- X and Y, create a secret handshake
+- X, give Y a motivational speech
+- X and Y, do your best Game Bro pose! (Stoner Lou)
+- X and Y, be the nucleus of a giant hug ball. Gather everyone!
+- X, tell Y a bedtime story or fairytale
+- X, be wingman for Y. (Pick a quadrant.)
+
+Auspitice c3<
+
+- Z, be the beatbox as X and Y rap
+- Z, force X and Y to compliment each other
+- Z, come over and smash X and Y into a hug
+- X, Y and Z: 2x three legged combo! Make everyone else team up and race against you.
+Y and Z, carry X around.
+- X and Y, argue, or argue-sing. Z, do a shut-up serenade.
+Z, interfere with X and Y's hate-dance
+- X and Y look horrible! Z, be What Not To Wear.
+- X, Y, and Z: do See No Evil, Hear No Evil, Speak No Evil
+- X, Y, and Z: grab a fourth and do the YMCA
+- X, Y, Z: make a small human/troll pyramid
+- X, Y, Z: monkey in the middle
+Z, gently knock X and Y's skulls together
+- X, Y, Z: Be the Three Stooges
+- X, break up a slapfight between Y and Z.
+- X, Y, Z: Play Ring Around the Rosie (feel free to grab more players)
+Shit, let's be mailmen. Z, deliver note from X to Y. (Y must read it aloud)
+- X, Y, Z: Make three competing conga lines! Longest one wins.
+- X, Y, Z: make a c3< symbol with your arms/bodies
+- X, Y, Z: pose for a photo
+- X, Y, Z: Congratulations, you have been drafted by the Power Rangers. Pose for photo!
+- X and Z play tug of war with Y's arms
+- X, use Y as a shield against Z's attacks
+- X, Y, and Z do the cancan
+- X, Y, Z: Sunglasses jenga. Put as many on one person's face as possible.
+- X, Y, Z: Do the wwavve. Add as many people as possible.
+

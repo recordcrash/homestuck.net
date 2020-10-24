@@ -1,0 +1,2103 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 1:30:54 Dec 28, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:10:59 Jul 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*------------------------------------------------*/
+/* FONT-FACE CSS Created by Penny Arcade - 2010 --*/
+/* www.penny-arcade.com --------------------------*/
+/*------------------------------------------------*/
+
+/*---------------------*/
+/* Rockwell Bold ------*/
+/*---------------------*/
+@font-face {
+   font-family: 'RockwellBold';
+   src: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell_bold-webfont.eot');
+   src: local('☺'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell_bold-webfont.woff') format('woff'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell_bold-webfont.ttf') format('truetype'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell_bold-webfont.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+/*---------------------*/
+/* Rockwell Regular ---*/
+/*---------------------*/
+@font-face {
+   font-family: 'Rockwell';
+   src: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell-webfont.eot');
+   src: local('☺'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell-webfont.woff') format('woff'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell-webfont.ttf') format('truetype'), url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/pa-webfonts/css_fonts_rockwell-webfont.svg') format('svg');
+   font-weight: normal;
+   font-style: normal;
+}
+
+body {
+   /* background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-top-pixels-bg.png') top center no-repeat #e9f8fc; */
+   background: #010d21;
+   font-family: Helvetica, Arial, Verdana, sans-serif;
+   min-width: 990px;
+}
+.content {
+   width: 990px;
+   margin: 0 auto;
+}
+.nav a:hover {
+   background-position: bottom left !important;
+}
+/* un-reset subscript and superscript */
+sub, sup { font-size: .83em; }
+sub             { vertical-align: sub; }
+sup             { vertical-align: super; }
+#Frame {
+   background: #e9f8fc url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-top-pixels-bg.png') top center repeat-x;
+   overflow: hidden;
+}
+
+/* =============================================== Penny Arcade Header Styles */
+#header {
+   /* background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-banner-tile.png') top left repeat-x;  */
+   background: #032255 url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-banner-tile.png') top left repeat-x;
+}
+#header .pixels {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-banner-bg.png') center top no-repeat;
+}
+#header .content {
+   overflow: hidden;
+   height: 160px;
+   margin: 0 auto;
+   width: 990px;
+}
+#header h1 {
+   margin: 0;
+   border: none;
+}
+#header h1 a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo.png') top left no-repeat;
+   float: left;
+   display: inline;
+   text-indent: -999em;
+   overflow: hidden;
+   width: 200px;
+   height: 126px;
+   margin: 17px 0 0 16px;
+   outline: none;
+}
+#header h1 a:hover {
+   background-position: bottom;
+}
+#header #bannerAd {
+   width: 728px;
+   height: 90px;
+   float: left;
+   display: inline;
+   margin: 10px 0 0 21px;
+}
+#header ul {
+   overflow: hidden;
+   width: 760px;
+   float: left;
+   display: inline;
+   margin: 0 0 0 11px;
+   list-style: none;
+   list-style-position: outside;
+}
+#header li {
+   float: left;
+   display: inline;
+}
+#header ul .nav a {
+   height: 38px;
+   float: left;
+   display: inline;
+   padding: 0;
+   margin: 0;
+}
+#header .nav a {
+   border: 0;
+   position: relative;
+   display: block;
+   text-indent: -999em;
+   overflow: hidden;
+}
+#header .nav a:hover {text-decoration: none;}
+#header .active a {background-position: bottom;}
+#navComic a {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-comic.png') top left no-repeat; width: 92px;}
+#navArchive a {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-archive.png') top left no-repeat; width: 104px;}
+#navStore a {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-store.png') top left no-repeat; width: 84px;}
+#navForum a {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-forum.png') top left no-repeat; width: 87px;}
+#navPATV a {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-patv.png') top left no-repeat; width: 78px;}
+#header .nav a span {
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: block;
+   height: 38px;
+   width: 92px;
+}
+#navComic a span {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-comic.png') bottom left no-repeat; width: 92px;}
+#navArchive a span {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-archive.png') bottom left no-repeat; width: 104px;}
+#navStore a span {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-store.png') bottom left no-repeat; width: 84px;}
+#navForum a span {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-forum.png') bottom left no-repeat; width: 87px;}
+#navPATV a span {background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-nav-patv.png') bottom left no-repeat; width: 78px;}
+#header ul a {
+   border-right: 1px solid #013e7f;
+   color: #fff;
+   float: left;
+   display: inline;
+   font-size: 11px;
+   line-height: 14px;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 0 11px 0 11px;
+   margin: 8px 0 0 0;
+}
+#header ul a:hover {
+   color: #2abae1;
+}
+#header ul .last a {
+   border-right: 0;
+}
+#footer {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-footer-tile.png') top center repeat-x #010d21;
+   text-align: center;
+   padding: 40px 0;
+}
+#footer #brands {
+   list-style: none;
+   list-style-position: outside;
+   overflow: hidden;
+}
+#footer #brands li {
+   display: inline-block;
+   vertical-align: middle;
+}
+#footer .btn a {
+   border: 0 none;
+   cursor: pointer;
+   display: block;
+   outline: medium none;
+   overflow: hidden;
+   text-indent: -999em;
+   text-transform: uppercase;
+   margin: 0 28px;
+}
+#footer .btn a:hover {
+   background-position: left bottom !important;
+}
+#footer #logoPAX a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo-pax.png') top left no-repeat;
+   width: 65px;
+   height: 35px;
+   margin-top: 4px;
+}
+#footer #logoFP a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo-fp.png') top left no-repeat;
+   width: 125px;
+   height: 21px;
+}
+#footer #logoCP a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo-cp.png') top left no-repeat;
+   width: 58px;
+   height: 57px;
+}
+#footer #logoPA a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo-footer.png') top left no-repeat;
+   width: 189px;
+   height: 141px;
+   margin: 0;
+}
+#footer #logoPATV a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/pa-logo-patv.png') top left no-repeat;
+   width: 61px;
+   height: 36px;
+}
+
+/* Vanilla Styles */
+#Panel {
+   display: none;
+}
+body.Conversations.Messages #Panel {
+   display: block;
+}
+#Content {
+   width: auto;
+   float: none;
+   margin: 0;
+}
+body.Conversations.Messages #Content {
+   margin: 0 280px 0 0;
+}
+body.Conversations.Messages.add #Content {
+   margin: 0;
+}
+ul.Conversations div.Meta a.Name,
+ul.Activities div.Excerpt a,
+ul.Activities div.Meta a,
+ul.PanelInfo li.Active a,
+ul.PanelInfo li.Active a:hover,
+a, a:hover {
+   color: #0055A2;
+   text-decoration: none;
+}
+ul.Conversations div.Meta a.Name:hover,
+ul.Activities div.Excerpt a:hover,
+ul.Activities div.Meta a:hover,
+ul.PanelInfo li.Active a:hover,
+a:hover {
+   color: #0055A2;
+   text-decoration: underline;
+}
+#Head {
+   background: none;
+   text-align: right;
+   width: auto;
+   margin: 4px 30px 0;
+   font-weight: bold;
+}
+.Breadcrumbs {
+   float: left;
+   font-size: 12px;
+   line-height: 24px;
+   margin: 4px 0 0 0;
+        font-weight: bold;
+   color: black;
+}
+.Breadcrumbs .NoCrumb {
+   color: #0055a2;
+}
+#Frame .Breadcrumbs a,#Head a {
+   color: #0055a2;
+   text-decoration: underline;
+}
+#Head a:hover {
+   color: #0055a2;
+   text-decoration: none;
+}
+#Head .ProfileMenu {
+   font-size: 14px;
+}
+#Head .ProfileMenu a,
+#Head .ProfileMenu a:hover {
+   display: inline-block;
+   text-decoration: none;
+   line-height: 24px;
+   color: #032255;
+   margin: 5px 0 0 0;
+}
+#Head .ProfileMenu a.Activity,
+#Head .ProfileMenu a.Dashboard,
+#Head .ProfileMenu a.Profile {
+   padding-right: 10px;
+   margin-right: 10px;
+   border-right: 1px solid #b4d8e6;
+}
+#Head div.ProfileMenu img {
+   height: 24px;
+   width: 24px;
+   vertical-align: top;
+   display: inline-block;
+   margin-right: 8px;
+   overflow: hidden;
+   text-indent: 1000px;
+   background: #fff;
+}
+#Head div.ProfileMenu a.Inbox {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 10px 7px no-repeat #64cde9;
+   border-radius: 12px;
+   -moz-border-radius: 12px;
+   -webkit-border-radius: 12px;
+   text-decoration: none !important;
+}
+#Head div.ProfileMenu a.Inbox:hover {
+   background-color: #6EE1FF;
+}
+#Head div.ProfileMenu a.Inbox span.Alert {
+   padding: 0 10px 0 35px;
+   background: none;
+   border: none;
+   color: #032255;
+}
+#Head div.ProfileMenu a.Inbox span.Hidden {
+   display: none;
+}
+#Head div.ProfileMenu a.Profile {
+   text-decoration: none;
+}
+#Head div.ProfileMenu a.Profile span.Alert {
+   padding: 4px;
+   background: #64cde9;
+   color: #032255;
+   text-shadow: none;
+   border-radius: 12px;
+   -moz-border-radius: 12px;
+   -webkit-border-radius: 12px;
+}
+#Head div.ProfileMenu a.Profile:hover span.Alert {
+   background: #6EE1FF;
+}
+#Body {
+   width: auto;
+   margin: 15px 30px;
+}
+#Foot {
+   padding: 0;
+   margin: 50px 0 0 0;
+}
+#Foot div {
+   width: auto;
+   margin: 0 30px 20px;
+   padding: 0;
+   text-align: right;
+}
+#footer .content #vLogo a:hover {color: #fff;}
+#footer .content #vLogo a {
+   display: block;
+   height: 30px;
+   width: 130px;
+   text-align: left;
+   padding: 6px 0 0 80px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/logo_footer.png') top left no-repeat;
+   margin: 10px 0 0 350px;
+   color: #7AD3F9;
+}
+#Head form {
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   background: transparent;
+   float: none;
+   margin: 0;
+   padding: 0;
+   width: auto;
+   display: inline;
+}
+.TinySearch, .TinySearch div {
+   display: inline-block;
+}
+.TinySearch {
+   border-right: 1px solid #b3d8e6;
+   padding-right: 10px;
+   margin-right: 10px;
+}
+.SearchInput {
+   padding: 2px 0 2px 20px;
+   border: 1px solid #888;
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 5px -747px no-repeat #fff;
+   color: #999;
+   width: 170px;
+}
+.SearchInput:focus {
+   color: #000;
+}
+
+
+/* Dismiss Messages */
+div.DismissMessage,
+div.DismissMessage.Info {
+   background: rgb(0, 0, 0);
+   background: rgba(0, 0, 0, 0.7);
+   color: #ffffff;
+   font-size: 13px;
+   border: 2px solid #fff;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   box-shadow: 0 2px 0 #000;
+   -moz-box-shadow: 0 2px 2px #555;
+   -webkit-box-shadow: 0 2px 0 #000;
+   padding: 4px 8px;
+}
+div.DismissMessage a {
+   color: #fff;
+   text-decoration: underline;
+}
+div.DismissMessage a:hover {
+   color: #fff;
+   text-decoration: none;
+}
+div.DismissMessage.Warning {
+   background: #d00;
+   border: solid 2px #fff;
+}
+div.DismissMessage.Box {
+   color: #fff;
+   background: #4080b9;
+}
+div.DismissMessage a.Dismiss,
+div.DismissMessage a.Dismiss:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+/* Discussions */
+.DiscussionsTabs,
+body.Discussion #Content {
+   position: inherit;
+}
+.ProfileBreadCrumb,
+div.ActivityTabs div.SubTab,
+div.ConversationTabs div.SubTab,
+div.ConversationsTabs div.SubTab,
+div.DiscussionTabs div.SubTab,
+div.DiscussionsTabs div.SubTab {
+   font-size: 12px;
+   position: absolute;
+   top: 174px;
+   left: 160px;
+   right: 550px;
+   white-space: nowrap;
+   overflow: hidden;
+   background: none;
+   padding: 0;
+   margin: 0;
+   font-weight: bold;
+   color: #0055a2;
+   line-height: 1;
+}
+div.ActivityTabs div.SubTab a,
+div.ConversationTabs div.SubTab a,
+div.ConversationsTabs div.SubTab a,
+div.DiscussionTabs div.SubTab a,
+div.DiscussionsTabs div.SubTab a {
+   color: #0055a2;
+   text-decoration: underline;
+}
+div.ActivityTabs div.SubTab a:hover,
+div.ConversationTabs div.SubTab a:hover,
+div.ConversationsTabs div.SubTab a:hover,
+div.DiscussionTabs div.SubTab a:hover,
+div.DiscussionsTabs div.SubTab a:hover {
+   color: #0055a2;
+   text-decoration: none;
+}
+span.BreadCrumb {
+   text-align:left;
+   direction:ltr;
+   display: inline-block;
+   text-indent: -1000px;
+   overflow: hidden;
+   width: 5px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -47px no-repeat;
+   vertical-align: middle;
+   padding: 0;
+   margin: 0 5px;
+   line-height: 1;
+}
+div.CategoryHeadings,
+div.CategoryTabs,
+div.ActivityTabs,
+#MessageForm h2,
+div.ConversationTabs,
+div.ConversationsTabs,
+div.FormBanner,
+div.ProfileTabs,
+div.DiscussionTabs,
+div.DiscussionsTabs,
+div.SearchTabs {
+   border: 1px solid #004487;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-heading-tile.png') top left repeat-x #004d99;
+   border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   -webkit-border-radius: 4px 4px 0 0;
+}
+#MessageForm h2,
+div.FormBanner,
+div.DiscussionTabs {
+   padding: 4px 10px;
+}
+#MessageForm h2,
+div.FormBanner {
+   font-size: 13px;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+table.CategoryHeading td,
+div.CategoryTabs h2,
+div.ActivityTabs h1,
+div.ConversationTabs h1,
+div.ConversationTabs h1 a,
+div.ConversationsTabs h1,
+div.ConversationsTabs h1 a,
+div.DiscussionTabs h1,
+div.SearchTabs h1,
+div.SearchTabs h2 {
+   margin: 0;
+   padding: 0;
+   font-size: 13px;
+   background: none;
+   border: none;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+div.Tabs li a,
+div.Tabs li a:link,
+div.Tabs li a:hover,
+div.Tabs li a:active,
+div.Tabs li a:visited {
+   border: 1px solid #004487;
+   border-color: #26b1dc #004487 #00366A #004487;
+   background:-webkit-gradient(linear, center bottom, center top, from(#004d99), to(#005daa));
+   background:-moz-linear-gradient(top, #0065B8, #004284);
+   -pie-background:linear-gradient(top, #005daa, #004d99);
+   background:linear-gradient(top, #005daa, #004d99);
+   color: #fff;
+   margin: 0;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   display: inline;
+   font-weight: bold;
+   text-decoration: none;
+   padding: 5px 10px;
+	line-height: 2.6;
+	white-space: nowrap;
+}
+div.Tabs li a:hover,
+div.Tabs li a:active {
+   border: 1px solid #003368;
+   background: #003368;
+}
+div.Tabs li.Active a {
+   background: none;
+   border: none;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+   border: 1px solid #001D3C;
+   background: #001D3C;
+}
+div.Tabs li a span {
+   background: #003569;
+   color: #A0F5FF;
+}
+.DataList .Item {
+   padding: 0 0 0 15px;
+   border-top: solid 1px #fff;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-read.png') left center repeat-y #fff;
+}
+
+ul.CategoryList li.Depth2, ul.CategoryListWithHeadings li.Depth2,
+ul.CategoryList li.Depth3, ul.CategoryListWithHeadings li.Depth3,
+ul.CategoryList li.Depth4, ul.CategoryListWithHeadings li.Depth4,
+ul.CategoryList li.Depth5, ul.CategoryListWithHeadings li.Depth5,
+ul.CategoryList li.Depth6, ul.CategoryListWithHeadings li.Depth6,
+ul.CategoryList li.Depth7, ul.CategoryListWithHeadings li.Depth7,
+ul.CategoryList li.Depth8, ul.CategoryListWithHeadings li.Depth8 {
+   padding-left: 0 !important;
+}
+.CategoryHeadings table,
+ul.DataList.CategoryList li.Item table,
+ul.DataList.Discussions li.Item table,
+table.DiscussionHeading {
+   width: 100%;
+}
+body.Drafts table.DiscussionHeading {
+   display: none;
+}
+ul.DataList.CategoryList li.Item table td,
+ul.DataList.Discussions li.Item table td {
+   line-height: 1;
+   padding: 4px 0;
+}
+/*ul.DataList.CategoryList li.Item table td,*/
+ul.DataList.Discussions li.Item table td.DiscussionName {
+   line-height: 140%;
+}
+
+table.CategoryHeading td.LatestPost,
+ul.DataList.CategoryList li.Item table td.LatestPost {
+   width: 260px;
+   text-align: left;
+}
+table.CategoryHeading td.LatestPost {
+   width: 251px;
+}
+table.CategoryHeading td.CountHeading,
+ul.DataList.CategoryList li.Item table td.BigCount,
+ul.DataList.Discussions li.Item table td.BigCount,
+table.DiscussionHeading td.CountHeading {
+   width: 70px;
+   text-align: center;
+   overflow: hidden;
+   white-space: nowrap;
+}
+ul.DataList.CategoryList li.Item table td.CountViews,
+ul.DataList.Discussions li.Item table td.CountViews,
+table.DiscussionHeading td.CountViews {
+   padding-right: 20px;
+}
+ul.DataList.Discussions li.Item table td.User,
+table.DiscussionHeading td.User {
+   width: 150px;
+   text-align: left;
+   vertical-align: middle;
+   overflow: hidden;
+   white-space: nowrap;
+}
+ul.DataList.Discussions li.Item table td.LastUser,
+table.DiscussionHeading td.LastUser {
+   width: 180px;
+}
+ul.DataList.CategoryList li.Item table td.CategoryName,
+ul.DataList.Discussions li.Item table td.DiscussionName,
+table.DiscussionHeading td.DiscussionName {
+   vertical-align: middle;
+}
+ul.DataList.Discussions li.Item table td.DiscussionName {
+   padding: 4px 8px 0 0;
+}
+table.CategoryHeading td.CategoryName,
+table.DiscussionHeading td.DiscussionName {
+   text-indent: 8px;
+}
+table.DiscussionHeading td {
+   padding: 8px 0 4px;
+   font-family: "RockwellBold", Helvetica, Arial;
+   font-weight: normal;
+   text-transform: uppercase;
+   color: #fff;
+   text-shadow: 0 1px 0 #336694;
+   background: #4080b9;
+   border-bottom: 1px solid #00529f !important;
+}
+ul.DataList.CategoryList li.Item table td.BigCount,
+ul.DataList.Discussions li.Item table td.BigCount {
+   vertical-align: middle;
+   font-weight: bold;
+   font-size: 20px;
+   font-family: helvetica, arial, Trebuchet MS;
+   color: #032255;
+}
+ul.DataList.CategoryList li.Item td .Wrap,
+ul.DataList.Discussions li.Item td .Wrap {
+   border-right: 1px solid #e5eef6;
+   margin-right: 4px;
+}
+table.CategoryHeading td .Wrap,
+table.DiscussionHeading td .Wrap {
+   margin-right: 11px;
+}
+ul.DataList.CategoryList li.Item:nth-child(odd) td .Wrap,
+ul.DataList.Discussions li.Item:nth-child(odd) td .Wrap {
+   border-right: 1px solid #d9e2ea;
+}
+ul.DataList.Discussions li.Item table td.User a.PhotoLink {
+   line-height: 1;
+}
+ul.CategoryList li.Item a.PhotoLink img,
+ul.DataList.Discussions li.Item table td.User a.PhotoLink img {
+   float: left;
+   margin: 1px 5px 0 0;
+   height: 24px;
+   width: 24px;
+   display: block;
+   overflow: hidden;
+   background: transparent;
+   vertical-align: top;
+}
+#Content ul.CategoryList li.CategoryHeading {
+   border-top: 0px;
+}
+ul.DataList.Discussions li.Item table td.User a.UserLink {
+   font-weight: bold;
+   font-size: 13px;
+   color: #032255;
+   max-width: 105px;
+   overflow: hidden;
+   display: inline-block;
+}
+ul.DataList.Discussions li.Item table td.User span.CommentDate {
+   display: block;
+   font-size: 11px;
+   line-height: 11px;
+   color: #666;
+   padding: 1px 0;
+}
+.PaSprite {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') top left no-repeat;
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+}
+.PaSprite.GreenArrow {
+   background-position: 0 -101px;
+   height: 20px;
+   width: 20px;
+}
+
+.UserQuote .QuoteLink {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') top left no-repeat;
+   background-position: 0 -101px;
+   display: inline-block;
+   height: 20px;
+   width: 20px;
+   vertical-align: middle;
+}
+
+.UserQuote .ArrowLink {
+   display: none;
+}
+
+ul.DataList.Discussions .PaSprite {
+   float: right;
+   margin: 2px 8px 0 0;
+}
+ul.DataList.Discussions li.Item:nth-child(2) {
+   border-top: none !important;
+}
+ul.DataList.Conversations li.Item:nth-of-type(odd),
+ul.DataList.SearchResults li.Item:nth-of-type(odd),
+ul.DataList.Discussions li.Item:nth-of-type(odd) {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-read.png') left center repeat-y #f2f2f2;
+}
+ul.DataList.Drafts li.Item,
+ul.DataList.Activities li.Item {
+   padding: 4px 6px;
+   background: #fff;
+}
+ul.DataList.Drafts li.Item:nth-of-type(odd),
+ul.DataList.Activities li.Item:nth-of-type(odd) {
+   background: #f2f2f2;
+}
+ul.DataList.Conversations li.Item.New,
+ul.DataList.Discussions li.Item.New {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-unread.png') left center repeat-y #fff;
+}
+ul.DataList.Conversations li.Item.New:nth-of-type(odd),
+ul.DataList.Discussions li.Item.New:nth-of-type(odd) {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-unread.png') left center repeat-y #f2f2f2;
+}
+ul.DataList.Drafts,
+ul.DataList.CategoryList:last-child,
+ul.DataList.Conversations,
+ul.DataList.SearchResults,
+ul.DataList.Activities,
+ul.MessageList,
+ul.DataList.Discussions {
+   padding-bottom: 6px;
+   border-radius: 0 0 4px 4px;
+   -moz-border-radius: 0 0 4px 4px;
+   -webkit-border-radius: 0 0 4px 4px;
+   background: #fff;
+}
+ul.DataList.CategoryList div.CategoryDescription,
+ul.DataList div.Excerpt {
+   color: #666;
+   font-size: 13px;
+}
+ul.DataList.CategoryList a.Title,
+ul.DataList.SearchResults a.Title,
+ul.DataList.Discussions a.Title {
+   font-size: 14px;
+   font-weight: normal;
+}
+ul.DataList.Discussions .ToggleFlyout {
+   right: 492px;
+   top: 7px;
+}
+a.Bookmark, a.Bookmarked, a.Bookmarking {
+   position: absolute;
+   background: url("/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bookmark.png") no-repeat scroll center top transparent;
+   top: -5px;
+   right: -5px;
+}
+a.Bookmarked { background-position: center center; }
+a.Bookmarking { background-position: bottom center; }
+div.BookmarkWrapper {
+   position: absolute;
+   right: 0;
+   top: -3px;
+}
+body.Discussion a.Bookmark,
+body.Discussion a.Bookmarked,
+body.Discussion a.Bookmarking {
+   right: 0;
+}
+a.BigButton:hover {
+   text-decoration: none;
+}
+div.SearchForm input.Button,
+body.Vanilla div.CommentForm input.CommentButton,
+body.Vanilla a.BigButton,
+body.Vanilla a.BigButton:hover,
+body.Vanilla a.BigButton:active {
+   display: block;
+   height: 29px;
+   width: 105px;
+   cursor: pointer;
+   margin: 4px 0;
+   padding: 0;
+   text-indent: -1000px;
+   overflow: hidden;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/btn-sprite.png') 0 -29px no-repeat;
+   text-shadow: 0;
+   border: none;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+}
+body.Vanilla a.BigButton:hover { background-position: 0 0; }
+body.Vanilla a.BigButton:active { background-position: 0 -58px; }
+body.Vanilla div.CommentForm input.CommentButton,
+body.Discussion a.BigButton { background-position: -105px -29px; }
+body.Vanilla div.CommentForm input.CommentButton:hover,
+body.Discussion a.BigButton:hover { background-position: -105px 0px; }
+body.Vanilla div.CommentForm input.CommentButton:active,
+body.Discussion a.BigButton:active { background-position: -105px -58px; }
+div.SearchForm input.Button {
+   display: inline-block;
+   width: 68px;
+   background-position: -210px -29px;
+}
+div.SearchForm input.Button:hover { background-position: -210px 0px; }
+div.SearchForm input.Button:active { background-position: -210px -58px; }
+.NumberedPager {
+   padding: 3px 0;
+   float: none;
+}
+.MiniPager a,
+.MiniPager span,
+.NumberedPager a,
+.NumberedPager span {
+   font-family: 'lucida grande','Lucida Sans Unicode',tahoma,sans-serif;
+   font-weight: normal !important;
+   font-size: 11px !important;
+   line-height: 10px !important;
+   color: #032255;
+   text-shadow: 0 1px 0 #c2ebf6;
+   background: #66cde9;
+   border-right: 1px solid #59b2ca;
+   margin: 0 !important;
+   padding: 4px 8px;
+   display: inline-block;
+   vertical-align: text-top;
+}
+.MiniPager a:nth-child(2),
+.NumberedPager a:first-child,
+.NumberedPager span:first-child {
+   border-radius: 3px 0 0 3px;
+   -moz-border-radius: 3px 0 0 3px;
+   -webkit-border-radius: 3px 0 0 3px;
+}
+.MiniPager a:last-child,
+.NumberedPager a:last-child,
+.NumberedPager span:last-child {
+   border-radius: 0 3px 3px 0;
+   -moz-border-radius: 0 3px 3px 0;
+   -webkit-border-radius: 0 3px 3px 0;
+   border: none;
+}
+.MiniPager a:hover,
+.NumberedPager a:hover {
+   background: #99EDFF;
+   text-decoration: none;
+}
+.NumberedPager a.Highlight {
+   color: #66cde9;
+   text-shadow: 0 1px 0 #000;
+   background: #032255;
+}
+#PagerBefore {
+   padding: 0;
+   margin: 0;
+}
+body.Discussion #PagerAfter {
+   float: none;
+   padding: 10px 0 2px;
+   margin: 0;
+}
+ul.DataList.Discussions li.Item.Announcement td.DiscussionName {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -342px no-repeat;
+   padding-left: 28px;
+}
+ul.DataList.Discussions a.Title {
+   display: inline;
+}
+.MiniPager {
+   margin: 0 0 0 8px;
+   vertical-align: text-top;
+   display: inline-block;
+   white-space: nowrap;
+   position: relative;
+   top: -3px;
+}
+.MiniPager a,
+.MiniPager span {
+   display: inline-block;
+   line-height: 10px !important;
+   color: #fff;
+   text-shadow: 0 1px 0 #4b5618;
+   background: #96ac31;
+   border-right: 1px solid #82952a;
+   padding: 4px;
+   vertical-align:middle;
+}
+.MiniPager a:hover {
+   background: #B3CE3A;
+}
+.MiniPagerArrow {
+   display: inline-block;
+   height: 8px;
+   width: 4px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -400px no-repeat transparent;
+}
+.NumberedPager a:nth-child(2),
+.NumberedPager span:nth-child(2) {
+   -moz-border-radius: 3px 0 0 3px;
+}
+.NumberedPager a.Previous,
+.NumberedPager span.Previous {
+   display: none;
+}
+.NumberedPager a.Next,
+.NumberedPager span.Next,
+.MiniPager a.GoToPageLink,
+.MiniPager a.GoToPageLink:hover {
+   text-indent: 100px;
+   padding: 1px;
+   width: 16px;
+   height: 16px;
+   overflow: hidden;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 1px -799px no-repeat #96AC31;
+}
+.MiniPager a.GoToPageLink:hover {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 1px -799px no-repeat #B3CE3A;
+}
+.NumberedPager a.Next,
+.NumberedPager span.Next,
+.NumberedPager a.Next:hover,
+.NumberedPager span.Next:hover {
+   background-color: #66cde9;
+   cursor: pointer;
+   background-position: 1px -849px;
+}
+.NumberedPager a.Next:hover,
+.NumberedPager span.Next:hover {
+   background-color: #99EDFF;
+}
+
+.NoJump .NumberedPager span.Next,
+.NoJump .NumberedPager a.Next {
+   background-image: none;
+   overflow: visible;
+   width: auto;
+   height: auto;
+   text-indent: 0;
+   padding: 4px 8px;
+}
+.PageControl {
+   position: relative;
+   display: inline-block;
+   text-align: right;
+}
+.GoToPage {
+   z-index: 300;
+   border-top: 1px solid #244953;
+   background: #3d7a8b;
+   color: #fff;
+   font-size: 10px;
+   border-radius: 0 0 2px 2px;
+   -moz-border-radius: 0 0 2px 2px;
+   -webkit-border-radius: 0 0 2px 2px;
+   display: inline-block;
+   position: absolute;
+   padding: 1px 3px 2px;
+   right: 2px;
+}
+.MiniPageControl .GoToPage {
+   margin-top: -3px;
+   border-top: 1px solid #394112;
+   background: #5f6d1f;
+}
+.GoToPage input {
+   width: 20px;
+   font-size: 10px;
+   line-height: 10px;
+   padding: 0;
+   text-align: center;
+}
+table.PageNavigation {
+   width: 100%;
+   margin-bottom: 10px;
+}
+table.PageNavigation td {
+   vertical-align: middle;
+}
+table.PageNavigation td:last-child {
+   text-align: right;
+}
+
+/* Discussion */
+ul.MessageList.Discussion li.Item {
+   padding: 0;
+   border-top: 1px solid #fff !important;
+   background: #fff;
+}
+ul.MessageList.Discussion li.Item:nth-of-type(odd) {
+   background: #f2f2f2;
+}
+.CommentTable {
+   width: 100%;
+	table-layout: fixed;
+}
+.CommentTable td {
+   vertical-align: top;
+	min-height: 82px;
+	overflow: auto;
+}
+.CommentTable div.Comment {
+   position: relative;
+}
+
+.ProfileUser,
+.CommentTable td.Author {
+   width: 150px;
+   overflow: hidden;
+   background: #E2E2E2;
+   border-right: 1px solid #c7c7c7;
+   padding: 10px 0;
+}
+.CommentTable td.Author div {
+	margin-left: 10px;
+}
+.ProfileUser {
+   width: 250px;
+   border: none;
+}
+.ProfileUser div {
+	margin: 0 10px;
+}
+.ProfileUser span,
+.CommentTable td.Author span {
+   font-size: 12px;
+   color: #666;
+   display: block;
+   margin: 0;
+   padding: 6px 0;
+   line-height: 1;
+   border-bottom: 1px solid #cbcfd5;
+}
+.ProfileUser div.Name,
+.CommentTable td.Author div.Name {
+   font-size: 12px;
+   line-height: 100%;
+   padding-bottom: 3px;
+   margin-bottom: 10px;
+}
+.CommentTable td.Author div.CommentInfo div {
+   margin-left: 0px;
+}
+.ProfileUser .PhotoInfo,
+.CommentTable .Author .CommentInfo {
+   margin-top: 10px;
+   color: #666;
+   text-shadow: 0 1px 0 #fff;
+}
+.CommentTable td.Author div {
+   width: 130px;
+   overflow: hidden;
+}
+.ProfileUser div.Name,
+.CommentTable td.Author div.Name a {
+   color: #032760;
+   font-size: 16px;
+   text-shadow: 0 1px 0 #fff;
+   font-weight: bold;
+   line-height: 1;
+}
+.ProfileUser div.Name {
+   padding: 0 0 3px;
+}
+.ProfileUser div.Photo,
+.CommentTable td.Author div.Photo {
+   padding: 0;
+   background: #b5c6d5;
+   height: 80px;
+   width: 130px;
+   text-align: right;
+   overflow: hidden;
+   border: none;
+}
+.User-Location {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -895px no-repeat transparent;
+   padding-left: 16px;
+   min-height: 20px;
+}
+.ProfileUser div.Photo {
+   width: 230px;
+   height: auto;
+}
+.ProfileUser div.Photo span.Rank,
+.CommentTable td.Author div.Photo span.Rank {
+   border: none;
+   float: left;
+   display: block;
+   height: 40px;
+   width: 50px;
+   padding: 0;
+   margin: 10px 0 0;
+   overflow: hidden;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/rank-sprites.png') 3px -120px no-repeat transparent;
+}
+.role-moderator div.Photo { background: #e0d8b8 !important; }
+.role-moderator div.Photo span.Rank { background-position: 3px -80px !important; }
+.role-administrator div.Photo { background: #cfd3d6 !important; }
+.role-administrator div.Photo span.Rank { background-position: 3px -40px !important; }
+.role-penny_arcade_staff div.Photo { background: #e5cbb7 !important; }
+.role-penny_arcade_staff div.Photo span.Rank { background-position: 3px 0px !important; }
+.role-vanilla_staff div.Photo { background: #cfd3d6 !important; }
+.role-vanilla_staff div.Photo span.Rank { background-position: -40px 0px !important; }
+
+.Jailed div.Photo { background: #c3c3c3 !important; }
+.Jailed div.Photo span.Rank { background-position: 3px -160px !important; }
+.Banned div.Photo { background: #d8b5b5 !important; }
+.Banned div.Photo span.Rank { background-position: 3px -200px !important; }
+
+.CommentTable td.Author div.Photo a.ProfileLink {
+   color: #777;
+   display: block;
+   line-height: 1000px;
+   height: 80px;
+   width: 80px;
+   overflow: hidden;
+   background: transparent;
+}
+.Photo,
+.ProfileLink { position: relative; }
+.JailedIcon {
+   position: absolute;
+   z-index: 200;
+   background: transparent !important;
+}
+.ProfileLink .JailedIcon {
+   left: -50px;
+}
+.Photo .JailedIcon {
+   left: -34px;
+}
+.CommentTable .Photo .JailedIcon {
+   left: 0;
+}
+.ProfileUser div.Photo img.Jailed {
+   position: absolute;
+   left: 50px;
+}
+.ProfileUser div.Photo img {
+   display: block;
+   width: 180px;
+}
+.CommentTable td.Author div.Photo a.ProfileLink img {
+   display: block;
+   height: 80px;
+   width: 80px;
+}
+.ProfileUser div.Status,
+.CommentTable td.Author div.Status {
+   font-size: 11px;
+   border-top: 1px solid #cbcfd5;
+   border-bottom: 0;
+}
+.CommentTable div.Meta {
+   padding: 8px 0 0;
+   min-height: 0;
+}
+ul.DataList.SearchResults div.DateCreated,
+.CommentTable div.Meta span.DateCreated {
+   background: #a6a6a6;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   padding: 2px 4px 2px 6px;
+   margin: 0 0 0 10px;
+   display: inline;
+   font-size: 11px;
+}
+ul.DataList.SearchResults div.DateCreated a,
+.CommentTable div.Meta span.DateCreated a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -147px no-repeat transparent;
+   padding-left: 23px;
+   color: #fff;
+   text-shadow: 0 1px 0 #666;
+}
+.CommentTable div.Message {
+   padding: 0 10px;
+   clear: none;
+   color: #333;
+   font-size: 13px;
+   font-family: helvetica, arial, 'lucida grande','Lucida Sans Unicode', sans-serif;
+}
+table.CommentFormTable {
+   background: #f2f2f2;
+}
+table.CommentFormTable td.Comment {
+   width: 100%;
+}
+div.MessageForm {
+   background: transparent;
+   border: none;
+}
+.Comment .CommentForm {
+   padding: 6px 12px;
+}
+/* inline edit */
+ul.MessageList td.Comment div.MessageForm {
+   padding: 0 0 10px 0;
+   margin: 10px 20px 10px;
+   border-bottom: 1px solid #DADDE3;
+}
+div.PostEdited {
+   margin: 0 !important;
+   padding: 0 20px !important;
+}
+div.MessageForm div.Buttons {
+   text-align: right;
+}
+body.Vanilla div.CommentForm input.CommentButton {
+   display: inline-block;
+   margin: 0;
+}
+div.Preview {
+   background: #fff;
+   padding: 4px 0;
+}
+
+/* Quote, Awesome, Report Buttons */
+ul.MessageList div.Meta {
+   min-height: 0;
+}
+ul.MessageList div.Message {
+   margin: 0 20px 10px;
+   padding: 12px 0 8px;
+   border-bottom: 1px solid #dadde3;
+}
+.Comment .Message-Footer {
+   min-height: 30px;
+}
+span.CommentQuote,
+span.AwesomePost,
+span.ReportPost {
+   position: absolute;
+   bottom: 8px;
+   right: 20px;
+   border-right: 1px solid #d9e2ea;
+   padding-right: 10px;
+}
+span.ReportPost {
+   border-right: none;
+   padding-right: 0;
+}
+span.CommentQuote { right: 204px; }
+span.AwesomePost { right: 100px; }
+span.CommentQuote a,
+span.AwesomePost a,
+span.ReportPost a {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -500px no-repeat transparent;
+   display: inline-block;
+   height: 20px;
+   font-family: RockwellBold;
+   font-size: 14px;
+   padding-left: 24px;
+}
+span.AwesomePost a {
+   padding-left: 18px;
+}
+span.CommentQuote a { background-position: 0 -600px; }
+span.AwesomePost a { background-position: 0 -550px; }
+span.ReportPost a { background-position: 0 -500px; }
+
+/* Quotes */
+body ul div.Comment blockquote.UserQuote {
+   background-color: transparent;
+   font-style: inherit;
+   margin: 0;
+   padding: 5px 10px;
+}
+.QuoteAuthor a {
+   font-weight: bold;
+}
+.QuoteAuthor span.GreenArrow {
+   vertical-align: middle;
+}
+div.Comment blockquote.UserQuote div.QuoteText {
+   background-color: #e1e1e1;
+   background-color: rgba(128,128,128,0.1);
+   color: #383838;
+   border: 1px solid #c1c1c1;
+   border-width: 1px 0;
+   margin: 5px 0 0;
+   padding: 5px;
+}
+
+/* Signatures */
+div.UserSignature {
+   margin: 10px 0 10px 20px;
+   padding: 0;
+   overflow: hidden;
+   border-top: 0;
+   width: 500px;
+   max-height: 150px;
+   line-height: 100%;
+}
+
+
+
+/* Categories */
+span.ChildCategories {
+   display: block;
+   padding: 2px 0;
+   color: #666;
+}
+span.ChildCategories b {
+   font-weight: normal;
+}
+ul.CategoryList li.CategoryHeading div.Category {
+   padding: 8px 8px 4px 0;
+   font-family: Rockwell, Helvetica, Arial;
+   font-weight: normal;
+}
+ul.CategoryList li.Item {
+   border-bottom: 1px solid #d9d9d9 !important;
+}
+ul.CategoryList li.Depth1 {
+   text-transform: uppercase;
+   color: #fff;
+   text-shadow: 0 1px 0 #336694;
+   background: #4080b9;
+   border-bottom: 1px solid #00529f !important;
+}
+ul.CategoryList li.Depth2 {
+   border-top: 1px solid #fff !important;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-unread.png') left center repeat-y #fff;
+}
+ul.CategoryList li.Depth2:nth-child(2) {
+   border-top: none !important;
+}
+ul.CategoryList li.Depth2:nth-of-type(odd) {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-unread.png') left center repeat-y #f2f2f2;
+}
+ul.CategoryList li.Read.Depth2 {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-read.png') left center repeat-y #fff;
+}
+ul.CategoryList li.Read.Depth2:nth-of-type(odd) {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-read.png') left center repeat-y #f2f2f2;
+}
+ul.CategoryList:nth-child(2) li.CategoryHeading .Category {
+   border-top: 1px solid #346da5 !important;
+}
+ul.CategoryList:last-child {
+   padding-bottom: 6px;
+   border-radius: 0 0 4px 4px;
+   -moz-border-radius: 0 0 4px 4px;
+   -webkit-border-radius: 0 0 4px 4px;
+   background: #fff;
+}
+ul.DataList.CategoryList table td {
+   vertical-align: middle;
+}
+ul.DataList.CategoryList li.Item table td.CategoryName {
+   padding: 10px 15px;
+}
+ul.DataList.CategoryList a.Title,
+ul.DataList.SearchResults a.Title,
+ul.DataList.Discussions a.Title {
+   font-family: Rockwell, Helvetica, Arial;
+   color: #032255;
+   font-size: 14px;
+   font-weight: normal;
+   text-shadow: 0 1px 0 #fff;
+}
+div.CategoryDescription {
+   color: #666;
+   font-size: 13px;
+   line-height: 14px;
+   padding: 2px 0;
+}
+ul.DataList.CategoryList .ToggleFlyout {
+   right: 402px;
+}
+ul.DataList.CategoryList a.Small,
+ul.DataList.CategoryList a.Small img {
+   background: #ddd;
+   display: inline-block;
+   height: 24px;
+   width: 24px;
+   overflow: hidden;
+}
+ul.DataList.CategoryList a.Small:hover {
+   text-decoration: none;
+   background: #eee;
+}
+ul.DataList.CategoryList a.Small img {
+   background: none;
+   text-indent: -100px;
+}
+ul.DataList.CategoryList a.Small {
+   margin: 0 2px 2px 0;
+}
+ul.CategoryList li.Item a.LatestPostTitle {
+   display: block;
+   font-weight: bold;
+   font-size: 13px;
+   color: #032255;
+}
+ul.CategoryList li.Item a.UserLink,
+ul.CategoryList li.Item a.CommentDate {
+   color: #032255;
+   font-size: 11px;
+   line-height: 11px;
+}
+ul.CategoryList li.Item a.CommentDate {
+   color: #666666;
+   margin: 0 0 0 10px;
+}
+
+
+/* Panel Boxes */
+div.Box.Moderators,
+div.Box {
+   color: #666;
+}
+div.Box.Moderators,
+#Panel div.Box {
+   background: none;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   padding: 0;
+}
+div.Box.Moderators h4,
+#Panel div.Box h4 {
+   border: 1px solid #004487;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-heading-tile.png') top left repeat-x #004d99;
+   border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   -webkit-border-radius: 4px 4px 0 0;
+   padding: 4px 10px;
+   font-size: 13px;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+div.Box.Moderators h4 {
+   padding-left: 38px;
+   position: relative;
+}
+span.ModeratorsIcon {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/rank-sprites.png') 0 -289px no-repeat transparent;
+   height: 21px;
+   width: 18px;
+   overflow: hidden;
+   display: block;
+   position: absolute;
+   left: 12px;
+}
+#Panel div.Box h4 a {
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+div.Box dl {
+   background: #fff;
+   padding: 8px 10px;
+}
+div.Box dl dt {
+   color: #032760;
+   font-size: 13px;
+   font-weight: bold;
+}
+div.Box dl dd {
+   width: 150px;
+   margin-left: 80px;
+   font-size: 13px;
+   overflow: hidden;
+}
+ul.PanelInfo {
+   border-top: 1px solid #BEC8CC;
+}
+ul.PanelInfo li,
+ul.PanelInfo li.Active {
+   background: #fff;
+   border-bottom: none;
+   padding: 2px 10px;
+}
+
+/* Moderators List */
+div.Box.Moderators ul.PanelInfo {
+   background: #fff;
+   padding: 15px 15px 10px;
+}
+div.Box.Moderators ul.PanelInfo li {
+   padding: 0 0 5px;
+   background: none;
+   display: inline-block;
+   width: 150px;
+   overflow: hidden;
+   white-space: nowrap;
+}
+div.Moderators ul.PanelInfo li a.Small,
+div.Moderators ul.PanelInfo li a.Small img {
+   display: inline-block;
+   vertical-align: bottom;
+}
+
+/* Profile Page */
+body.Profile #Content {
+   width: auto;
+   float: none;
+   margin: 0 0 0 270px;
+}
+body.Profile ul.PanelInfo {
+   border-bottom: 1px solid #BEC8CC;
+}
+body.Profile #Panel {
+   display: block;
+   width: 250px;
+}
+body.Profile #Panel div.PhotoBox {
+   margin-bottom: 0;
+}
+#Status {
+   border-top: 1px solid #CBCFD5;
+   background: none;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   font-size: 13px;
+   color: #666;
+   margin: 10px 10px 0;
+   padding: 6px 0 8px;
+}
+div.Empty {
+   margin: 0;
+   padding: 10px;
+   border-radius: 0 0 2px 2px;
+   -moz-border-radius: 0 0 2px 2px;
+   -webkit-border-radius: 0 0 2px 2px;
+   background: #fff;
+}
+div.Box dl dt.CustomProfileField-facebook,
+div.Box dl dt.CustomProfileField-twitter,
+div.Box dl dt.CustomProfileField-website {
+   float: none;
+   display: block;
+   width: auto;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 0 no-repeat;
+   padding: 0 0 0 14px;
+}
+div.Box dl dt.CustomProfileField-facebook {
+   background-position: 0 -194px;
+}
+div.Box dl dt.CustomProfileField-twitter {
+   background-position: 0 -244px;
+}
+div.Box dl dt.CustomProfileField-website {
+   background-position: 0 -294px;
+}
+div.Box dl dd.CustomProfileField-facebook,
+div.Box dl dd.CustomProfileField-twitter,
+div.Box dl dd.CustomProfileField-website {
+   margin: 0;
+   line-height: 1;
+   padding: 0 0 8px;
+   white-space: nowrap;
+}
+/* Force specific dimensions on profile pics when user is jailed */
+body.Profile .PhotoBox .Jailed .Photo {
+   height: 180px;
+   overflow: hidden;
+}
+
+
+/* Activities */
+.TimestampContainer {
+   position: relative;
+}
+.TimestampArrow {
+   border-radius: 0 !important;
+   -moz-border-radius: 0 !important;
+   -webkit-border-radius: 0 !important;
+   background: url("/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png") no-repeat scroll 0px -450px transparent !important;
+   display: block !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   text-shadow: none !important;
+   position: absolute !important;
+   top: 4px;
+   left: -4px !important;
+   height: 8px !important;
+   width: 4px !important;
+}
+ul.DataList.SearchResults div.DateCreated span.TimestampArrow {
+   top: 5px;
+}
+ul.MessageList div.Comment div.Meta span.TimestampArrow {
+   top: 4px;
+}
+form.Activity {
+   background: #E2E2E2;
+   padding-bottom: 10px;
+}
+ul.DataList.Activities li.Item {
+   padding: 15px 20px;
+}
+ul.DataList.Activities li.Item li.Item {
+   padding: 4px 6px;
+}
+body.Profile ul.DataList.Activities {
+   margin-top: 0;
+}
+.DataList.Activities div.DateCreated {
+   line-height: 1;
+   padding: 0 0 8px;
+}
+.DataList.Activities div.DateCreated span {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 5px -145px no-repeat #a6a6a6;
+   border-radius: 3px;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   padding: 2px 6px 3px 28px;
+   margin: 0;
+   color: #fff;
+   text-shadow: 0 1px 0 #666;
+   font-size: 11px;
+   line-height: 1;
+   display: inline-block;
+}
+ul.DataList.Activities div.Photo img {
+    height: 24px;
+    width: 24px;
+}
+ul.Activities li.HasPhoto div.ItemContent {
+   margin-left: 35px;
+   width: auto;
+}
+ul.Condensed li, li.Condensed {
+   clear: none;
+}
+ul.Activities ul.DataList li,
+ul.DataList.Activities li.Item li.Item {
+   background: #e2e2e2;
+}
+ul.DataList.Activities li.Item li.Item {
+   border: none !important;
+}
+ul.DataList.Activities div.Excerpt {
+   margin-top: 10px;
+   padding-top: 10px;
+   border-top: 1px solid #dadde3;
+}
+ul.DataList.Activities li.AboutUpdate div.Excerpt {
+   margin: 0;
+   padding: 0 0 0 4px;
+   border: none;
+}
+ul.Activities ul.DataList {
+   margin-left: 35px;
+}
+.Foot {
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   background: none;
+   border: none;
+   padding: 0 6px 10px;
+}
+a.TabLink,
+a.TabLink:link,
+a.TabLink:hover,
+a.TabLink:active,
+a.TabLink:visited,
+div.MorePager a,
+div.MorePager a:link,
+div.MorePager a:hover,
+div.MorePager a:active,
+div.MorePager a:visited {
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   background: none;
+   border: none;
+   color: #0055A2;
+   text-decoration: none;
+   padding: 0;
+}
+div.MorePager a:hover {
+   text-decoration: underline;
+}
+
+/* Conversations */
+ul.MessageList.Conversation li.Item {
+   padding: 0;
+   border-top: 1px solid #fff !important;
+   background: #fff;
+}
+ul.MessageList.Conversation li.Item:nth-of-type(odd) {
+   background: #f2f2f2;
+}
+ul.MessageList div.Meta span.Author img {
+    float: none;
+}
+ul.MessageList div.Meta .Photo {
+    float: left;
+    width: 50px;
+}
+div.ConversationMessage {
+   padding: 6px;
+}
+ul.MessageList div.Message {
+   clear: none;
+}
+#MessageForm {
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   background: #f2f2f2;
+   margin: 10px 0 0;
+   padding: 0;
+}
+#MessageForm form {
+   padding: 10px;
+}
+div.AddPeople form {
+   background: #fff;
+   padding: 10px;
+}
+
+/* Activity */
+div.Box.RecentUsers div.Icons {
+   background: #fff;
+   padding: 10px;
+   float: left;
+   width: 230px;
+}
+
+/* Popups */
+div.Border {
+   /*
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   */
+   border: 1px solid #66deff;
+   background:  none;
+   padding: 0;
+}
+div.Popup div.Border {
+    max-width: 600px;
+}
+div.Popup div.Body {
+   border-radius: 7px;
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+}
+.Popup .Body {
+   border: 2px solid #27b1d9;
+   border-radius: 6px;
+   -moz-border-radius: 6px;
+   -webkit-border-radius: 6px;
+}
+.Popup .Body .Content {
+   /* border: 1px solid #032a61; */
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+}
+div.Popup h1, div.Popup h2, div.Connect h1, div.Connect h2 {
+   border: 1px solid #004487;
+   border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   -webkit-border-radius: 4px 4px 0 0;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-heading-tile.png') 0 -1px repeat-x #004d99;
+   color: #FFFFFF;
+}
+div.Popup div.MultipleEntryMethods h1 {
+   padding: 5px 9px 4px;
+}
+div.Overlay {
+   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+}
+a.Close, a.Close:hover {
+   right: 11px;
+   top: 9px;
+   text-decoration: none;
+}
+div.MultipleEntryMethods {
+   width: 494px;
+}
+
+/* Forms */
+#DiscussionForm label {
+   color: #333;
+}
+
+/* Discussion Administration Checkboxes */
+.AdminCheck {
+   width: 32px;
+   text-align: center;
+   padding: 4px 0 5px;
+   position: absolute;
+   left: -32px;
+   top: 38px;
+}
+.DiscussionTabs .AdminCheck,
+.DiscussionsTabs .AdminCheck {
+   left: -2px;
+   top: auto;
+   margin: -30px 0 0;
+}
+.DiscussionsTabs .AdminCheck {
+   left: -33px;
+}
+.AllDiscussionsTab a {
+   padding-left: 15px !Important;
+}
+.Item .AdminCheck {
+   left: -32px;
+   top: 6px;
+   background: none;
+   border: none;
+}
+
+.Discussion .AdminCheck {
+   left: -180px;
+}
+
+.Profile .Item .AdminCheck {
+   left: -27px;
+}
+
+/* Entry Pages */
+body.Entry div.DismissMessage {
+   display: none;
+}
+body.Entry #Content h1  {
+   border: 1px solid #004487;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-heading-tile.png') top left repeat-x #004d99;
+   border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   -webkit-border-radius: 4px 4px 0 0;
+   padding: 4px 10px;
+   font-size: 13px;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+body.Entry.register #Content h1 {
+   padding: 8px 16px;
+   font-size: 18px;
+}
+body.Entry.register #Content {
+   width: 710px;
+}
+body.Entry div.MainForm {
+   background: #fff;
+   padding: 8px;
+}
+body.Entry div.Box {
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   padding: 0;
+   background: #fff;
+   border-radius: 0 0 4px 4px;
+   -moz-border-radius: 0 0 4px 4px;
+   -webkit-border-radius: 0 0 4px 4px;
+}
+body.Entry.register #Content form {
+   padding: 0;
+}
+body.Entry.register form ul li {
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #d9d9d9;
+   padding: 6px 16px;
+   vertical-align: bottom;
+}
+body.Entry.register form ul li:nth-child(even) {
+   background: #f2f2f2;
+}
+body.Entry.register form ul li.Buttons {
+   margin: 0;
+   background: none;
+   border: none;
+   padding: 6px 16px 6px 205px;
+}
+div#recaptcha_widget_div {
+   display: inline-block;
+}
+body.Entry.register form ul li label {
+   vertical-align: top;
+   padding: 0 0 5px;
+   display: inline-block;
+   width: 185px;
+   white-space: nowrap;
+   overflow: hidden;
+   color: #032255;
+   line-height: 2;
+}
+body.Entry.register form ul li label.CheckBoxLabel {
+   width: auto;
+   display: block;
+   margin-left: 190px;
+}
+body.Entry.register li.Gender {
+   margin-bottom: 0;
+}
+
+/* Forms */
+#ConversationForm h1,
+#DiscussionForm h1 {
+   border: 1px solid #004487;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/bg-heading-tile.png') top left repeat-x #004d99;
+   border-radius: 4px 4px 0 0;
+   -moz-border-radius: 4px 4px 0 0;
+   -webkit-border-radius: 4px 4px 0 0;
+   padding: 8px 16px;
+   margin: 0;
+   font-size: 18px;
+   color: #fff;
+   text-shadow: 0 -1px 0 #000;
+}
+#ConversationForm form,
+#DiscussionForm form {
+   border-radius: 0 0 4px 4px;
+   -moz-border-radius: 0 0 4px 4px;
+   -webkit-border-radius: 0 0 4px 4px;
+   background: #fff;
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+#ConversationForm form div.P,
+#DiscussionForm form div.P {
+   margin: 0;
+   padding: 0 16px;
+}
+#ConversationForm form div.P:nth-child(3),
+#DiscussionForm form div.P:nth-child(5) {
+   margin: 0;
+   padding: 10px 16px 6px;
+}
+#ConversationForm form div.Buttons,
+#DiscussionForm form div.Buttons {
+   margin: 0;
+   padding: 16px;
+}
+#ConversationForm form {
+   text-align: left;
+}
+div.Popup #ConversationForm div.P,
+div.Popup #ConversationForm form div.Buttons {
+   margin: 0;
+   padding: 0;
+}
+
+/* Errors */
+div.Errors ul {
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   padding: 6px 16px;
+}
+
+/* Custom Inform Sprites */
+span.InformSprite.Check {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -650px no-repeat;
+   top: 7px;
+   left: 7px;
+   height: 23px;
+   width: 23px;
+}
+span.InformSprite.Redflag {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0 -700px no-repeat;
+   top: 7px;
+   left: 7px;
+   height: 25px;
+   width: 23px;
+}
+
+/* Search Results */
+div.SearchForm {
+   background: #fff;
+   border-radius: 0 0 3px 3px;
+   -moz-border-radius: 0 0 3px 3px;
+   -webkit-border-radius: 0 0 3px 3px;
+   padding: 15px;
+   margin: 0 0 15px;
+}
+.SearchBox {
+   font-size: 14px;
+   padding: 3px 3px 3px 21px;
+   width: 450px;
+   margin: 0 10px 0 0;
+}
+span.SearchSprite {
+   margin: 13px 0 0 8px;
+   position: absolute;
+   display: block;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/themes/pennyarcade/design/images/sprites.png') 0px -750px no-repeat transparent;
+   height: 13px;
+   width: 13px;
+}
+ul.DataList.SearchResults .ItemContent {
+   padding: 0 10px;
+}
+ul.DataList div.Excerpt a:hover {
+   text-decoration: none;
+}
+ul.DataList.SearchResults a.Title,
+ul.DataList.SearchResults div.Excerpt,
+ul.DataList.SearchResults div.Excerpt a {
+   display: inline;
+}
+ul.DataList.SearchResults div.Excerpt a {
+   margin-left: 10px;
+   color: #666;
+}
+ul.DataList.SearchResults li.Item, ul.DataList.Activities li.Item {
+   padding: 8px 6px;
+}
+
+/* Infractions */
+body.Profile ul.InfractionOverview {
+   background: #fff;
+   padding: 10px 0 10px 20px;
+}
+body.Profile div.Punishment {
+   margin: 0;
+}
+body.Profile ul.DataList.Infractions {
+   background: #fff;
+}
+body.Profile ul.DataList.Infractions li.Item {
+   padding: 4px 8px;
+}
+.Infraction .Message {
+   clear: inherit;
+}
+.Hidden {
+   display: none;
+}
+
+.ProfileImgLinkInline img {
+   width: 16px;
+   height: 16px;
+   vertical-align:text-bottom;
+}
+
+#Body #DiscussionForm .ButtonBar {
+   margin-bottom: 0px;
+}

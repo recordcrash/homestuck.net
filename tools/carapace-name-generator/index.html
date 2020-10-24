@@ -1,0 +1,582 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><title>Carapace Name Generator</title>
+
+<style>
+
+textarea.results {
+	color: #555A73;
+	border:none;
+	font-family: Verdana;
+	font-size: 24px;
+	text-align:center;
+}
+
+#credits {
+	position: absolute;
+	bottom: 10;
+	left: 10;
+	color: #555A73;
+	font-size: 10px;
+	font-family: verdana;
+}
+
+a {color: #61AECB;}
+
+a:hover {color: #ADFFE3;}
+</style>
+
+<script language="JAVASCRIPT">
+<!--
+var aVocab = new Array();
+
+var intIncr
+var intCat
+
+intCat =0
+intIncr=0
+
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="FIRST"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="<DESCRIPTOR> <TITLE>"
+
+intCat++
+intIncr=0
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="DESCRIPTOR"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="Skittish" 
+aVocab[intCat][1][intIncr++]="Formidable" 
+aVocab[intCat][1][intIncr++]="Sordid" 
+aVocab[intCat][1][intIncr++]="Inscrutable" 
+aVocab[intCat][1][intIncr++]="Unwavering" 
+aVocab[intCat][1][intIncr++]="Sordid" 
+aVocab[intCat][1][intIncr++]="Vapid" 
+aVocab[intCat][1][intIncr++]="Strident" 
+aVocab[intCat][1][intIncr++]="Sodden" 
+aVocab[intCat][1][intIncr++]="Discountenanced" 
+aVocab[intCat][1][intIncr++]="Zealous" 
+aVocab[intCat][1][intIncr++]="Insolent" 
+aVocab[intCat][1][intIncr++]="Rebellious" 
+aVocab[intCat][1][intIncr++]="Prospitian" 
+aVocab[intCat][1][intIncr++]="Dersite" 
+aVocab[intCat][1][intIncr++]="Slighted" 
+aVocab[intCat][1][intIncr++]="Youthful" 
+aVocab[intCat][1][intIncr++]="Splendorous" 
+aVocab[intCat][1][intIncr++]="Roguish" 
+aVocab[intCat][1][intIncr++]="Verbose" 
+aVocab[intCat][1][intIncr++]="Proselytizing" 
+aVocab[intCat][1][intIncr++]="Phantasmagoric" 
+aVocab[intCat][1][intIncr++]="Dreamy" 
+aVocab[intCat][1][intIncr++]="Berserk" 
+aVocab[intCat][1][intIncr++]="Mammonistic" 
+aVocab[intCat][1][intIncr++]="Antagonistic" 
+aVocab[intCat][1][intIncr++]="Exoteric" 
+aVocab[intCat][1][intIncr++]="Burly" 
+aVocab[intCat][1][intIncr++]="Canorous" 
+aVocab[intCat][1][intIncr++]="Chthonic" 
+aVocab[intCat][1][intIncr++]="Exiguous" 
+aVocab[intCat][1][intIncr++]="Cogent" 
+aVocab[intCat][1][intIncr++]="Mordant" 
+aVocab[intCat][1][intIncr++]="Virtuous" 
+aVocab[intCat][1][intIncr++]="Ebullient" 
+aVocab[intCat][1][intIncr++]="Nervewracked"
+aVocab[intCat][1][intIncr++]="Nervous"
+aVocab[intCat][1][intIncr++]="Desultory" 
+aVocab[intCat][1][intIncr++]="Aestival" 
+aVocab[intCat][1][intIncr++]="Vulgar" 
+aVocab[intCat][1][intIncr++]="Ribald" 
+aVocab[intCat][1][intIncr++]="Graceless" 
+aVocab[intCat][1][intIncr++]="Cupidinous" 
+aVocab[intCat][1][intIncr++]="Torpid" 
+aVocab[intCat][1][intIncr++]="Listless" 
+aVocab[intCat][1][intIncr++]="Genial" 
+aVocab[intCat][1][intIncr++]="Raucous" 
+aVocab[intCat][1][intIncr++]="Aberrant" 
+aVocab[intCat][1][intIncr++]="Diffident" 
+aVocab[intCat][1][intIncr++]="Gregarious" 
+aVocab[intCat][1][intIncr++]="Erudite" 
+aVocab[intCat][1][intIncr++]="Innocuous" 
+aVocab[intCat][1][intIncr++]="Dour" 
+aVocab[intCat][1][intIncr++]="Jovial" 
+aVocab[intCat][1][intIncr++]="Stoic" 
+aVocab[intCat][1][intIncr++]="Malicious" 
+aVocab[intCat][1][intIncr++]="Chaste" 
+aVocab[intCat][1][intIncr++]="Judicial" 
+aVocab[intCat][1][intIncr++]="Resilient" 
+aVocab[intCat][1][intIncr++]="Prudent" 
+aVocab[intCat][1][intIncr++]="Maudlin" 
+aVocab[intCat][1][intIncr++]="Bibulous" 
+aVocab[intCat][1][intIncr++]="Captious" 
+aVocab[intCat][1][intIncr++]="Maladroit" 
+aVocab[intCat][1][intIncr++]="Sedulous" 
+aVocab[intCat][1][intIncr++]="Puckish" 
+aVocab[intCat][1][intIncr++]="Parsimonious" 
+aVocab[intCat][1][intIncr++]="Prurient" 
+aVocab[intCat][1][intIncr++]="Lascivious" 
+aVocab[intCat][1][intIncr++]="Sagacious" 
+aVocab[intCat][1][intIncr++]="Astute" 
+aVocab[intCat][1][intIncr++]="Keen" 
+aVocab[intCat][1][intIncr++]="Ignorant" 
+aVocab[intCat][1][intIncr++]="Sapphic" 
+aVocab[intCat][1][intIncr++]="Persnickety" 
+aVocab[intCat][1][intIncr++]="Seraphic" 
+aVocab[intCat][1][intIncr++]="Beguiling" 
+aVocab[intCat][1][intIncr++]="Benevolent" 
+aVocab[intCat][1][intIncr++]="Ignoble" 
+aVocab[intCat][1][intIncr++]="Wily" 
+aVocab[intCat][1][intIncr++]="Docile" 
+aVocab[intCat][1][intIncr++]="Brazen" 
+aVocab[intCat][1][intIncr++]="Intrepid" 
+aVocab[intCat][1][intIncr++]="Austere" 
+aVocab[intCat][1][intIncr++]="Frugal" 
+aVocab[intCat][1][intIncr++]="Acrimonious" 
+aVocab[intCat][1][intIncr++]="Mirthful" 
+aVocab[intCat][1][intIncr++]="Flippant" 
+aVocab[intCat][1][intIncr++]="Fastidious" 
+aVocab[intCat][1][intIncr++]="Imprudent" 
+aVocab[intCat][1][intIncr++]="Finicky" 
+aVocab[intCat][1][intIncr++]="Meticulous" 
+aVocab[intCat][1][intIncr++]="Slovenly" 
+aVocab[intCat][1][intIncr++]="Incorrigible" 
+aVocab[intCat][1][intIncr++]="Unscrupulous" 
+aVocab[intCat][1][intIncr++]="August" 
+aVocab[intCat][1][intIncr++]="Slavish" 
+aVocab[intCat][1][intIncr++]="Supercilious" 
+aVocab[intCat][1][intIncr++]="Furtive" 
+aVocab[intCat][1][intIncr++]="Gauche" 
+aVocab[intCat][1][intIncr++]="Lethargic" 
+aVocab[intCat][1][intIncr++]="Languid" 
+aVocab[intCat][1][intIncr++]="Melancholy" 
+aVocab[intCat][1][intIncr++]="Quiescent" 
+aVocab[intCat][1][intIncr++]="Stalwart" 
+aVocab[intCat][1][intIncr++]="Imperturbable" 
+aVocab[intCat][1][intIncr++]="Indolent" 
+aVocab[intCat][1][intIncr++]="Alopecoid" 
+aVocab[intCat][1][intIncr++]="Brumal" 
+aVocab[intCat][1][intIncr++]="Cancellarial" 
+aVocab[intCat][1][intIncr++]="Cantative" 
+aVocab[intCat][1][intIncr++]="Edacious" 
+aVocab[intCat][1][intIncr++]="Gluttonous" 
+aVocab[intCat][1][intIncr++]="Domestic" 
+aVocab[intCat][1][intIncr++]="Gelastic" 
+aVocab[intCat][1][intIncr++]="Pauciloquent" 
+aVocab[intCat][1][intIncr++]="Inaniloquent" 
+aVocab[intCat][1][intIncr++]="Timid" 
+aVocab[intCat][1][intIncr++]="Laconic" 
+aVocab[intCat][1][intIncr++]="Soliloquent" 
+aVocab[intCat][1][intIncr++]="Poetic" 
+aVocab[intCat][1][intIncr++]="Vexatious" 
+aVocab[intCat][1][intIncr++]="Demure" 
+aVocab[intCat][1][intIncr++]="Witless" 
+aVocab[intCat][1][intIncr++]="Froward" 
+aVocab[intCat][1][intIncr++]="Loquacious" 
+aVocab[intCat][1][intIncr++]="Garrulous" 
+aVocab[intCat][1][intIncr++]="Volatile" 
+aVocab[intCat][1][intIncr++]="Impudent" 
+aVocab[intCat][1][intIncr++]="Audacious" 
+aVocab[intCat][1][intIncr++]="Multifarious" 
+aVocab[intCat][1][intIncr++]="Impotent" 
+aVocab[intCat][1][intIncr++]="Errant" 
+aVocab[intCat][1][intIncr++]="Gallant" 
+aVocab[intCat][1][intIncr++]="Immaculate" 
+aVocab[intCat][1][intIncr++]="Vacuous" 
+aVocab[intCat][1][intIncr++]="Jocose" 
+aVocab[intCat][1][intIncr++]="Smitten" 
+aVocab[intCat][1][intIncr++]="Insatiable" 
+aVocab[intCat][1][intIncr++]="Renegade" 
+aVocab[intCat][1][intIncr++]="Sabaistic" 
+aVocab[intCat][1][intIncr++]="Eumoirous"
+aVocab[intCat][1][intIncr++]="Macabre"
+aVocab[intCat][1][intIncr++]="Gossipy"
+aVocab[intCat][1][intIncr++]="Mannerly"
+aVocab[intCat][1][intIncr++]="Truculent"
+aVocab[intCat][1][intIncr++]="Surly"
+aVocab[intCat][1][intIncr++]="Naive"
+aVocab[intCat][1][intIncr++]="Junior"
+aVocab[intCat][1][intIncr++]="Idealistic"
+aVocab[intCat][1][intIncr++]="Pessimistic"
+aVocab[intCat][1][intIncr++]="Pyromaniacal"
+aVocab[intCat][1][intIncr++]="Maniacal"
+aVocab[intCat][1][intIncr++]="Leading"
+aVocab[intCat][1][intIncr++]="Maddened"
+aVocab[intCat][1][intIncr++]="Matchless"
+aVocab[intCat][1][intIncr++]="Hopeful"
+aVocab[intCat][1][intIncr++]="Hopeless"
+aVocab[intCat][1][intIncr++]="Flighty"
+aVocab[intCat][1][intIncr++]="Aimless"
+aVocab[intCat][1][intIncr++]="Reknowned"
+aVocab[intCat][1][intIncr++]="Radiant"
+aVocab[intCat][1][intIncr++]="Nonsensical"
+
+intCat++
+intIncr=0
+aVocab[intCat]= new Array();
+aVocab[intCat][0]="TITLE"
+aVocab[intCat][1] = new Array()
+aVocab[intCat][1][intIncr++]="Archer"
+aVocab[intCat][1][intIncr++]="Fashionista"
+aVocab[intCat][1][intIncr++]="Wanderer"
+aVocab[intCat][1][intIncr++]="Survivalist"
+aVocab[intCat][1][intIncr++]="Mistress"
+aVocab[intCat][1][intIncr++]="Socialite"
+aVocab[intCat][1][intIncr++]="Gentleman"
+aVocab[intCat][1][intIncr++]="Advisor"
+aVocab[intCat][1][intIncr++]="Warrior" 
+aVocab[intCat][1][intIncr++]="Bishop" 
+aVocab[intCat][1][intIncr++]="Pilgrim" 
+aVocab[intCat][1][intIncr++]="Informant" 
+aVocab[intCat][1][intIncr++]="Painter" 
+aVocab[intCat][1][intIncr++]="Botainst" 
+aVocab[intCat][1][intIncr++]="Worker" 
+aVocab[intCat][1][intIncr++]="Rabblerouser" 
+aVocab[intCat][1][intIncr++]="Bard" 
+aVocab[intCat][1][intIncr++]="Artist" 
+aVocab[intCat][1][intIncr++]="Detective" 
+aVocab[intCat][1][intIncr++]="Salesman" 
+aVocab[intCat][1][intIncr++]="Librarian" 
+aVocab[intCat][1][intIncr++]="Bookkeeper" 
+aVocab[intCat][1][intIncr++]="Statistician" 
+aVocab[intCat][1][intIncr++]="Alchemist" 
+aVocab[intCat][1][intIncr++]="Tutor" 
+aVocab[intCat][1][intIncr++]="Actuary" 
+aVocab[intCat][1][intIncr++]="Sentry" 
+aVocab[intCat][1][intIncr++]="Scion" 
+aVocab[intCat][1][intIncr++]="Sluggard" 
+aVocab[intCat][1][intIncr++]="Tyro" 
+aVocab[intCat][1][intIncr++]="Neophyte" 
+aVocab[intCat][1][intIncr++]="Apprentice" 
+aVocab[intCat][1][intIncr++]="Pupil" 
+aVocab[intCat][1][intIncr++]="Novitiate" 
+aVocab[intCat][1][intIncr++]="Polyglot" 
+aVocab[intCat][1][intIncr++]="Parvenu" 
+aVocab[intCat][1][intIncr++]="Bully" 
+aVocab[intCat][1][intIncr++]="Rogue" 
+aVocab[intCat][1][intIncr++]="Suitor" 
+aVocab[intCat][1][intIncr++]="Attendant" 
+aVocab[intCat][1][intIncr++]="Rascal" 
+aVocab[intCat][1][intIncr++]="Poet" 
+aVocab[intCat][1][intIncr++]="Lyricist" 
+aVocab[intCat][1][intIncr++]="Prig" 
+aVocab[intCat][1][intIncr++]="Derelict" 
+aVocab[intCat][1][intIncr++]="Trollop" 
+aVocab[intCat][1][intIncr++]="Harlot" 
+aVocab[intCat][1][intIncr++]="Heathen" 
+aVocab[intCat][1][intIncr++]="Lothario" 
+aVocab[intCat][1][intIncr++]="Novelist" 
+aVocab[intCat][1][intIncr++]="Storyteller" 
+aVocab[intCat][1][intIncr++]="Polymath" 
+aVocab[intCat][1][intIncr++]="Tramontane" 
+aVocab[intCat][1][intIncr++]="Emigrant" 
+aVocab[intCat][1][intIncr++]="Pundit" 
+aVocab[intCat][1][intIncr++]="Despot" 
+aVocab[intCat][1][intIncr++]="Usurper" 
+aVocab[intCat][1][intIncr++]="Ruffian" 
+aVocab[intCat][1][intIncr++]="Lackey" 
+aVocab[intCat][1][intIncr++]="Sycophant" 
+aVocab[intCat][1][intIncr++]="Fugitive" 
+aVocab[intCat][1][intIncr++]="Remnant" 
+aVocab[intCat][1][intIncr++]="Refugee" 
+aVocab[intCat][1][intIncr++]="Entrepreneur" 
+aVocab[intCat][1][intIncr++]="Miscreant" 
+aVocab[intCat][1][intIncr++]="Traveler" 
+aVocab[intCat][1][intIncr++]="Courier" 
+aVocab[intCat][1][intIncr++]="Jester" 
+aVocab[intCat][1][intIncr++]="Harbinger" 
+aVocab[intCat][1][intIncr++]="Handmaid" 
+aVocab[intCat][1][intIncr++]="Maiden" 
+aVocab[intCat][1][intIncr++]="Musician" 
+aVocab[intCat][1][intIncr++]="Vocalist" 
+aVocab[intCat][1][intIncr++]="Servant" 
+aVocab[intCat][1][intIncr++]="Swordsman" 
+aVocab[intCat][1][intIncr++]="Swordswoman"
+aVocab[intCat][1][intIncr++]="Marksman"
+aVocab[intCat][1][intIncr++]="Markswoman"
+aVocab[intCat][1][intIncr++]="Acater" 
+aVocab[intCat][1][intIncr++]="Accipitrary" 
+aVocab[intCat][1][intIncr++]="Administrator" 
+aVocab[intCat][1][intIncr++]="Clergyman" 
+aVocab[intCat][1][intIncr++]="Aeronaut" 
+aVocab[intCat][1][intIncr++]="Alblastere"
+aVocab[intCat][1][intIncr++]="Alewife"
+aVocab[intCat][1][intIncr++]="Almoner"
+aVocab[intCat][1][intIncr++]="Anchorite" 
+aVocab[intCat][1][intIncr++]="Anchoress"
+aVocab[intCat][1][intIncr++]="Apiarian" 
+aVocab[intCat][1][intIncr++]="Aproneer" 
+aVocab[intCat][1][intIncr++]="Avowry" 
+aVocab[intCat][1][intIncr++]="Bagman" 
+aVocab[intCat][1][intIncr++]="Belhoste" 
+aVocab[intCat][1][intIncr++]="Crier" 
+aVocab[intCat][1][intIncr++]="Biddy" 
+aVocab[intCat][1][intIncr++]="Blacksmith" 
+aVocab[intCat][1][intIncr++]="Officer" 
+aVocab[intCat][1][intIncr++]="Enforcer" 
+aVocab[intCat][1][intIncr++]="Brewer" 
+aVocab[intCat][1][intIncr++]="Bummer" 
+aVocab[intCat][1][intIncr++]="Deserter" 
+aVocab[intCat][1][intIncr++]="Marauder" 
+aVocab[intCat][1][intIncr++]="Caddie" 
+aVocab[intCat][1][intIncr++]="Chancellor" 
+aVocab[intCat][1][intIncr++]="Capitalist" 
+aVocab[intCat][1][intIncr++]="Cartographer" 
+aVocab[intCat][1][intIncr++]="Cartomancer" 
+aVocab[intCat][1][intIncr++]="Chamberlain" 
+aVocab[intCat][1][intIncr++]="Chandler" 
+aVocab[intCat][1][intIncr++]="Astrologer" 
+aVocab[intCat][1][intIncr++]="Astronomer" 
+aVocab[intCat][1][intIncr++]="Cleric" 
+aVocab[intCat][1][intIncr++]="Clerk" 
+aVocab[intCat][1][intIncr++]="Cobbler" 
+aVocab[intCat][1][intIncr++]="Collier" 
+aVocab[intCat][1][intIncr++]="Confectioner" 
+aVocab[intCat][1][intIncr++]="Executioner" 
+aVocab[intCat][1][intIncr++]="Headsman" 
+aVocab[intCat][1][intIncr++]="Deputy" 
+aVocab[intCat][1][intIncr++]="Drummer"
+aVocab[intCat][1][intIncr++]="Esquire"
+aVocab[intCat][1][intIncr++]="Knight"
+aVocab[intCat][1][intIncr++]="Floater"
+aVocab[intCat][1][intIncr++]="Robber"
+aVocab[intCat][1][intIncr++]="Fowler"
+aVocab[intCat][1][intIncr++]="Gangster" 
+aVocab[intCat][1][intIncr++]="Hatter" 
+aVocab[intCat][1][intIncr++]="Headhunter" 
+aVocab[intCat][1][intIncr++]="Henter" 
+aVocab[intCat][1][intIncr++]="Agent" 
+aVocab[intCat][1][intIncr++]="Seamstress" 
+aVocab[intCat][1][intIncr++]="Guardian" 
+aVocab[intCat][1][intIncr++]="Mercenary" 
+aVocab[intCat][1][intIncr++]="Mixer" 
+aVocab[intCat][1][intIncr++]="Innkeeper" 
+aVocab[intCat][1][intIncr++]="Guide" 
+aVocab[intCat][1][intIncr++]="Tramp" 
+aVocab[intCat][1][intIncr++]="Plowman" 
+aVocab[intCat][1][intIncr++]="Gatekeeper" 
+aVocab[intCat][1][intIncr++]="Prentis" 
+aVocab[intCat][1][intIncr++]="Preceptress" 
+aVocab[intCat][1][intIncr++]="Puggard" 
+aVocab[intCat][1][intIncr++]="Runner" 
+aVocab[intCat][1][intIncr++]="Smuggler" 
+aVocab[intCat][1][intIncr++]="Messenger" 
+aVocab[intCat][1][intIncr++]="Scribe" 
+aVocab[intCat][1][intIncr++]="Scrinever" 
+aVocab[intCat][1][intIncr++]="Scullion" 
+aVocab[intCat][1][intIncr++]="Tailor" 
+aVocab[intCat][1][intIncr++]="Smith" 
+aVocab[intCat][1][intIncr++]="Stravaiger" 
+aVocab[intCat][1][intIncr++]="Swain" 
+aVocab[intCat][1][intIncr++]="Tapster" 
+aVocab[intCat][1][intIncr++]="Dancer" 
+aVocab[intCat][1][intIncr++]="Sailor" 
+aVocab[intCat][1][intIncr++]="Aviator" 
+aVocab[intCat][1][intIncr++]="Valet" 
+aVocab[intCat][1][intIncr++]="Priest"
+aVocab[intCat][1][intIncr++]="Priestess" 
+aVocab[intCat][1][intIncr++]="Watchman" 
+aVocab[intCat][1][intIncr++]="Nurse" 
+aVocab[intCat][1][intIncr++]="Wright" 
+aVocab[intCat][1][intIncr++]="Gourmet" 
+aVocab[intCat][1][intIncr++]="Defenestrator" 
+aVocab[intCat][1][intIncr++]="Famulus" 
+aVocab[intCat][1][intIncr++]="Pilgarlick" 
+aVocab[intCat][1][intIncr++]="Tregetour" 
+aVocab[intCat][1][intIncr++]="Trickster" 
+aVocab[intCat][1][intIncr++]="Ancress" 
+aVocab[intCat][1][intIncr++]="Musicaster" 
+aVocab[intCat][1][intIncr++]="Militaster" 
+aVocab[intCat][1][intIncr++]="Astrologaster" 
+aVocab[intCat][1][intIncr++]="Warden" 
+aVocab[intCat][1][intIncr++]="Ward" 
+aVocab[intCat][1][intIncr++]="Witticaster" 
+aVocab[intCat][1][intIncr++]="Pariah" 
+aVocab[intCat][1][intIncr++]="Mortician" 
+aVocab[intCat][1][intIncr++]="Undertaker" 
+aVocab[intCat][1][intIncr++]="Vagrant" 
+aVocab[intCat][1][intIncr++]="Recluse" 
+aVocab[intCat][1][intIncr++]="Hermit" 
+aVocab[intCat][1][intIncr++]="Eremite" 
+aVocab[intCat][1][intIncr++]="Ascetic" 
+aVocab[intCat][1][intIncr++]="Straggler" 
+aVocab[intCat][1][intIncr++]="Swashbuckler" 
+aVocab[intCat][1][intIncr++]="Buccaneer" 
+aVocab[intCat][1][intIncr++]="Bandit" 
+aVocab[intCat][1][intIncr++]="Corsair" 
+aVocab[intCat][1][intIncr++]="Privateer" 
+aVocab[intCat][1][intIncr++]="Forager" 
+aVocab[intCat][1][intIncr++]="Outlaw" 
+aVocab[intCat][1][intIncr++]="Desperado" 
+aVocab[intCat][1][intIncr++]="Raider" 
+aVocab[intCat][1][intIncr++]="Hooligan" 
+aVocab[intCat][1][intIncr++]="Brigand" 
+aVocab[intCat][1][intIncr++]="Racketeer" 
+aVocab[intCat][1][intIncr++]="Ravager" 
+aVocab[intCat][1][intIncr++]="Footpad" 
+aVocab[intCat][1][intIncr++]="Henchman" 
+aVocab[intCat][1][intIncr++]="Courtier" 
+aVocab[intCat][1][intIncr++]="Leman" 
+aVocab[intCat][1][intIncr++]="Dowager" 
+aVocab[intCat][1][intIncr++]="Slattern" 
+aVocab[intCat][1][intIncr++]="Practitioner" 
+aVocab[intCat][1][intIncr++]="Loyalist" 
+aVocab[intCat][1][intIncr++]="Baron" 
+aVocab[intCat][1][intIncr++]="Baronet" 
+aVocab[intCat][1][intIncr++]="Viscount" 
+aVocab[intCat][1][intIncr++]="Martinet" 
+aVocab[intCat][1][intIncr++]="Highbrow" 
+aVocab[intCat][1][intIncr++]="Ranger" 
+aVocab[intCat][1][intIncr++]="Strumpet" 
+aVocab[intCat][1][intIncr++]="Acolyte" 
+aVocab[intCat][1][intIncr++]="Demimonde" 
+aVocab[intCat][1][intIncr++]="Arbitrator" 
+aVocab[intCat][1][intIncr++]="Debutante" 
+aVocab[intCat][1][intIncr++]="Paragon" 
+aVocab[intCat][1][intIncr++]="Renegade" 
+aVocab[intCat][1][intIncr++]="Cacogen" 
+aVocab[intCat][1][intIncr++]="Bibliothecary" 
+aVocab[intCat][1][intIncr++]="Korinthenkacker" 
+aVocab[intCat][1][intIncr++]="Logastellus" 
+aVocab[intCat][1][intIncr++]="Paralian" 
+aVocab[intCat][1][intIncr++]="Acosmist" 
+aVocab[intCat][1][intIncr++]="Pissant"
+aVocab[intCat][1][intIncr++]="General"
+aVocab[intCat][1][intIncr++]="Strategist"
+aVocab[intCat][1][intIncr++]="Commander"
+aVocab[intCat][1][intIncr++]="Estimator"
+aVocab[intCat][1][intIncr++]="Fruitseller"
+aVocab[intCat][1][intIncr++]="Gossip"
+aVocab[intCat][1][intIncr++]="Elucidator"
+aVocab[intCat][1][intIncr++]="Journeyman"
+aVocab[intCat][1][intIncr++]="Tactician"
+aVocab[intCat][1][intIncr++]="Moderator"
+aVocab[intCat][1][intIncr++]="Boatswain"
+aVocab[intCat][1][intIncr++]="Bargemaster"
+aVocab[intCat][1][intIncr++]="Alomancer"
+aVocab[intCat][1][intIncr++]="Cleidomancer"
+aVocab[intCat][1][intIncr++]="Cleromancer"
+aVocab[intCat][1][intIncr++]="Enoptromaner"
+aVocab[intCat][1][intIncr++]="Halomancer"
+aVocab[intCat][1][intIncr++]="Hypnomancer"
+aVocab[intCat][1][intIncr++]="Hypnotist"
+aVocab[intCat][1][intIncr++]="Idol"
+aVocab[intCat][1][intIncr++]="Enchanter"
+aVocab[intCat][1][intIncr++]="Conjuror"
+aVocab[intCat][1][intIncr++]="Osteomancer"
+aVocab[intCat][1][intIncr++]="Agister"
+aVocab[intCat][1][intIncr++]="Greenhorn"
+aVocab[intCat][1][intIncr++]="Fledgling"
+aVocab[intCat][1][intIncr++]="Escort"
+aVocab[intCat][1][intIncr++]="Courtier"
+aVocab[intCat][1][intIncr++]="Chevalier"
+aVocab[intCat][1][intIncr++]="Equestrian"
+aVocab[intCat][1][intIncr++]="Paladin"
+aVocab[intCat][1][intIncr++]="Sage"
+aVocab[intCat][1][intIncr++]="Archsage"
+aVocab[intCat][1][intIncr++]="Ballistician"
+aVocab[intCat][1][intIncr++]="Valkyrie"
+aVocab[intCat][1][intIncr++]="Shaman"
+aVocab[intCat][1][intIncr++]="Druid"
+aVocab[intCat][1][intIncr++]="Junior"
+aVocab[intCat][1][intIncr++]="Revenant"
+aVocab[intCat][1][intIncr++]="Sergeant"
+aVocab[intCat][1][intIncr++]="Seraph"
+aVocab[intCat][1][intIncr++]="Sentinel"
+aVocab[intCat][1][intIncr++]="Broad"
+aVocab[intCat][1][intIncr++]="Lyncher"
+aVocab[intCat][1][intIncr++]="Naysayer"
+aVocab[intCat][1][intIncr++]="Idealist"
+aVocab[intCat][1][intIncr++]="Pessimist"
+aVocab[intCat][1][intIncr++]="Inspector"
+aVocab[intCat][1][intIncr++]="Dollmaker"
+aVocab[intCat][1][intIncr++]="Banshee"
+aVocab[intCat][1][intIncr++]="Toymaker"
+aVocab[intCat][1][intIncr++]="Physicist"
+aVocab[intCat][1][intIncr++]="Mooch"
+aVocab[intCat][1][intIncr++]="Fortuneteller"
+aVocab[intCat][1][intIncr++]="Mechanic"
+aVocab[intCat][1][intIncr++]="Artisan"
+aVocab[intCat][1][intIncr++]="Artificer"
+aVocab[intCat][1][intIncr++]="Cavalryman"
+aVocab[intCat][1][intIncr++]="Pissant"
+aVocab[intCat][1][intIncr++]="Noisemaker"
+
+	function GenNumber(nRange)
+	{
+                var iNumGen
+		iNumGen = Math.round((Math.random() * nRange));
+
+                return iNumGen;
+	}
+
+        function GetFrom(aArray)
+	{
+		var undefined
+		var sReturn
+		sReturn = aArray[GenNumber(aArray.length)];
+		if (sReturn == undefined)
+		{
+			sReturn = GetFrom(aArray)
+		}
+		return sReturn
+	}
+
+
+	function GetArray(sArrayName)
+	{
+		for (var intLooper=0;intLooper <aVocab.length;intLooper++)
+		{
+			if (aVocab[intLooper][0]==sArrayName)
+			{
+				return aVocab[intLooper][1];
+				break;
+			}
+		}
+	}
+
+	function ScanLine(sLine)
+	{
+		var iTagStart, iTagEnd
+		var sKey
+
+		if (sLine.indexOf("<") > -1)
+		{
+			iTagStart = sLine.indexOf("<");
+			iTagEnd = sLine.indexOf(">");
+			
+			sKey = sLine.substr(iTagStart+1, iTagEnd-(iTagStart+1));
+
+			sKey = GetFrom(GetArray(sKey))
+			sLine = sLine.substr(0, iTagStart) + sKey + sLine.substr(iTagEnd+1, (sLine.length - iTagEnd))
+
+		}
+		
+
+		if (sLine.indexOf("<") > - 1)
+		{
+			sLine = ScanLine(sLine)
+		}
+
+		return sLine;
+	}
+
+
+	function GenPlot()
+	{
+		sLine = GetFrom(GetArray("FIRST"));
+
+		sLine = ScanLine(sLine)
+
+		document.GENFORM.STORY.value = sLine;
+	}
+//-->
+</script>
+
+</head><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style><body><center><img src="index_files/tumblr_lzixyxWJtA1qbxamm.png">
+<form name="GENFORM">
+               <textarea class="results" name="STORY" rows="1" cols="50" spellcheck="false">Edacious Tutor</textarea>
+               <br><input type="button" class="go" name="BGENERATE" value="Generate" onclick="GenPlot();">
+     </form></center>
+	 
+
+<div id="credits">Art by <a href="http://isthatwhatyoumint.tumblr.com/">Maya</a>, used with permission.<br>
+Results may be conflicting or repetitive. Refresh and try again.</div></body></html>

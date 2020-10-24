@@ -1,0 +1,138 @@
+/************* GENERAL CSS ************/
+
+body {
+	width: 100%;
+	height:100%;
+	margin: 0px;
+	padding: 0px;
+	background: #292929 repeat-y center top;
+	text-align: justify;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+
+h1, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #3399FF;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #3399FF;
+	background-color: #CDCDCD;
+}
+
+a {
+	font-weight: bold;	
+	text-decoration: none;
+	color: #33CCFF;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #33CCFF;
+}
+
+/************* HEADER STUFF ************/
+
+#header {
+	width: 770px;
+	height: 120px;
+	margin: 0px auto;
+	padding: 10px 0px;
+	background: #FFFBFD url(../images/header.jpg);
+	max-height:100%; 
+	max-width:100%;
+}
+
+#header h1 {
+	margin: 0px;
+	padding: 0px 0px 0px 10px;
+	text-align: left;
+	color: #3399FF;
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+#header h2 {
+	margin: 0px;
+	padding: 0px 0px 0px 20px;
+	text-align: left;
+	font-size: 1.5em;
+	background-color: #CDCDCD;
+	text-transform: uppercase;
+}
+
+/************* MENU ************/
+
+#menu {
+	width: 770px;
+	margin: 0px auto;
+	padding: 5px 0px 5px 0px;
+	background-color: #000000;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	padding: 5px 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	background-color: #333333;
+}
+
+/************* CONTENT ************/
+
+#content {
+	width: 770px;
+	margin: 0px auto;
+	background-color: #CDCDCD;
+	padding: 20px 0px 0px 0px;
+}
+
+#content h2, #content h3, #content h4, #content h5, #content h6 {
+	font-weight: normal;
+}
+
+#content p, #content ul, #content ol {
+	line-height: 150%;
+}
+
+#left {
+	float: left;
+	width: auto;
+	padding: 0% 3% 0% 3%;
+	background-color: #CDCDCD;
+}
+
+#p
+{
+text-indent:50px;
+background-color: #CDCDCD;
+}
+
+#right {
+	float: right;
+	width: 210px;
+	padding: 0% 20% 40% 20%;
+	color: #99CCFF;
+	background-color: #CDCDCD;
+}
+

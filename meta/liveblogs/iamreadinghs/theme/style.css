@@ -1,0 +1,73 @@
+.themeloading,
+			.themeloaded.wf-loading {
+				background: url(//static.tumblr.com/41ljbbi/dZjlnvr8e/ajax-loader-1.gif) no-repeat center center;
+			}
+
+			.themeloading body,
+			.themeloaded.wf-loading body {
+				left: -99999px;
+				position: absolute;
+				*overflow: hidden;
+			}
+			
+
+			
+			
+			
+
+			.bF, .bF * { background-color: #777777; }
+			.lF a, a.lF, .tF { color: #ffffff; }
+			.bP { background-color: #6CA516; }
+			.lP a, a.lP, .lS a:hover, a:hover.lS, .like_post a, .blogsmore, #tumblr-tweets .date:hover { color: #6CA516; }
+			.lS a, a.lS, #tumblr-tweets .date { color: #6e6e6e; }
+			.bT { background-color: #259096; }
+			.lT a, a.lT, .like_link a { color: #259096; }
+
+			/* Fonts */
+			body {
+				font-family: 'Arial';
+			}
+
+			.fS {
+  				font-family: 'Yanone Kaffeesatz';
+			}
+
+			
+#fade { /*--Transparent background layer--*/
+display: none; /*--hidden by default--*/
+background: #000;
+position: fixed; left: 0; top: 0;
+width: 100%; height: 100%;
+opacity: .80;
+z-index: 9999;
+}
+.popup_block{
+display: none; /*--hidden by default--*/
+background: #fcfbf8;
+padding: 10px;
+border: 5px solid #f2e7e2;
+float: left;
+font-size: 10;
+position: fixed;
+top: 50%; left: 50%;
+z-index: 99999;
+/*--CSS3 Box Shadows--*/
+-webkit-box-shadow: 0px 0px 20px #000;
+-moz-box-shadow: 0px 0px 20px #000;
+box-shadow: 0px 0px 20px #000;
+/*--CSS3 Rounded Corners--*/
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+img.btn_close {
+float: right;
+margin: -20 -20px 0 0;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+position: absolute;
+}
+*html .popup_block {
+position: absolute;
+}

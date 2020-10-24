@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- Song: The Souns of Justis by Viridian https://coolandnewwebcomic.bandcamp.com/track/the-souns-of-justis !-->
+<!-- Original site: https://matias.ma/nsfw/ - Favicon animation: https://stackoverflow.com/a/2995536 - Original terezi: https://www.homestuck.com/story/6231 -->
+<html style="background-color: rgb(209, 167, 93);"><head>
+<title>:tereziFlip:</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" type="image/png" href="img/tereziFlip.png?v=1" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://homestuck.net/tereziFlip.html" />
+<meta property="og:site_name" content="HOMESTUCK.NET" />
+<meta property="og:title" content=":tereziFlip:" />
+<meta property="og:keywords" content="terezi, flip, tereziFlip" />
+<meta property="og:image" content="https://imgur.com/2f8zTLH.png" />
+<meta property="og:locale" content="en-US" />
+
+<style type="text/css">
+			article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block}
+			
+			html, body {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			html {
+				background-color: #000;
+			}
+			
+			body {
+				padding: 0px;
+				margin: 0px;
+				opacity: 0.0;
+				
+				display: block;
+				overflow: hidden;
+				position:absolute;
+				height:auto;
+				bottom:20px;
+				top:20px;
+				left:20px;
+				right:20px;
+				background-color: #9f9f9f;
+				
+				-webkit-transition: opacity 1.5s ease-in;
+				-moz-transition: opacity 1.5s ease-in;
+				-o-transition: opacity 1.5s ease-in;
+				-ms-transition: opacity 1.5s ease-in;
+				
+				border-radius: 10px;
+				
+				cursor: wait;
+			}
+			
+			.roll {
+				opacity: 1.0;
+				cursor: default;
+			}
+			
+			figure.ditto {
+				position: absolute;
+				display: block;
+				padding: 0px; margin: 0px;
+				width: 499px;
+				height: 439px;
+				
+				background-image: url(img/tereziFlip.gif);
+				background-repeat: no-repeat;
+			}
+			
+			figure.ditto.hero {
+				z-index: 0;
+				
+				position: absolute;
+				left: 50%;
+				margin-left: -255px;
+				
+				top: 50%;
+				margin-top: -220px;
+
+				-webkit-animation: flip 2s linear infinite;
+				-moz-animation:    flip 2s linear infinite;
+				-ms-animation:     flip 2s linear infinite;
+
+			}
+			
+			figure.fromLeft {
+				-webkit-animation: fromLeft 3s linear;
+				-moz-animation:    fromLeft 3s linear;
+				-ms-animation:     fromLeft 3s linear;
+				
+				left: -100%;
+			}
+			
+			figure.fromRight {
+				-webkit-animation: fromRight 3s linear;
+				-moz-animation:    fromRight 3s linear;
+				-ms-animation:     fromRight 3s linear;
+				
+				right: -100%;
+			}
+			
+			@-webkit-keyframes fromLeft {
+				0%   {left: -100%; -webkit-transform: rotate(0deg); }
+				100% {left: 100%;-webkit-transform: rotate(360deg);}
+			}
+			
+			@-moz-keyframes fromLeft {
+				0%   {left: -100%; -moz-transform: rotate(0deg); }
+				100% {left: 100%;-moz-transform: rotate(360deg);}
+			}
+			
+			@-ms-keyframes fromLeft {
+				0%   {left: -100%; -ms-transform: rotate(0deg); }
+				100% {left: 100%;-ms-transform: rotate(360deg);}
+			}
+			
+			@-webkit-keyframes fromRight {
+				0%   { right: -100%; -webkit-transform: rotate(360deg);}
+				100% { right: 100%; -webkit-transform: rotate(0deg);}
+			}
+			
+			@-moz-keyframes fromRight {
+				0%   { right: -100%; -webkit-transform: rotate(360deg);}
+				100% { right: 100%; -webkit-transform: rotate(0deg);}
+			}
+			
+			@-ms-keyframes fromRight {
+				0%   { right: -100%; -webkit-transform: rotate(360deg);}
+				100% { right: 100%; -webkit-transform: rotate(0deg);}
+			}
+			
+			@-webkit-keyframes appear {
+				0%   { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			
+			@-moz-keyframes appear {
+				0%   { opacity: 0; }
+				100% { opacity: 1; }
+			}
+			
+			@-ms-keyframes appear {
+				0%   { opacity: 0; }
+				100% { opacity: 1; }
+			}
+
+			@-webkit-keyframes flip {
+				0%   { -webkit-transform: rotate(0deg); }
+				100% {-webkit-transform: rotate(360deg);}
+			}
+			
+			@-moz-keyframes flip {
+				0%   { -moz-transform: rotate(0deg); }
+				100% {-moz-transform: rotate(360deg);}
+			}
+			
+			@-ms-keyframes flip {
+				0%   { -ms-transform: rotate(0deg); }
+				100% {-ms-transform: rotate(360deg);}
+			}
+			
+			figure.spinner {
+				display: block !important;
+				opacity: 1.0 !important;
+				position: absolute;
+				top: 100px;
+				bottom: 100px;
+				left: 0px;
+				right: 0px;
+				z-index: 1337;
+			}
+
+		</style>
+<script>
+    		
+        // Break out of an iframe. Some of you have been doing it.
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+        
+        </script>
+<script src="/tereziFlip/jquery.js"></script>
+<script src="/tereziFlip/spin.js"></script><style></style>
+<script type="text/javascript">
+			/*
+				Matías Martínez, (cc) 2012
+				Makin, (cc) 2018
+			*/
+
+
+
+			
+			
+			
+			$(document).ready(function() {
+				document.head = document.head || document.getElementsByTagName('head')[0];
+		  		var r = $("html");
+		  		var b = $("body");
+		  		var c = $("section#dancefloor");
+		  		var spawnRate = 375;
+		  		var deallocDelay = 3000;
+		  		var danceDelay = 1000;
+		  		var memes = true;
+		  		var faviconchange = false;
+		  		
+				function changeFavicon(src) {
+						 var link = document.createElement('link'),
+						     oldLink = document.getElementById('dynamic-favicon');
+						 link.id = 'dynamic-favicon';
+						 link.rel = 'shortcut icon';
+						 link.href = src;
+						 if (oldLink) {
+						  document.head.removeChild(oldLink);
+						 }
+						 document.head.appendChild(link);
+				}
+
+		  		function newDitto() { 
+		  			var scale =  "scale("+dice(0.1, 1.6)+")";
+		  			var fromLeft = diceInt(0,1);
+		  			var originY = dice(-10, 100) + "%";
+		  			var opacity = dice(0.1, 1.0);
+		  			var index = dice(-30, 10);
+		  			var duration = dice(0.5, 3) + "s";
+		  			
+		  			var d = $('<figure/>').css({
+		  				top: originY,
+		  				opacity: opacity,
+		  				"z-index": index,
+		  				"-webkit-transform": scale,
+		  				"-moz-transform": scale,
+		  				"-o-transform": scale,
+		  				"-webkit-animation-duration": duration,
+		  				"-moz-animation-duration": duration,
+		  				"-ms-animation-duration": duration
+					});
+					
+					r.css({
+						"background-color": color()
+					});
+					
+					b.css({
+						"background-color": color()
+					});
+					
+					d.addClass("ditto");
+					d.addClass( (fromLeft) ? "fromLeft" : "fromRight");
+					d.appendTo(c);
+					if(faviconchange){
+						if (memes){
+							changeFavicon('img/tereziFlip2.png?v=2');
+							memes = false;
+							faviconchange = false;
+						}
+						else {
+							changeFavicon('img/tereziFlip.png?v=2');
+							memes = true;
+						}
+					}
+					
+					setTimeout(function() { 
+						d.remove();
+					}, deallocDelay); 
+		  		}
+		  		
+		  		document.getElementById("song").addEventListener("canplaythrough", kongatime, false);
+				
+				function kongatime()
+				{	
+					// Let's roll
+					document.title = ":tereziFlip:";
+					b.addClass("roll");
+					
+					// Delete spinner
+					$("figure#spinner").fadeOut(200)
+					setTimeout(function() { 
+						$("figure#spinner").remove();
+					}, 202); 
+					
+					// Loop				
+					setTimeout(function() { 
+						setInterval(function() { 
+		  					newDitto();
+		  					faviconchange = true;
+		  				}, spawnRate); 
+		  			}, danceDelay); 
+					
+				}
+				
+				// Dirty isn't it?
+		  		var opts = {
+		  			lines: 13, // The number of lines to draw
+		  			length: 7, // The length of each line
+		  			width: 4, // The line thickness
+		  			radius: 10, // The radius of the inner circle
+		  			rotate: 0, // The rotation offset
+		  			color: '#fff', // #rgb or #rrggbb
+		  			speed: 1, // Rounds per second
+		  			trail: 60, // Afterglow percentage
+		  			shadow: true, // Whether to render a shadow
+		  			hwaccel: false, // Whether to use hardware acceleration
+		  			className: 'spinner', // The CSS class to assign to the spinner
+		  			zIndex: 2e9, // The z-index (defaults to 2000000000)
+		  			top: 'auto', // Top position relative to parent in px
+		  			left: 'auto' // Left position relative to parent in px
+		  		
+		  			
+		  		};
+		  	
+		  	var spin = $('<figure/>').attr({
+		  				id: "spinner"
+					});
+		  	$("html").append(spin);
+		  	
+		  	var target = document.getElementById('spinner');
+		  	var spinner = new Spinner(opts).spin(target);
+				
+		  		
+			});
+			
+			function dice(min, max) {
+    			return Math.random() * (max - min) + min;
+			}
+			
+			function diceInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			
+			function color() {
+		  		return '#'+Math.floor(Math.random()*16777215).toString(16);
+		  	}
+		  	
+		</script>
+<script async="" src="/tereziFlip/js"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'UA-8704026-3');
+    </script>
+</head>
+<body class="roll" style="background-color: rgb(153, 37, 120);">
+<section id="dancefloor">
+<figure class="ditto hero"></figure>
+<figure style="top: 61.1788%; opacity: 0.666132; transform: scale(0.44226); animation-duration: 0.757573s;" class="ditto fromRight"></figure><figure style="top: 43.9553%; opacity: 0.155899; transform: scale(0.975861); animation-duration: 1.85127s;" class="ditto fromLeft"></figure><figure style="top: 16.2066%; opacity: 0.704603; transform: scale(0.892951); animation-duration: 2.72407s;" class="ditto fromLeft"></figure><figure style="top: 92.1037%; opacity: 0.545797; transform: scale(1.37968); animation-duration: 2.02723s;" class="ditto fromLeft"></figure><figure style="top: 9.05293%; opacity: 0.952003; transform: scale(1.10512); animation-duration: 2.68875s;" class="ditto fromLeft"></figure><figure style="top: 66.08%; opacity: 0.85985; transform: scale(0.670551); animation-duration: 1.1759s;" class="ditto fromRight"></figure><figure style="top: 51.0801%; opacity: 0.671805; transform: scale(0.259956); animation-duration: 1.80602s;" class="ditto fromRight"></figure><figure style="top: 69.9085%; opacity: 0.265715; transform: scale(0.357434); animation-duration: 2.47342s;" class="ditto fromLeft"></figure></section>
+<audio id="song" autoplay="autoplay" loop="">
+<source src="/tereziFlip/flip.mp3" type="audio/mp3">
+<embed src="/tereziFlip/flip.mp3" loop="true">
+</audio>
+
+
+</body></html>

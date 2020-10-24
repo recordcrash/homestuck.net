@@ -1,0 +1,56 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 0:19:08 Nov 21, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:10:59 Jul 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+.MessageList li.Comment .CommentTable .Photo {
+   height: 85px;
+   position: relative;
+   overflow: visible;
+}
+
+li.Comment .CommentTable .Photo a.PosterOnline {
+   position: absolute;
+   top: 80px;
+   left: 39px;
+}
+
+li.Comment .CommentTable .Photo .PosterOnlineImage {
+   width: 82px;
+   height: 13px;
+   background: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/OnlineGlow/design/images/offlineglow.png') top left no-repeat;
+}
+
+li.Comment.Online .CommentTable .Photo .PosterOnlineImage {
+   background: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/OnlineGlow/design/images/onlineglow.png') top left no-repeat;
+}
+
+.Profile .PhotoBox .Photo {
+   padding-bottom: 5px;
+   position: relative;
+   overflow: visible;
+}
+
+.PhotoBox .Photo a.PosterOnline {
+   position: absolute;
+   bottom: -8px;
+   left: 40px;
+}
+
+.PhotoBox .Photo .PosterOnlineImage {
+   width: 180px;
+   height: 13px;
+   background: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/OnlineGlow/design/images/profile-offlineglow.png') top left no-repeat;
+}
+
+.PhotoBox.Online .Photo .PosterOnlineImage {
+   background: url('/web/20111121001908/http://autostatic.forums.penny-arcade.com/plugins/OnlineGlow/design/images/profile-onlineglow.png') top left no-repeat;
+}

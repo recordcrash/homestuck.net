@@ -1,0 +1,90 @@
+body {
+	background: black;
+	color: #7e7e7e;
+}
+.off-black {
+	background: #111;
+}
+.body-normal {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.item {
+	background: #111111;
+	border: 6px solid #2f2f2f;
+	padding-left: 12px;
+	padding-right: 10px;
+	padding-bottom: 14px;
+	margin-bottom: 12px;
+	overflow: auto;
+}
+.item p {
+	margin-top: 14px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+.item ul {
+	margin-bottom: 4px;
+}
+h3 {
+	margin-bottom: 14px;
+	margin-left: 2px;
+}
+h3:first-child {
+	margin-top: 14px;
+}
+.item-left {
+	float: left;
+	margin-top: 14px;
+	margin-right: 14px;
+	margin-bottom: 0;
+}
+.item-left, .center-image {
+	font-size: 0;
+}
+.footer {
+	background: #111111;
+	font-size: small;
+	padding: 3px;
+	text-align: center;
+	max-width: 950px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.footer p {
+	margin: 0;
+}
+.main {
+	max-width: 800px;
+}
+a {
+	text-decoration: none;
+}
+h1, h3, a {
+	color: #A1EE26;
+}
+.center-image {
+	text-align: center;
+}
+.headers {
+	margin-bottom: 28px;
+	text-align: center;
+}
+.goback, .topright {
+	font-family: verdana;
+	font-size: x-small;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+.topleft {
+	position: fixed;
+	margin-top: 0;
+	top: 8px;
+	left: 8px;
+}
+.topright {
+	position: fixed;
+	margin-top: 0;
+	top: 8px;
+	right: 8px;
+}

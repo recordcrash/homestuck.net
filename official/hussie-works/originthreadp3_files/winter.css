@@ -1,0 +1,68 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 1:30:54 Dec 28, 2011 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 1:10:59 Jul 14, 2014.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body #header .pixels {
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/pa-banner-bg-snow.png') center top no-repeat;
+}
+body #header h1 a {
+   background-image: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/pa-logo-snow.png');
+   height: 136px;
+   background-position: -10px -10px;
+}
+
+li.Comment .CommentTable .Photo {
+   position: relative;
+   overflow: visible;
+}
+
+li.Comment .CommentTable .Photo .PosterSnowCap {
+   position: absolute;
+   top: -10px;
+   left: 25px;
+   width: 110px;
+   height: 61px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/poster-snow-cap.png') top left no-repeat;
+   z-index: 200;
+}
+
+body table.CommentFormTable td.Comment {
+   overflow: visible;
+}
+body table.CommentFormTable div.CommentForm {
+   position: relative;
+   overflow: visible;
+}
+table.CommentFormTable td.Comment .PostSnowCap {
+   position: absolute;
+   top: -51px;
+   right: -17px;
+   width: 386px;
+   height: 118px;
+   background: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/comment-snow-cap.png') top left no-repeat;
+}
+
+body ul.CategoryList li.Depth2 {
+   background-image: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/bg-unread-colors.png');
+}
+body ul.CategoryList li.Depth2:nth-of-type(odd) {
+   background-image: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/bg-unread-colors.png');
+}
+
+body ul.DataList.Conversations li.Item.New,
+body ul.DataList.Discussions li.Item.New {
+   background-image: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/bg-unread-colors.png');
+}
+body ul.DataList.Conversations li.Item.New:nth-of-type(odd),
+body ul.DataList.Discussions li.Item.New:nth-of-type(odd) {
+   background-image: url('/web/20111228013054/http://autostatic.forums.penny-arcade.com/plugins/Winter/design/images/bg-unread-colors.png');
+}

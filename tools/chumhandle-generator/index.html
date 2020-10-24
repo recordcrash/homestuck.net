@@ -1,0 +1,77 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>chumHandle Generator</title>
+
+<script language="JavaScript">
+function loadWords(){
+  //Load first words
+  var txtFile = new XMLHttpRequest();
+  txtFile.open("GET", "firstWord.txt", true);
+  txtFile.onreadystatechange = function() {
+    if (txtFile.readyState === 4) {  // Makes sure the document is ready to parse.
+      if (txtFile.status === 200) {  // Makes sure it's found the file.
+        allText = txtFile.responseText;
+        fWords = txtFile.responseText.split("\n"); // Will separate each line into an array
+      }
+    }
+  }
+  txtFile.send(null);
+  
+  //Load second words
+  var txtFile2 = new XMLHttpRequest();
+  txtFile2.open("GET", "secondWord.txt", true);
+  txtFile2.onreadystatechange = function() {
+    if (txtFile2.readyState === 4) {
+      if (txtFile2.status === 200) {
+        allText = txtFile2.responseText;
+        sWords = txtFile2.responseText.split("\n");
+      }
+    }
+  }
+  txtFile2.send(null);
+}
+
+function chooseLetter(first,second){
+  //Loop through all results, and only pick ones containing our letter
+  var i=0;
+  var fString = "";
+  for(i=0;i<fWords.length;i++){
+    if(fWords[i].indexOf(first.toLowerCase()) == 0){ //Word contains our letter, add it to a new array
+      fString += fWords[i];
+      if(i < fWords.length){ fString+="||";}
+    }
+  }
+
+  var sString = "";
+  for(i=0;i<sWords.length;i++){
+    if(sWords[i].indexOf(second) == 0){
+      sString += sWords[i];
+      if(i < sWords.length){ sString+="||";}
+    }
+  }
+  fWordsL = fString.split("||");
+  sWordsL = sString.split("||");
+}
+
+function generateHandle(objeto){
+  //Generate a chumHandle based on the selected letters
+  var fi = document.getElementById('first').selectedIndex;
+  var f = String.fromCharCode(document.getElementById('first')[fi].value);
+  var si = document.getElementById('second').selectedIndex;
+  var s = String.fromCharCode(document.getElementById('second')[si].value);
+  loadWords(); //Load the words first
+  chooseLetter(f,s); //Modify the arrays
+  
+  var r1 = Math.floor(Math.random()*(fWordsL.length-1));
+  var r2 = Math.floor(Math.random()*(sWordsL.length-1));
+  
+  document.getElementById(objeto).value = fWordsL[r1]+sWordsL[r2];
+}
+</script>
+</head><link type="text/css" id="dark-mode" rel="stylesheet" href=""><style type="text/css" id="dark-mode-custom-style"></style>
+<body onload="loadWords();">
+Select stwo letters and press the "Generate" button to get your own chumHandle!<br><br>
+<form name="generator">First letter: <select id="first"><option value="65">A</option><option value="66">B</option><option value="67">C</option><option value="68">D</option><option value="69">E</option><option value="70">F</option><option value="71" selected="selected">G</option><option value="72">H</option><option value="73">I</option><option value="74">J</option><option value="75">K</option><option value="76">L</option><option value="77">M</option><option value="78">N</option><option value="79">O</option><option value="80">P</option><option value="81">Q</option><option value="82">R</option><option value="83">S</option><option value="84">T</option><option value="85">U</option><option value="86">V</option><option value="87">W</option><option value="88">X</option><option value="89">Y</option><option value="90">Z</option></select>	Second Letter: <select id="second"><option value="65" selected="selected">A</option><option value="66">B</option><option value="67">C</option><option value="68">D</option><option value="69">E</option><option value="70">F</option><option value="71">G</option><option value="72">H</option><option value="73">I</option><option value="74">J</option><option value="75">K</option><option value="76">L</option><option value="77">M</option><option value="78">N</option><option value="79">O</option><option value="80">P</option><option value="81">Q</option><option value="82">R</option><option value="83">S</option><option value="84">T</option><option value="85">U</option><option value="86">V</option><option value="87">W</option><option value="88">X</option><option value="89">Y</option><option value="90">Z</option></select><br>
+<input type="button" name="generate" value="Generate!" onclick="generateHandle('c');"><br><br>
+Your chumHandle is: <input type="text" name="chumhandle" id="c"></form>
+ </body></html>
