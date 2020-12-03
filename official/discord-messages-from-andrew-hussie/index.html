@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Previously only distributed via postal lottery, this collection of Discord messages had never before seen the light of a backlit screen. Enjoy Andrew Hussie's 2019 musings on canonicity, fan communication, Homestuck and Air Bud."
+    />
+    <meta name="Makin" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homestuck.net/" />
+    <meta property="og:site_name" content="HOMESTUCK.NET" />
+    <meta
+      property="og:title"
+      content="Discord Messages from Andrew Hussie - HOMESTUCK.NET"
+    />
+    <meta
+      property="og:description"
+      content="Previously only distributed via postal lottery, this collection of Discord messages had never before seen the light of a backlit screen. Enjoy Andrew Hussie's 2019 musings on canonicity, fan communication, Homestuck and Air Bud."
+    />
+    <meta
+      property="og:credits"
+      content="Hussie's avatar by enenkaydoodles, Discord copycat CSS/JS by enesonurata"
+    />
+    <!-- Hussie's Mr. T comic: https://www.reddit.com/r/homestuck/comments/1iuex5/hussie_hunt_day_6_totally_t/-->
+    <meta
+      property="og:keywords"
+      content="homestuck, hiveswap, community, andrew hussie, hussie, resources, games, music, news, information"
+    />
+    <meta
+      property="og:image"
+      content="https://homestuck.net/official/discord-messages-from-andrew-hussie/thumbnail.png"
+    />
+    <meta property="og:locale" content="en-US" />
+
+    <meta name="msapplication-TileColor" content="#00CC00" />
+    <meta name="theme-color" content="#00CC00" />
+    <title>Discord Messages from Andrew Hussie - HOMESTUCK.NET</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180" />
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="/favicon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700");
+      html {
+        background:white;
+      }
+      body {
+        margin: 0;
+        font-family: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 16px;
+      }
+      #discord {
+        padding: 28px 0 72px;
+        text-align: center;
+        height: auto;
+      }
+      #discord .title {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 0.75em;
+      }
+      #discord .discord-app-mount {
+        text-align: left;
+        height: 600px;
+        position: relative;
+        min-width: 1000px;
+      }
+      .discord-app {
+        font-size: 16px;
+        user-select: none;
+        color: #fff;
+        width: 1000px;
+        height: 600px;
+        background: #36393f;
+        position: absolute;
+        border-radius: 6px;
+        overflow: hidden;
+        left: 50%;
+        margin-left: -500px;
+      }
+      .discord-app ::-webkit-scrollbar {
+        width: 14px;
+      }
+      .discord-app ::-webkit-scrollbar-thumb,
+      .discord-app ::-webkit-scrollbar-track-piece {
+        border-radius: 7px;
+        background-clip: padding-box;
+        border: 3px solid #373a3f;
+      }
+      .discord-app ::-webkit-scrollbar-thumb {
+        background-color: #1e2124;
+      }
+      .discord-app ::-webkit-scrollbar-track-piece {
+        background-color: #2f3137;
+      }
+      .discord-app .app-buttons,
+      .discord-app .app-buttons:before,
+      .discord-app .app-buttons:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 4;
+        transition: 100ms;
+      }
+      .discord-app .app-buttons {
+        background-color: #ffbc05;
+        top: 8px;
+        left: 31px;
+      }
+      .discord-app .app-buttons:before {
+        background-color: #ff6052;
+        left: -18px;
+      }
+      .discord-app .app-buttons:after {
+        background-color: #15cb37;
+        left: 18px;
+      }
+      .discord-app .emoji {
+        height: 1rem;
+        width: 1rem;
+        min-height: 22px;
+        min-width: 22px;
+        margin: 0 0.05em 0 0.1em !important;
+        vertical-align: -0.4em;
+        object-fit: contain;
+      }
+      .discord-app .guilds,
+      .discord-app .channels,
+      .discord-app .chat {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+      }
+      .discord-app .guilds {
+        width: 70px;
+        padding: 36px 0 18px 10px;
+        box-sizing: border-box;
+        background: #1e2124;
+        overflow-y: auto;
+        left: 0;
+      }
+      .discord-app .guilds .guild {
+        width: 50px;
+        height: 50px;
+        background: #2f3137;
+        border-radius: 50%;
+        cursor: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .discord-app .guilds .guild.selected {
+        border-radius: 15px;
+      }
+      .discord-app .guilds .guild.selected:before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 40px;
+        background: #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: -15px;
+        margin-top: -20px;
+      }
+      .discord-app .guilds .guild.guild-add {
+        background: #171a1c;
+        border: 1px dashed #545659;
+        color: #545659;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 100%;
+        vertical-align: baseline;
+        text-align: center;
+        transition: border-color 250ms ease, color 250ms ease;
+      }
+      .discord-app .guilds .guild.guild-add:after {
+        content: "+";
+        position: relative;
+        top: 4px;
+      }
+      .discord-app .guilds .guild.guild-add:hover {
+        border-color: rgba(255, 255, 255, 0.75);
+        color: rgba(255, 255, 255, 0.75);
+      }
+      .discord-app .guilds .guild + .guild {
+        margin-top: 8px;
+      }
+      .discord-app .channels .header,
+      .discord-app .chat .header {
+        height: 56px;
+        color: #fff;
+        line-height: 55px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+      }
+      .discord-app .channels ::-webkit-scrollbar,
+      .discord-app .chat textarea ::-webkit-scrollbar {
+        width: 8px;
+      }
+      .discord-app .channels ::-webkit-scrollbar-thumb,
+      .discord-app .chat textarea ::-webkit-scrollbar-thumb,
+      .discord-app .channels ::-webkit-scrollbar-track-piece,
+      .discord-app .chat textarea ::-webkit-scrollbar-track-piece {
+        border-color: rgba(0, 0, 0, 0);
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 3px;
+      }
+      .discord-app .channels ::-webkit-scrollbar-thumb,
+      .discord-app .chat textarea ::-webkit-scrollbar-thumb {
+        background-color: #212326;
+        border: 2px solid rgba(0, 0, 0, 0);
+      }
+      .discord-app .channels ::-webkit-scrollbar-track,
+      .discord-app .chat textarea ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid rgba(0, 0, 0, 0);
+        visibility: hidden;
+      }
+      .discord-app .channels ::-webkit-scrollbar-track-piece,
+      .discord-app .chat textarea ::-webkit-scrollbar-track-piece {
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .discord-app .channels ::-webkit-scrollbar-corner,
+      .discord-app .chat textarea ::-webkit-scrollbar-corner {
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .discord-app .channels {
+        background-color: #2f3137;
+        width: 240px;
+        left: 70px;
+      }
+      .discord-app .channels .header {
+        font-weight: 500;
+        padding: 0 16px;
+        cursor: pointer;
+        transition: background-color 150ms ease;
+        z-index: 3;
+      }
+      .discord-app .channels .header:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+      .discord-app .channels .channel-wrapper {
+        padding-top: 16px;
+        overflow-y: auto;
+        position: absolute;
+        top: 56px;
+        bottom: 52px;
+        left: 0;
+        right: 0;
+      }
+      .discord-app .channels .channel-wrapper .channel {
+        width: 224px;
+        height: 32px;
+        line-height: 32px;
+        padding: 0 8px;
+        margin: 1px 0 1px 8px;
+        border-radius: 3px;
+        box-sizing: border-box;
+        transition: 50ms;
+      }
+      .discord-app .channels .channel-wrapper .channel.selected {
+        background-color: rgba(80, 85, 94, 0.6);
+      }
+      .discord-app .channels .channel-wrapper .channel:not(.selected) {
+        cursor: pointer;
+      }
+      .discord-app .channels .channel-wrapper .channel:not(.selected):hover {
+        background-color: #36393f;
+      }
+      .discord-app .channels .channel-wrapper .channel:before {
+        content: "#";
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(186, 188, 191, 0.6);
+        margin-right: 4px;
+        vertical-align: top;
+      }
+      .discord-app .channels .user {
+        height: 52px;
+        background-color: rgba(33, 35, 38, 0.3);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .discord-app .chat {
+        background-color: #373a3f;
+        left: 310px;
+        right: 0;
+      }
+      .discord-app .chat .header {
+        padding: 0 5px 0 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 52px;
+      }
+      .discord-app .chat .header:before {
+        content: "#";
+        margin-right: 4px;
+        color: #8a8e93;
+        font-size: 24px;
+        font-weight: 400;
+        vertical-align: top;
+      }
+      .discord-app .chat .messages-wrapper {
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        bottom: 95px;
+      }
+      .discord-app .chat .messages {
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .discord-app .chat .messages.attached {
+        position: absolute;
+        bottom: 0;
+      }
+      .discord-app .chat .messages.hide {
+        transform: translate3D(50px, 0, 0);
+        opacity: 0;
+        transition: 300ms ease-in;
+      }
+      .discord-app .chat .message-group {
+        margin: 0 6px 0 20px;
+        padding: 0;
+        overflow: hidden;
+        opacity: 0;
+        max-height: 0;
+        transform: perspective(600px) translate3D(0, 0, -50px);
+        transition: 1000ms max-height, 100ms padding, 200ms opacity,
+          400ms transform;
+      }
+      .discord-app .chat .message-group + .message-group {
+        border-top: 1px solid rgba(255, 255, 255, 0.04);
+      }
+      .discord-app .chat .message-group.animate-in {
+        padding: 20px 0;
+        opacity: 1;
+        max-height: 1000px;
+        transform: perspective(600px) translate3D(0, 0, 0);
+      }
+      .discord-app .chat .message-group .avatar,
+      .discord-app .chat .message-group .comment {
+        vertical-align: top;
+        display: inline-block;
+      }
+      .discord-app .chat .message-group .avatar {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.1);
+        background-size: cover;
+        border-radius: 50%;
+        margin: -2px 20px 0 0;
+      }
+      .discord-app .chat .message-group .comment {
+        width: 550px;
+      }
+      .discord-app .chat .message-group .username-wrapper {
+        font-size: 0;
+      }
+      .discord-app .chat .message-group .username-wrapper .username,
+      .discord-app .chat .message-group .username-wrapper .bot-tag,
+      .discord-app .chat .message-group .username-wrapper .timestamp {
+        display: inline-block;
+        vertical-align: baseline;
+        font-size: 1rem;
+      }
+      .discord-app .chat .message-group .username-wrapper .username {
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .discord-app .chat .message-group .username-wrapper .username:hover {
+        text-decoration: underline;
+      }
+      .discord-app .chat .message-group .username-wrapper .bot-tag {
+        background-color: #7288da;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        margin-left: 6px;
+        padding: 1px 2px;
+        text-transform: uppercase;
+        vertical-align: bottom;
+      }
+      .discord-app .chat .message-group .username-wrapper .bot-tag:before {
+        content: "BOT";
+      }
+      .discord-app .chat .message-group .username-wrapper .timestamp {
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.2);
+        margin-left: 6px;
+      }
+      .discord-app .chat .message {
+        opacity: 0;
+        transform: perspective(600px) translate3D(0, 0, -50px);
+        transition: opacity 800ms, 250ms transform;
+      }
+      .discord-app .chat .message.animate-in {
+        opacity: 1;
+        transform: perspective(600px) translate3D(0, 0, 0);
+      }
+      .discord-app .chat .message .message-text {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.9375rem;
+        line-height: 1.1em;
+        margin-top: 6px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        user-select: text;
+      }
+      .discord-app .chat .message .embed {
+        display: flex;
+        max-width: 520px;
+        margin-top: 5px;
+        position: relative;
+      }
+      .discord-app .chat .message .embed .embed-pill {
+        width: 4px;
+        border-radius: 3px 0 0 3px;
+        background-color: #4f545c;
+        flex-shrink: 0;
+      }
+      .discord-app .chat .message .embed .embed-rich {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        background-color: rgba(46, 48, 54, 0.3);
+        border-color: rgba(46, 48, 54, 0.6);
+        border-radius: 0 3px 3px 0;
+        padding: 8px 10px;
+        position: relative;
+      }
+      .discord-app .chat .message .embed .embed-rich .embed-footer-icon,
+      .discord-app .chat .message .embed .embed-rich .embed-footer {
+        vertical-align: baseline;
+      }
+      .discord-app .chat .message .embed .embed-rich .embed-footer-icon {
+        border-radius: 2.45px;
+        float: left;
+        height: 18px;
+        margin-right: 10px;
+        object-fit: contain;
+        width: 18px;
+      }
+      .discord-app .chat .message .embed .embed-rich .embed-footer {
+        color: rgba(255, 255, 255, 0.6);
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0;
+        transform: translate3d(0, -3px, 0);
+      }
+      .discord-app .chat .input-wrapper {
+        padding: 20px 0 30px;
+        box-sizing: border-box;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 0;
+      }
+      .discord-app .chat .input-wrapper .input {
+        height: 44px;
+        background-color: rgba(114, 118, 126, 0.3);
+        border-radius: 5px;
+      }
+      .discord-app .chat .input-wrapper .input textarea {
+        font-family: inherit;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0);
+        color: rgba(255, 255, 255, 0.7);
+        padding: 10px 38px 10px 12px;
+        appearance: none;
+        border: none;
+        font-size: 0.9375rem;
+        font-weight: 400;
+        letter-spacing: -0.025rem;
+        line-height: 1.25rem;
+        margin: 2px 2px 2px 0;
+        max-height: 144px;
+        min-height: 20px;
+        outline: none;
+        resize: none;
+        width: 100%;
+      }
+      .discord-app .chat .message .embed .embed-content {
+        display: flex;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+      .discord-app .chat .message .embed .embed-content .embed-inner-content {
+        flex: 1;
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-title {
+        color: #fff;
+        font-size: 0.875rem;
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-fields {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: -10px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-fields
+        .embed-field {
+        flex: 0;
+        max-width: 506px;
+        min-width: 100%;
+        padding-top: 10px;
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-fields
+        .embed-field.embed-field-inline {
+        flex: 1;
+        flex-basis: auto;
+        min-width: 150px;
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-fields
+        .embed-field
+        .embed-field-name {
+        color: #fff;
+        font-size: 0.825rem;
+        font-weight: 500;
+        margin-bottom: 4px;
+      }
+      .discord-app
+        .chat
+        .message
+        .embed
+        .embed-content
+        .embed-inner-content
+        .embed-fields
+        .embed-field
+        .embed-field-value {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 0.775rem;
+        font-weight: 400;
+        line-height: 0.9625rem;
+        white-space: pre-line;
+      }
+      .discord-app .chat .message .embed .embed-content .embed-thumb {
+        border-radius: 3px;
+        flex-shrink: 0;
+        margin-left: 20px;
+        max-height: 80px;
+        max-width: 80px;
+        object-fit: contain;
+        width: auto;
+      }
+
+      @media (max-width: 720px) { 
+        
+      }
+    </style>
+    <link href="/css/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="site-header sticky-top py-1">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between"
+      >
+        <a
+          class="navbar-spiro py-2"
+          href="/index.html"
+          aria-label="Homestuck.net"
+        >
+          <img
+            class="bd-placeholder-img mr-2 rounded"
+            height="25"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+            role="img"
+            src="/img/templogowhite.png"
+          />
+        </a>
+        <a class="py-2 d-none d-md-inline-block" href="/games">Games</a>
+        <a class="py-2 d-none d-md-inline-block" href="/music">Music</a>
+        <a class="py-2 d-none d-md-inline-block" href="/resources">Resources</a>
+        <a class="py-2 d-none d-md-inline-block" href="/tools">Tools</a>
+        <a class="py-2 d-none d-md-inline-block" href="/meta">Meta</a>
+        <a class="py-2 d-none d-md-inline-block" href="/fanworks">Fanworks</a>
+        <a class="py-2 d-none d-md-inline-block" href="/official">Official</a>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="discord">
+        <div class="title">Discord Messages from Andrew Hussie</div>
+        <div class="discord-app-mount">
+          <div class="discord-app">
+            <div class="app-buttons"></div>
+            <div class="guilds">
+              <div
+                class="guild selected"
+                style="background-image: url(hussavatar.png)"
+              ></div>
+              <div class="guild"></div>
+              <div class="guild guild-add"></div>
+            </div>
+            <div class="channels">
+              <div class="header">Direct Messages</div>
+              <div class="channel-wrapper"></div>
+              <div class="user"></div>
+            </div>
+            <div class="chat">
+              <div class="header">introduction</div>
+              <div class="messages-wrapper">
+                <div class="messages"></div>
+              </div>
+              <div class="input-wrapper">
+                <div class="input">
+                  <textarea
+                    placeholder="Message #introduction"
+                    disabled="disabled"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-md-12">
+          <p>Best read on bigger screens.</p>
+          <p>These Discord messages were originally part of a paper zine entitled <a href="https://www.ssstudio.org/discordzine">Discord Messages I Have Received From Andrew Hussie</a> by gamblignant8, sent between July and September 2019. </p>
+          <p>Always meant to be read by fans, these are now available to an international and diverse public for their perusal. Enjoy Andrew Hussie's musings on canonicity, fan communication, Homestuck and Air Bud.</p>
+          <p></p>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <script>
+      var _slicedToArray = (function () {
+        function sliceIterator(arr, i) {
+          var _arr = [];
+          var _n = true;
+          var _d = false;
+          var _e = undefined;
+          try {
+            for (
+              var _i = arr[Symbol.iterator](), _s;
+              !(_n = (_s = _i.next()).done);
+              _n = true
+            ) {
+              _arr.push(_s.value);
+              if (i && _arr.length === i) break;
+            }
+          } catch (err) {
+            _d = true;
+            _e = err;
+          } finally {
+            try {
+              if (!_n && _i["return"]) _i["return"]();
+            } finally {
+              if (_d) throw _e;
+            }
+          }
+          return _arr;
+        }
+        return function (arr, i) {
+          if (Array.isArray(arr)) {
+            return arr;
+          } else if (Symbol.iterator in Object(arr)) {
+            return sliceIterator(arr, i);
+          } else {
+            throw new TypeError(
+              "Invalid attempt to destructure non-iterable instance"
+            );
+          }
+        };
+      })();
+
+      function _toConsumableArray(arr) {
+        if (Array.isArray(arr)) {
+          for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) {
+            arr2[i] = arr[i];
+          }
+          return arr2;
+        } else {
+          return Array.from(arr);
+        }
+      }
+
+      var discordEle = { lastMsgGroup: null };
+
+      var users = {
+        andrew: {
+          username: "Andrew",
+          nameColor: "hsl(0, 100, 100)",
+          avatar: "hussavatar.png",
+        },
+        ansrew: {
+          username: "Andrew ",
+          nameColor: "hsl(0, 100, 100)",
+          avatar: "hussavatar.png",
+        },
+      };
+
+      var channelData = [
+        {
+          name: "introduction",
+          selected: true,
+          messages: [
+            {
+              type: "message",
+              text:
+                "i just mean at any point you can take my unbelievably hot shit, print it out, and start circulating underground zines",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "go to kinkos, make horrifically bad photocopies of my screencapped shitpost statements on discord",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "i once made a zine via kinkos as a teen, i miss those times",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "really felt like i was doing something quite subversive",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "it was this completely insane, like actually incomprehensible thing",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "it included a few comics, one was a cyberpunk type comic about mr. T which i made",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "the rest was... I don't even know, like ripped out bits of magazines to make almost ransom note-style graphics, resulting in ludicrous articles about, like, nothing?",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "then we (me and my cousins) drove around the city trying to put it in stores, like inside storefront windows and such",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "and most people just kicked us out",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "i learned some things about society i guess",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "most businesses do not cotton to this. like literally just fucking banks and shit we would walk into with great aplomb, and begin positioning our literature as if mandated by the president to do so",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "it didnt really fly",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                'but on the other hand, the dude at kinkos gave us all the copies for free, because he wanted to "encourage stuff like this"',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "to be honest, we didnt even try much very hard, or intelligently",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "because we all knew it was fucking trash",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "we just tried whatever, until we ran out, and went home",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "normal",
+          messages: [
+            {
+              type: "message",
+              text:
+                "but actually lets not. lets be fucking normal. can we be normal for once??",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "Lets Make Normal Shit",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "clapping emojis",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "there is no bottom to dirk",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "yeah, its time to fuck me up",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "see, paradox space getting shattered and sucked into the hole... thats actually me getting owned",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "my vicegrip on all this shit is broken now",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "all of it is. just a perpetual and highly disgraceful ourobourotic self dunk, times infinity",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "its all grotesquely psychologically incestuous",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "thats why theres so much incest in hs i guess",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "sorry kids",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "that was all sort of the point",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "existing in some sort of uncanny incest space",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "silence",
+          messages: [
+            {
+              type: "message",
+              text:
+                "i came up with a reasonable method of dealing with the tension between all these forces, and im fairly satisfied with it to date",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "which is to say nothing, ever",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "epilogues",
+          messages: [
+            {
+              type: "message",
+              text:
+                "people just need the better part of a decade to get over themselves and finally appreciate good shit",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: 'like nobody thinks vriska is "controversial" anymore',
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "she won",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "i bet the same thing will happen with the epilogue",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "the epilogue is just a vriska, in story form",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "sometimes my ideas are so good i can barely stand it",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "and yeah, edging the reader is just part of the shit",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "clowns",
+          messages: [
+            {
+              type: "message",
+              text:
+                "im a dark prophet and know much more about our evil society than anyone wants to admit",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "yeah im working on it",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "i mean, not really",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "but in my IMAGINATION i am",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "always thinking about clowns. thats the fucking future",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "nah im too old for that",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "for me, now its build a clown school, or nothing",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "yeah i might be in my clown prime actually",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "mostly im just fucking lazy",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "some clowns are sad, im a lazy clown, too lazy paint up and spread the good word",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "we like to celebrate LIFE.",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "and love",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "and combat",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "also............?",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "philosophy",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "ive basically done a huge amount of work already, and somewhat illogically, conceptually tying juggalos to weed",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "420 is weed day, but its also clown day",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "homestuck",
+          messages: [
+            {
+              type: "message",
+              text: "fairly striderian",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "not to make everything about homestuck",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "except that everything actually is about homestuck",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "so whatever",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "radiation",
+          messages: [
+            {
+              type: "message",
+              text:
+                "ive been trying to make some recent effort toward the intellectual advancement of these clown ambitions",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "my latest thinking is that maybe it makes the most sense if the endeavor revolves around some sort of charitable cause",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "because at some point, one really has to ask, why the fuck are you trying to release more clowns into the world? is this actually responsible?",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "so you can either take your radioactive clowns and bury them in the earth under miles of concrete",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "OR",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "you can turn their radioactive properties into a force of good and change",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "sometimes radiation results in positive mutations",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "we want a bunch of fuckups at a cheap soviet facility to mishandle clown safety procedures, resulting in a massive, highly comical meltdown",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "ok, maybe that goal is too literal",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "rap",
+          messages: [
+            {
+              type: "message",
+              text:
+                'i dont "actively" rap, insofar as i dont think i have ever spoken a real rap out loud in my life',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "but ive written plenty of lyrics",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "also it will be assisted by the knowledge that cancellation isnt even quite real",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "if left to my own devices i will just never, ever stop thinking of ways to torment and shit on jake english",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "hes just tavros 2.0",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "this is probably going to result in some chaotic discussions",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "GUYS, THIS IS FUCKED UP, WE JUST HAD TO PUT OUR UNIVERSE INTO HOSPICE CARE",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "morals",
+          messages: [
+            {
+              type: "message",
+              text:
+                "maybe this is why communism fucking sucks actually. it all sounds good, but then they have to do shit. and all they do is right callout posts about eachother",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "same as it ever was",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "i think its probably just a universal constant that left wing personalities are just complete and total disaster people, and we need to make peace with that",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "see, this is why the left needs a massive clown movement to put wind in its sails",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "so we can lionize literal clowns",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "as a huge dunk on the right",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                'theres been an idea coalescing in young fandom which has been kind of difficult to deal with while still trying to make fictional content. which seems to be "the moral value of childrens media" should be conflated with "the moral values of any given piece of media"',
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "when a critical mass of young people start really believing and enforcing that, it gets kind of tough to keep making challenging things",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "which is kind of unfortunate, because making challenging stuff is the only way to make impactful statements about the important topics which they say they hold dear",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "king",
+          messages: [
+            {
+              type: "message",
+              text:
+                "one of my operating theories is if you take something by the creator, which carries that authentic canon energy, and then infuse it with energy/ideas that come more from the wavelength of fan enthusiasm, then it seems likely that fans will pickup on that wavelength too and enjoy the results",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "maybe they can make a zine for conservative homestucks",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "i knew it. i knew HS turned everyone gay, and/or destroyed gender",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "also non-cis spreads are pretty lopsided",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "i think the straights just have a weak farm system",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "the farm system is called gender",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "im just a more nuanced politician than that",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "a gentle philosopher king, if you will",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "please clap",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "canon",
+          messages: [
+            {
+              type: "message",
+              text:
+                'prefaced i guess by some sort of statement like, andres philosophy is that making "posts online" is for basic bitches, and true visionaries only communicate through an unfathomable pattern of performance art and loosely coordinated spokespeople',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "yeah. i think it can be interesting to play with official dispatches of info, ways to disseminate messages from a creator, almost as much as playing with the media in question",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "ill probably consider more methods like that",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "such as putting 20 toblerones in a box, near a cave",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "even though my thing was 2500 words, its still relatively brief compared to what could be said in a clarifying way. but i kinda think you just cant say too much at once sometimes, or the message disappears",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                'but i think there are more points to be made about like, "authoritativity" when it comes to how fans perceive some works of fiction as more legitimate than others, and how there are a lot of illusions about that which can be poked at',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                'people whove been writing works for marvel characters for the last several decades literally have been writing fanfiction. theres literally nothing to distinguish what they are doing from fanfiction, except a big corporation (run by people who also had nothing to do with these characters) is saying "this is more legitimate than anything you are doing out there"',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "which is sort of insane, that a corporation has a magic wand to tell you what forms of art are more important than others",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "everyone is so powerfully brainwashed by capitalism. even these passionate anti-capitalist folks",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "they talk a good game about how disney sucks or whatever, but then turn around and start talking about media in this very formalist way that implies they agree with corporations defining the legitimacy of whats real vs fake",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "even WP is a corporation. its just a very small one. the fact that WP has the good and real shit, whereas you do not, is a psychological thing, not a reality",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "toblerones",
+          messages: [
+            {
+              type: "message",
+              text:
+                "also i only post online for the specific purpose of granting wishes",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "i suddenly liked fostering the idea that these magic toblerones gave certain intrepid fans some true agency, per some wonka stunt",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "toblerones are like these magic golden triangle bars that contain pure hope energy",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "yeah theyre pretty good",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                'although really my "obsession" with them is just a long running gag more than anything',
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "and now i have decided to imbue them with this magic energy quite suddenly",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "i get to just do that",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "say something is magic. then its true",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "armor",
+          messages: [
+            {
+              type: "message",
+              text:
+                'one thing i always wanted to do was like, if i make a "good female character" or a "good gay character" is to make sure im making them total train wreck people just like all the cool cishet men characters get to be',
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "which i think also includes narratives that focus on that stuff, and read by those people. dont be afraid to nosedive into the sewer sometimes, otherwise youre just treating all that material with kid gloves too much",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                'i always felt like whenever i did crazy or sorta bad shit, it carried an implied message of "i know what im doing here, i can take a punch, and the message that i can take a punch almost becomes sort of the point of doing it weirdly"',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "but also this is a luxury i had as a solo artist",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "not to mention being insulated by privilege",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "but others may find it harder going forward",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "the problem is people involved are definitely going to get attacked, almost no matter what",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "and there just needs to be a willingness to build up some armor... or not even armor. its more like being at peace with very negative views about yourself",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                'i have thought about this much, this topic of over many years, which is something like "why do i do bad shit sometimes when i know its bad, and i know ill get destroyed for it"',
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "and i think the most constructive answer is that its was always partially an exercise in disarming my own fragility",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "which, i think has a lot of value if you actually want to be honest in confronting dark topics, within yourself and otherwise",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "but, if youre too scared or anxious you kinda cant do that. you can never go hard enough in art to create those revelatory experiences for yourself",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "but for me personally at lease, looking back on everything, i think there was a lot of value in doing all this shit which essentially worked to tear down my ego a bit, and other barriers which prevent you from being fully honest about the stuff you make",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "like theres this idea you can work hard to cultivate with your work, and that is going all out on making sure everything thinks youre a super duper good person",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "its a really tense line to walk, kind of unnatural, and at the end it can kind of all blow up in your face anyway if youve established such a high bar persona",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "then even tiny misteps can feel like the fucking end of the world",
+              user: users.andrew,
+            },
+          ],
+        },
+        {
+          name: "spirit",
+          messages: [
+            {
+              type: "message",
+              text:
+                "ive been putting so much energy into my clownsona that ive been horribly neglecting my fursona",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "i think that would be the obvious thing people would expect",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "there would be nothing wrong with a horsona per se",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "something about the energy of actually BEING a horse feel intimidating to me though",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "its like, a fucking lot",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "i would have to spend time ruminating on what makes me feel free inside",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "maybe go on a spiritual journey",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "ah shit. here we go again (walking back toward toblerone cave)",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "people now leaving notes of prayer to june egbert at the holy pilgrimage site",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "i knew it would start catching on as a place of spiritual journey",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "this is what i wanted",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "gamers",
+          messages: [
+            {
+              type: "message",
+              text: "its like, air bud",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                '"theres no rule that says jack nicholson cant play basketball"',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "hmm",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "vriska shit",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "just a vriska catastrophe, in automotive form",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "sollux comes from a long and proud heritage of gamers",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "gender",
+          messages: [
+            {
+              type: "message",
+              text:
+                'mspa has always been famous for "weird puzzle shit", but the real gamers know the dark horse contender has always been "weird gender shit"',
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "PS characters are a bit like mspa reader",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "person-like people",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "little dressup dolls who perform accordingly",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "caliborns male performance is 100% informed by just observing humans and their gender culture",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text:
+                "daves transformation into the berniecore, poli-turbonerd is really one of the best turns his character could have taken",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text: "gotta hand it to myself for that one",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "my take on that would be that jake is actually HARDER to read because of his totally indiscriminate tastes",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "when youre about everything, youre about nothing",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "or at least, youre making yourself out to be",
+              user: users.andrew,
+            },
+            {
+              type: "message",
+              text: "in a sense, its another method of obfuscation he uses",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "go run that hot shit by the englishistas out there. theyll eat it up",
+              user: users.ansrew,
+            },
+          ],
+        },
+        {
+          name: "end",
+          messages: [
+            {
+              type: "message",
+              text: "when seinfeld dies, that it, im packing it in",
+              user: users.ansrew,
+            },
+            {
+              type: "message",
+              text:
+                "just, walking off into the woods. youll never hear from me again",
+              user: users.ansrew,
+            },
+          ],
+        },
+      ];
+
+      var bracketsReplaceRegex = /\[(\S*)\s?(.*?)?\]/g;
+      var bracketsSplitRegex = /([^"\s]+)|("[^"]*")/g;
+      var numberTestRegex = /^[\d.]+$/g;
+
+      var canAddMessages = true;
+      var currentlyLoading = false;
+      var currentChannel = null;
+
+      function delay() {
+        var time =
+          arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+
+        if (!time) {
+          return Promise.resolve();
+        }
+        return new Promise(function (resolve) {
+          return setTimeout(resolve, time);
+        });
+      }
+
+      function errorHandle(err) {
+        if (err instanceof Error) {
+          console.log(err);
+        }
+      }
+
+      function clearInput() {
+        discordEle.input.value = "";
+      }
+
+      function typeInMessage(text) {
+        var prom = Promise.resolve();
+
+        var _loop = function _loop(i) {
+          prom = prom
+            .then(function () {
+              return delay(50 + Math.random() * 35);
+            })
+            .then(function () {
+              return (discordEle.input.value += text[i]);
+            });
+        };
+
+        for (var i = 0; i < text.length; i++) {
+          _loop(i);
+        }
+        return prom;
+      }
+
+      function clearMessages() {
+        if (!canAddMessages || discordEle.lastMsgGroup === null) {
+          return Promise.resolve();
+        }
+        discordEle.lastMsgGroup = null;
+        canAddMessages = false;
+        discordEle.messages.classList.add("hide");
+        return delay(300).then(function () {
+          discordEle.messages.innerHTML = "";
+          discordEle.messages.classList.remove("hide");
+          canAddMessages = true;
+        });
+      }
+
+      function scrollMessages() {
+        var startY = discordEle.messagesWrapper.scrollTop;
+        var endY =
+          discordEle.messages.scrollHeight -
+          discordEle.messagesWrapper.clientHeight;
+        discordEle.messagesWrapper.scroll({
+          top: endY,
+          left: 0,
+          behavior: "smooth",
+        });
+      }
+
+      function createEmbed(embed, embedData) {
+        var _embedData$title = embedData.title,
+          titleText = _embedData$title === undefined ? "" : _embedData$title,
+          _embedData$pill = embedData.pill,
+          pillColor =
+            _embedData$pill === undefined ? "hsl(0, 0%, 50%)" : _embedData$pill,
+          _embedData$footerIcon = embedData.footerIcon,
+          footerIconURL =
+            _embedData$footerIcon === undefined ? "" : _embedData$footerIcon,
+          _embedData$footer = embedData.footer,
+          footerText = _embedData$footer === undefined ? "" : _embedData$footer,
+          _embedData$thumb = embedData.thumb,
+          thumbURL = _embedData$thumb === undefined ? null : _embedData$thumb,
+          _embedData$fields = embedData.fields,
+          fieldList = _embedData$fields === undefined ? [] : _embedData$fields;
+
+        var pill = createElement({
+          classes: "embed-pill",
+          parent: embed,
+          style: { backgroundColor: pillColor },
+        });
+        var rich = createElement({ classes: "embed-rich", parent: embed });
+        var content = createElement({ classes: "embed-content", parent: rich });
+        var footerContainer = createElement({
+          parent: rich,
+          style: { height: footerText ? "18px" : "0px" },
+        });
+        var footerIcon = createElement({
+          tagName: "img",
+          classes: "embed-footer-icon",
+          attrs: { width: 20, height: 20 },
+        });
+        if (footerIconURL) {
+          footerIcon.onload = function () {
+            return (
+              (footerIcon.width = footerIcon.naturalWidth),
+              (footerIcon.height = footerIcon.naturalHeight)
+            );
+          };
+          footerIcon.src = footerIconURL;
+          footerContainer.appendChild(footerIcon);
+        }
+        var footer = createElement({
+          tagName: "span",
+          classes: "embed-footer",
+          parent: footerContainer,
+          text: footerText,
+        });
+        var innerContent = createElement({
+          classes: "embed-inner-content",
+          parent: content,
+        });
+        var thumb = createElement({
+          tagName: "img",
+          classes: "embed-thumb",
+          attrs: { width: 80, height: 80 },
+        });
+        var title = createElement({
+          classes: "embed-title",
+          parent: innerContent,
+          text: titleText,
+        });
+        var fields = createElement({
+          classes: "embed-fields",
+          parent: innerContent,
+        });
+        if (thumbURL) {
+          thumb.onload = function () {
+            return (
+              (thumb.width = thumb.naturalWidth),
+              (thumb.height = thumb.naturalHeight)
+            );
+          };
+          thumb.src = thumbURL;
+          content.appendChild(thumb);
+        }
+        if (fieldList.length) {
+          fieldList.forEach(function (_ref) {
+            var name = _ref.name,
+              value = _ref.value,
+              inline = _ref.inline;
+
+            var fieldClasses = ["embed-field"];
+            if (inline) {
+              fieldClasses.push("embed-field-inline");
+            }
+            var field = createElement({
+              classes: fieldClasses,
+              parent: fields,
+            });
+            var nameEle = createElement({
+              classes: "embed-field-name",
+              parent: field,
+              text: name,
+            });
+            var valueEle = createElement({
+              classes: "embed-field-value",
+              parent: field,
+              text: value,
+            });
+          });
+        }
+        return {
+          embed: embed,
+          embedData: embedData,
+          pill: pill,
+          rich: rich,
+          content: content,
+          footerContainer: footerContainer,
+          footerIcon: footerIcon,
+          footer: footer,
+          thumb: thumb,
+          innerContent: innerContent,
+          title: title,
+          fields: fields,
+        };
+      }
+
+      function createMessageGroup() {
+        var opts =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var _opts$avatar = opts.avatar,
+          avatarUrl = _opts$avatar === undefined ? "" : _opts$avatar,
+          _opts$username = opts.username,
+          name = _opts$username === undefined ? "" : _opts$username,
+          _opts$nameColor = opts.nameColor,
+          nameColor = _opts$nameColor === undefined ? "" : _opts$nameColor,
+          _opts$bot = opts.bot,
+          bot = _opts$bot === undefined ? false : _opts$bot;
+
+        var group = createElement({ classes: "message-group" });
+        var avatar = createElement({ classes: "avatar", parent: group });
+        var comment = createElement({ classes: "comment", parent: group });
+        var usernameWrapper = createElement({
+          classes: "username-wrapper",
+          parent: comment,
+        });
+        var username = createElement({
+          classes: "username",
+          text: name,
+          parent: usernameWrapper,
+        });
+        var botTag = createElement({ classes: "bot-tag" });
+        var date = new Date();
+        var time = date.getHours() + ":" + ("0" + date.getMinutes()).slice(-2);
+        var timestamp = createElement({
+          classes: "timestamp",
+          text: "Today at " + time,
+          parent: usernameWrapper,
+        });
+        var out = {
+          group: group,
+          avatar: avatar,
+          comment: comment,
+          usernameWrapper: usernameWrapper,
+          username: username,
+          timestamp: timestamp,
+          name: name,
+          bot: bot,
+          date: date,
+        };
+        if (bot) {
+          usernameWrapper.appendChild(botTag);
+          out.botTag = botTag;
+        }
+        if (avatarUrl) {
+          avatar.style.backgroundImage = "url(" + avatarUrl + ")";
+        }
+        if (nameColor) {
+          username.style.color = nameColor;
+        }
+        return out;
+      }
+
+      function createMessage() {
+        var opts =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var _opts$text = opts.text,
+          text = _opts$text === undefined ? "" : _opts$text,
+          _opts$embedData = opts.embedData,
+          embedData = _opts$embedData === undefined ? null : _opts$embedData;
+
+        var message = createElement({ classes: "message" });
+        var body = createElement({ classes: "body", parent: message });
+        var messageText = createElement({
+          classes: "message-text",
+          text: text,
+          parent: body,
+        });
+        var embed = createElement({ classes: "embed" });
+        var embedContent = null;
+        if (embedData) {
+          message.appendChild(embed);
+          embedContent = createEmbed(embed, embedData);
+        }
+        return {
+          message: message,
+          body: body,
+          messageText: messageText,
+          embed: embed,
+          embedContent: embedContent,
+        };
+      }
+
+      function showElement(ele) {
+        ele.classList.add("animate-in");
+      }
+
+      function addMessage() {
+        var opts =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+
+        if (!canAddMessages) {
+          console.log("Cannot add message currently");
+          return Promise.reject(false);
+        }
+        var _opts$username2 = opts.username,
+          username = _opts$username2 === undefined ? "" : _opts$username2,
+          _opts$lastMsgGroup = opts.lastMsgGroup,
+          lastMsgGroup =
+            _opts$lastMsgGroup === undefined ? null : _opts$lastMsgGroup;
+
+        var prom = Promise.resolve();
+        if (lastMsgGroup === null) {
+          lastMsgGroup = discordEle.lastMsgGroup;
+          if (lastMsgGroup === null || lastMsgGroup.name !== username) {
+            lastMsgGroup = createMessageGroup(opts);
+            discordEle.messages.appendChild(lastMsgGroup.group);
+            discordEle.lastMsgGroup = lastMsgGroup;
+            prom = delay(50).then(function () {
+              return showElement(lastMsgGroup.group);
+            });
+          }
+        }
+        var message = createMessage(opts);
+        lastMsgGroup.comment.appendChild(message.message);
+        prom = delay(25).then(function () {
+          lastMsgGroup.group.style.maxHeight = "none";
+          showElement(message.message);
+          setTimeout(scrollMessages, 35);
+        });
+      }
+
+      function setChannel(name) {
+        discordEle.channelName.innerText = name;
+        discordEle.input.placeholder = "Message #" + name;
+        discordEle.channelsList.forEach(function (n) {
+          return n.classList.remove("selected");
+        });
+        discordEle.channelsList
+          .find(function (n) {
+            return n.innerText === name;
+          })
+          .classList.add("selected");
+        return delay(50);
+      }
+
+      function loadChannel() {
+        var opts =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var _opts$name = opts.name,
+          name = _opts$name === undefined ? "general" : _opts$name,
+          _opts$messages = opts.messages,
+          messages = _opts$messages === undefined ? [] : _opts$messages;
+
+        if (name === currentChannel || currentlyLoading || !canAddMessages) {
+          return Promise.reject(false);
+        }
+        currentlyLoading = true;
+        currentChannel = name;
+        return setChannel(name)
+          .then(function () {
+            return clearMessages();
+          })
+          .then(function () {
+            return delay(200);
+          })
+          .then(function () {
+            var prom = Promise.resolve();
+            messages.forEach(function (n) {
+              var _n$type = n.type,
+                type = _n$type === undefined ? "message" : _n$type,
+                _n$user = n.user,
+                user = _n$user === undefined ? { username: "User" } : _n$user,
+                _n$text = n.text,
+                text = _n$text === undefined ? "" : _n$text,
+                _n$delay = n.delay,
+                delayTime = _n$delay === undefined ? 0 : _n$delay;
+
+              if (type === "input") {
+                prom = prom
+                  .then(function () {
+                    return delay(delayTime);
+                  })
+                  .then(function () {
+                    return typeInMessage(text);
+                  })
+                  .then(function () {
+                    return delay(250);
+                  })
+                  .then(clearInput)
+                  .then(function () {
+                    return addMessage(Object.assign({}, user, n));
+                  });
+              } else if (type === "message") {
+                prom = prom
+                  .then(function () {
+                    return delay(delayTime);
+                  })
+                  .then(function () {
+                    return addMessage(Object.assign({}, user, n));
+                  });
+              }
+            });
+            return prom.then(function () {
+              return (currentlyLoading = false);
+            });
+          });
+      }
+
+      window.addEventListener("load", function () {
+        // Preload avatars
+        Object.values(users).forEach(function (n) {
+          return (document.createElement("img").src = n.avatar);
+        });
+        var root = document.getElementById("discord");
+        var app = root.querySelector(".discord-app");
+        var elements = {
+          root: root,
+          app: app,
+          invite: ".invite-now",
+          guildName: [app, ".channels .header"],
+          channels: [app, ".channel-wrapper"],
+          channelName: [app, ".chat .header"],
+          messagesWrapper: [app, ".chat .messages-wrapper"],
+          messages: [app, ".chat .messages"],
+          input: [app, ".chat .input textarea"],
+        };
+        var _ele = Object.keys(elements).reduce(function (p, key) {
+          var n = elements[key];
+          var element = n;
+          if (typeof n === "string") {
+            element = root.querySelector(n);
+          } else if (Array.isArray(n)) {
+            element = n[0].querySelector(n[1]);
+          }
+          p[key] = element;
+          return p;
+        }, {});
+        Object.assign(discordEle, _ele);
+        var selectedChannel = void 0;
+        channelData.forEach(function (n) {
+          var name = n.name,
+            _n$selected = n.selected,
+            selected = _n$selected === undefined ? false : _n$selected;
+
+          if (selected) {
+            selectedChannel = n;
+          }
+          n.ele = createElement({
+            classes: ["channel", selected ? "selected" : ""],
+            text: name,
+            parent: discordEle.channels,
+          });
+          n.ele.addEventListener("click", function () {
+            return loadChannel(n).catch(errorHandle);
+          });
+        });
+        discordEle.channelsList = Array.from(discordEle.channels.children);
+        delay(600)
+          .then(function () {
+            return loadChannel(selectedChannel);
+          })
+          .catch(errorHandle);
+      });
+
+      function parseBrackets(text) {
+        var changedBrackets = false;
+        var result = text.replace(
+          bracketsReplaceRegex,
+          function (match, tag, attributes) {
+            var attr = {};
+            if (typeof attributes !== "number") {
+              attr = attributes
+                .split(bracketsSplitRegex)
+                .filter(function (n) {
+                  return n && n.trim();
+                })
+                .reduce(function (p, n) {
+                  return n[0] === '"' ? (p[p.length - 1] += n) : p.push(n), p;
+                }, [])
+                .map(function (n) {
+                  var spl = n.split(/=/);
+                  // if(spl.length === 1) {
+                  // }
+                  if (numberTestRegex.test(spl[1])) {
+                    spl[1] = parseFloat(spl[1]);
+                  } else {
+                    var m = spl[1].match(/"(.*)"/);
+                    if (m !== null && m.length === 2) {
+                      spl[1] = m[1];
+                    }
+                  }
+                  return spl;
+                })
+                .reduce(function (p, n) {
+                  return (p[n[0]] = n[1] || true), p;
+                }, {});
+              var ret = null;
+              if (tag === "emoji") {
+                ret =
+                  '<img class="emoji" src="https://twemoji.maxcdn.com/2/svg/' +
+                  attr.id.toLowerCase() +
+                  '.svg">';
+              } else if (tag === "strong") {
+                ret = "<strong>" + attr.text + "</strong>";
+              }
+              if (ret) {
+                changedBrackets = true;
+                return ret;
+              }
+            }
+            return match;
+          }
+        );
+        return { result: result, changedBrackets: changedBrackets };
+      }
+
+      function createElement() {
+        var opts =
+          arguments.length > 0 && arguments[0] !== undefined
+            ? arguments[0]
+            : {};
+        var _opts$tagName = opts.tagName,
+          tagName = _opts$tagName === undefined ? "div" : _opts$tagName,
+          _opts$classes = opts.classes,
+          classes = _opts$classes === undefined ? [] : _opts$classes,
+          _opts$id = opts.id,
+          id = _opts$id === undefined ? "" : _opts$id,
+          _opts$text2 = opts.text,
+          text = _opts$text2 === undefined ? "" : _opts$text2,
+          _opts$attrs = opts.attrs,
+          attrs = _opts$attrs === undefined ? [] : _opts$attrs,
+          _opts$style = opts.style,
+          style = _opts$style === undefined ? null : _opts$style,
+          _opts$parent = opts.parent,
+          parent = _opts$parent === undefined ? null : _opts$parent;
+
+        var ele = document.createElement(tagName);
+        if (typeof classes === "string" && classes.length) {
+          ele.classList.add(classes);
+        } else if (Array.isArray(classes) && classes.length) {
+          var _ele$classList;
+
+          (_ele$classList = ele.classList).add.apply(
+            _ele$classList,
+            _toConsumableArray(
+              classes.filter(function (n) {
+                return n;
+              })
+            )
+          );
+        }
+        if (id) {
+          ele.id = id;
+        }
+        if (text) {
+          var hasBrackets = /\[.*?\]/g.test(text);
+
+          var _ref2 = hasBrackets ? parseBrackets(text) : {},
+            _ref2$result = _ref2.result,
+            result = _ref2$result === undefined ? text : _ref2$result,
+            _ref2$changedBrackets = _ref2.changedBrackets,
+            changedBrackets =
+              _ref2$changedBrackets === undefined
+                ? false
+                : _ref2$changedBrackets;
+
+          ele[changedBrackets ? "innerHTML" : "innerText"] = result;
+        }
+        if (Array.isArray(attrs)) {
+          if (attrs.length === 1) {
+            var _attrs = _slicedToArray(attrs, 1),
+              attr = _attrs[0];
+
+            ele.setAttribute(attr[0], attr[1]);
+          } else if (attrs.length) {
+            attrs.forEach(function (attr) {
+              return ele.setAttribute(attr[0], attr[1]);
+            });
+          }
+        } else if (attrs) {
+          var keys = Object.keys(attrs);
+          keys.forEach(function (key) {
+            return ele.setAttribute(key, attrs[key]);
+          });
+        }
+        if (style) {
+          var _keys = Object.keys(style);
+          _keys.forEach(function (key) {
+            return (ele.style[key] = style[key]);
+          });
+        }
+        if (parent) {
+          parent.appendChild(ele);
+        }
+        return ele;
+      }
+    </script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+  <footer class="container py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="logo" src="/img/templogo.png" />
+        <small class="d-block mb-3 text-muted">&copy; 2020 - ∞</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Analysis and Meta</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="/meta/analysis.html"
+              >Homestuck analysis</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/meta/stats.html">Homestuck stats</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/meta/surveys.html"
+              >Surveys and censuses</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/meta/liveblogs.html">Liveblogs</a>
+          </li>
+          <li><a class="text-muted" href="/meta/other.html">Other meta</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Music Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="/music/references.html"
+              >Music references</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/music/visualizer.html"
+              >Reference visualizer</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/music/sheetmusic/"
+              >Sheet music and MIDIs</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/music/albums.html">Fan albums</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/music/misc.html">Other resources</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Fan Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted" href="/resources/cosplay.html"
+              >Cosplay guides</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/resources/roleplaying.html"
+              >Roleplaying guides</a
+            >
+          </li>
+          <li>
+            <a class="text-muted" href="/resources/assets.html">Art assets</a>
+          </li>
+          <li>
+            <a class="text-muted" href="/resources/other.html"
+              >Other resources</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Other</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="/fanworks">Homestuck fanworks</a></li>
+          <li><a class="text-muted" href="/games">Homestuck games</a></li>
+          <li><a class="text-muted" href="/tools">Software and tools</a></li>
+          <li><a class="text-muted" href="/official">Official content</a></li>
+          <li>
+            <a class="text-muted" href="/archives.html">Homestuck Archives</a>
+          </li>
+          <li><a class="text-muted" href="/about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</html>
