@@ -272,6 +272,20 @@
         </div>
 
         <hr>
+        <div class="row">
+           <div class="col-md-2">
+               <a href="http://alicorn.elcenia.com/stories/starwink.shtml" target="_blank">
+                   <img class="img-fluid rounded mb-3 mb-md-0" src="https://i.imgur.com/7kPjfEG.png" alt="">
+               </a>
+           </div>
+           <div class="col-md-9">
+               <span style="float:right; font-style:italic">Alicorn</span><h3>Starwink</h3>
+               <p>Apparently, as seen from all around the globe, the stars had, in fact... started to wink. Humanity resolves to do something about this.</p>
+               <span class="btn btn-secondary" id="starwink" onclick="like(23); return false">👍0</span><span class="btn btn-secondary words" title="An hour" href="#">Words: 8,775</span><a class="btn btn-primary" href="http://alicorn.elcenia.com/stories/starwink.shtml" target="_blank">Author's Website</a>
+           </div>
+       </div>
+
+        <hr>
          <div class="row">
             <div class="col-md-2">
                 <a href="https://www.fictionpress.com/s/2961893/1/Mother-of-Learning" target="_blank">
@@ -502,6 +516,7 @@
             $( "#gsh").text("👍"+data[20].likes);
             $( "#tlu").text("👍"+data[19].likes);
             $( "#chili").text("👍"+data[21].likes);
+            $( "#starwink").text("👍"+data[22].likes);
           });
     });
     
@@ -577,6 +592,9 @@
                        break;
                    case 22:
                        $( "#chili").text("👍"+data[id-1].likes);
+                       break;
+                    case 23:
+                       $( "#starwink").text("👍"+data[id-1].likes);
                        break;
                    default:
                        break;
