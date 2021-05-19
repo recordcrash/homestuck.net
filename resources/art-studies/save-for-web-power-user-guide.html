@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A guide by Boogs on how to make the most out of the MSPA GIF export process. Article 2 of the Boogs' Homestuck Art Studies series.">
+    <meta name="author" content="Boogs">
+    <meta property="article:author" content="Boogs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homestuck.net/resources/art-studies/save-for-web-power-user-guide.html" />
+    <meta property="og:site_name" content="HOMESTUCK.NET" />
+    <meta property="og:title" content="Save for Web Power User Tutorial" />
+    <meta property="og:description" content="A guide by Boogs on how to make the most out of the MSPA GIF export process. Article 2 of the Boogs' Homestuck Art Studies series.">
+    <meta property="og:keywords" content="photoshop, resources, homestuck, hiveswap, community, andrew hussie, hussie, games, music, news, information" />
+    <meta property="og:image" content="https://homestuck.net/resources/art-studies/images/FefColorThrottled.png"/>
+    <meta property="og:locale" content="en-US" />
+
+      <meta name="msapplication-TileColor" content="#00CC00">
+      <meta name="theme-color" content="#00CC00">
+    <title>Save for Web Power User Tutorial - HOMESTUCK.NET</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon.png">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-spiro py-2" href="/index.html" aria-label="Homestuck.net">
+     
+    <img class="bd-placeholder-img mr-2 rounded" height="25" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" src="/img/templogowhite.png">
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="/games">Games</a>
+    <a class="py-2 d-none d-md-inline-block" href="/music">Music</a>
+    <a class="py-2 d-none d-md-inline-block" href="/resources">Resources</a>
+    <a class="py-2 d-none d-md-inline-block" href="/tools">Tools</a>
+    <a class="py-2 d-none d-md-inline-block" href="/meta">Meta</a>
+    <a class="py-2 d-none d-md-inline-block" href="/fanworks">Fanworks</a>
+    <a class="py-2 d-none d-md-inline-block" href="/official">Official</a>
+  </div>
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4">Save for Web Power User Tutorial</h1>
+        <p>Guide to making the most out of the MSPA GIF export process.</p>
+        <hr>
+            <div>Alright, I know I was brought in (pft) to talk about animation, but, here’s an extra course on Photoshop’s Save For Web export tool.</div>
+			<p></p>
+            <div>If you’ve never even touched this tool, I go over the basics of MSPA-accurate exporting in <a href="/resources/art-studies/basics-of-mspa-animation.html">this</a> piece, so you should at least know what SFW exporting is. Wait, that implies there’s also nsfw exporting. Nevermind, I’ll just write the whole Save for Web everytime. </div>
+            <div>Now for the tricks.</div>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Color Palette Editing</u></p>
+            <div>Save for Web allows you to change every color in the current exported palette, affecting all pixels of that color.</div>
+            <div>If you have an animated, layered character on a black void background, you don’t wanna waste time bucket tooling every layer in their body gray, so you can use Palette Editing instead when exporting.</div>
+			<p></p>
+            <div>In this example, my assistant Feferi is still using matte black outlines in the Photoshop file, and is put against a flat red background.</div>
+            <div>In Save for Web, double click the colors and set them to your newly desired values- First, change the black color to a dark gray, then change red to black.</div>
+            <div>If you aren’t sure you’re selecting the right colors from the palette, you can use the eyedropper tool on the left, and it’ll highlight the corresponding square on the palette.</div>
+			<p></p>
+			<img class="img-fluid" src="images/DarkSpaceBackground.png">
+			<p></p>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Color Palette Locking</u></p>
+			<img class="img-fluid" max-width="900px" src="images/FefColorThrottled.png">
+			<p></p>
+            <div>Feferi, what are you doing against that high color variance flower? Look at how dithered and artifacted your sprite got. </div>
+            <div>This problem actually happens a lot in homestuck, for example, the Curious Case of the <a href="https://www.homestuck.com/story/142" target="_blank">Cyan Slimer Shirt</a>. The FIFO/FILO cards above egbert are downscaled and antialiased, which hogged the color palette.</div>
+			<p></p>
+            <div>To avoid this issue, you can Lock in selected colors in the export menu. There’s multiple ways to do this, but here’s the most reliable one:</div>
+            <div>Hide all layers, save for ones containing colors you want preserved.</div>
+            <div>Then, open Save for Web, select all of those colors (hold Shift!), and press the small Lock icon. Then, click Done, making the program remember these locked settings while not exporting just yet.</div>
+			<p></p>
+			<img class="img-fluid" src="images/ColorLock.png">
+			<p></p>
+            <div>Now, go back to your file and animate, pose and re-enable all layers as needed.</div>
+            <div>When you Save for Web next time, any additional colors calculated in will not erase the Locked in colors, preserving those details perfectly.</div>
+            <div></div>
+			<p></p>
+			<img class="img-fluid" max-width="900px" src="images/FefColorLock.png">
+			<p></p>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Using manual Color Limits</u></p>
+            <div>As should be seared into your brain by now, the traditional Homestuck GIF maxes out at 128 colors.</div>
+            <div>However, if like me, you enjoy the results of pattern dithering in compression, and want the effect to show up on purpose for flare,</div>
+            <div>You can throttle down the colors of a GIF to cause the effects on purpose. (Color locking is useful for this, so you can just throttle gradients and not the main colors.)</div>
+			<p></p>
+			<img class="img-fluid" max-width="900px" src="images/PrebakedDitherFX.png">
+			<p></p>
+            <div>Lowering this picture to just 9 colors makes for “automatic dithering pixel art” of sorts.</div>
+			<div>Exporting this and then using the lower-fidelity frames in the background of, say, Derse buildings, can make for nice, quick to make and appealing background textures. I call these “prebaked dithers” in my files, but that’s just me naming things whatever.</div>
+			<p></p>
+            <div>Color throttling can be used to make other cool automatic pixel art effects, like here, where I fade in various layered blobs of blackness, but limit the gif to 2 colors for effect.</div>
+			<p></p>
+            <img class="img-fluid" src="images/DarkDiffusion_03.gif">
+            <p></p>
+            <div>You can also make these effects transparent!</div>
+            <div>Not traditionally enabled in <a href="https://www.homestuck.com/story/1681" target="_blank">the settings hussie uses</a>, you can enable Dithered Transparency in the Save for Web menu, and limiting that to 2 colors let me make this nice prebaked dither gradient.</div>
+            <p></p>
+            <img class="img-fluid" src="images/DitherPatternTransparency.png">
+            <p></p>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Multi-slice exports</u></p>
+            <div>There’s a chance you’ve been exporting some pictures by now, and were handed out some supplementary rectangles of the rest of your file you had to delete.</div>
+            <div>To avoid this, on the bottom of the Save Location dialog (after hitting Save in SFW), choose Selected Slices instead of the default All Slices. Photoshop has a habit of forgetting this setting, so keep an eye on this one when saving here and there, or just be ready for this.</div>
+            <p></p>
+            <div>Also, your files might’ve been saving into a new annoying folder called Images.</div>
+            <div>On the same Save dialog, press the option above Selected Slices, press other, and disable all of these tickboxes. This should simplify the filenames too.</div>
+            <p></p>
+            <img class="img-fluid" src="images/SaveLessSlices.png">
+            <p></p>
+            <div>Now that you know how to avoid exporting multiple layers, here’s how to do it on purpose for a reason.</div>
+            <div>Say you wanna export a lot of small assets fast, from one file, into unique individual exports.</div>
+            <div>Put a slice around each thing you want exported- and before your screen gets obliterated by auxiliary dotted lines, hit that Hide Auto Slices button.</div>
+            <p></p>
+            <img class="img-fluid" src="images/MultiSliceExport.png">
+            <p></p>
+            <div>Now when exporting in Save for Web, I selected all of them (Use shift!) using the Slice Selector (K), and they all get exported individually into their own file. Time = Saved.</div>
+            <p></p>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Sweet Bro and Hella JPEG</u></p>
+            <div>This is a more widely-known trick, as Hussie has mentioned it on Formspring once, but it’s worth illustrating the process too:</div>
+            <div>If you wanna absolutely demolish some poor picture into artifact hell, select the JPEG as the filetype instead of GIF in Save for Web, and lower the quality to 0.</div>
+			<div>Then, screenshot/export that into your existing file.</div>
+            <div>Repeat this process while adding more and more manual noise, like sharpening and rotation artifacts, to worsen the picture to your heart’s content.</div>
+            <p></p>
+            <img class="img-fluid" src="images/NoQuality.png">
+            <p></p>
+            <div>I still find the idea of a “0 quality JPEG” exceedingly funny.</div>
+            <p></p>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Image Size menu</u></p>
+            <div>I’ve already went over this in my Introduction to MSPA animation piece, so I won’t burden you with more “reading” and “words” and such.</div>
+            <div>Here’s a simple visual illustration: upscaling uses clean pixels, downscaling uses antialiasing. Capiche?</div>
+            <p></p>
+            <img class="img-fluid" max-width="900px" src="images/RescalingSpecifics.png">
+            <p></p>
+            <div>(Note how upscaling within Save for Web makes for true 1px sized dithering, while rendering the picture small THEN upscaling the result would make 2px dither pixels. This Matters I Think)</div>
+            <p></p>
+		<hr>
+            <div>That’s it from me. Thanks for reading!</div>
+        <hr>
+    </div>
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+<footer class="container py-5">
+ <div class="row">
+    <div class="col-12 col-md">
+      <img class="logo" src="/img/templogo.png">
+      <small class="d-block mb-3 text-muted">Public Domain 2020 - ∞</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Analysis and Meta</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/meta/analysis.html">Homestuck analysis</a></li>
+        <li><a class="text-muted" href="/meta/stats.html">Homestuck stats</a></li>
+        <li><a class="text-muted" href="/meta/surveys.html">Surveys and censuses</a></li>
+        <li><a class="text-muted" href="/meta/liveblogs.html">Liveblogs</a></li>
+        <li><a class="text-muted" href="/meta/other.html">Other meta</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Music Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/music/references.html">Music references</a></li>
+        <li><a class="text-muted" href="/music/visualizer.html">Reference visualizer</a></li>
+        <li><a class="text-muted" href="/music/sheetmusic/">Sheet music and MIDIs</a></li>
+        <li><a class="text-muted" href="/music/albums.html">Fan albums</a></li>
+        <li><a class="text-muted" href="/music/misc.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Fan Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/resources/cosplay.html">Cosplay guides</a></li>
+        <li><a class="text-muted" href="/resources/roleplaying.html">Roleplaying guides</a></li>
+        <li><a class="text-muted" href="/resources/assets.html">Art assets</a></li>
+        <li><a class="text-muted" href="/resources/other.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Other</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/fanworks">Homestuck fanworks</a></li>
+        <li><a class="text-muted" href="/games">Homestuck games</a></li>
+        <li><a class="text-muted" href="/tools">Software and tools</a></li>
+        <li><a class="text-muted" href="/official">Official content</a></li>
+        <li><a class="text-muted" href="/archives.html">Homestuck Archives</a></li>
+        <li><a class="text-muted" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>

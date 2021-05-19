@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A guide by Boogs on the approach to animating a Sprite Mode panel, core principles and terms, and other fun stuff. Article 1 of the Boogs' Homestuck Art Studies series.">
+    <meta name="author" content="Boogs">
+    <meta property="article:author" content="Boogs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://homestuck.net/resources/art-studies/basics-of-mspa-animation.html" />
+    <meta property="og:site_name" content="HOMESTUCK.NET" />
+    <meta property="og:title" content="Basics of MSPA Animation" />
+    <meta property="og:description" content="A guide by Boogs on the approach to animating a Sprite Mode panel, core principles and terms, and other fun stuff. Article 1 of the Boogs' Homestuck Art Studies series.">
+    <meta property="og:keywords" content="animation, gif, resources, homestuck, hiveswap, community, andrew hussie, hussie, games, music, news, information" />
+    <meta property="og:image" content="https://homestuck.net/resources/art-studies/images/page1582_stunFrameExtension.gif"/>
+    <meta property="og:locale" content="en-US" />
+
+      <meta name="msapplication-TileColor" content="#00CC00">
+      <meta name="theme-color" content="#00CC00">
+    <title>Basics of MSPA Animation - HOMESTUCK.NET</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/favicon.png" sizes="180x180">
+    <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/favicon.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="/favicon.png">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-spiro py-2" href="/index.html" aria-label="Homestuck.net">
+     
+    <img class="bd-placeholder-img mr-2 rounded" height="25" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" src="/img/templogowhite.png">
+    </a>
+    <a class="py-2 d-none d-md-inline-block" href="/games">Games</a>
+    <a class="py-2 d-none d-md-inline-block" href="/music">Music</a>
+    <a class="py-2 d-none d-md-inline-block" href="/resources">Resources</a>
+    <a class="py-2 d-none d-md-inline-block" href="/tools">Tools</a>
+    <a class="py-2 d-none d-md-inline-block" href="/meta">Meta</a>
+    <a class="py-2 d-none d-md-inline-block" href="/fanworks">Fanworks</a>
+    <a class="py-2 d-none d-md-inline-block" href="/official">Official</a>
+  </div>
+</nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4">Introduction to MSPA Animation</h1>
+        <p>Approach to animating a Sprite Mode panel, core principles and terms, and other fun stuff.</p>
+        <hr>
+            <div>Hey, my name is Boogs, I write a <a href="https://mspfa.com/?s=37955&p=1" target="_blank">fan adventure on MSPFA</a> and I like animating my panels very accurately to the MSPA style. That's all there really is to say on the matter.</div>
+			<div>If before reading this guide / others, you'd like to see some of my work to judge whether I know what I'm talking about or not, my fan adventure <a href="https://mspfa.com/?s=39676&p=1" target="_blank">Good Daveternoon</a> was made entirely to practice some high-detail MSPA animations. Flip through it and see for yourself. Now let's start properly.</div>
+			<p></p>
+			<div>The way nearly all panel animations on Homestuck, and probably 100% of the prior animations on MSPA were made was by using Photoshop CS3's frame animation menu. This means every frame was manually positioned and made by moving layers around, animating their opacity, visibility and effects.</div>
+			<div>Versions of photoshop from CS2 onward should still be able to do this, and CS2 is the software I personally use to make all my panels across all my work.</div>
+			<div>This article, specifically Part 3, is based on the assumption you use photoshop, but most of it applies to any art program.</div>
+        <hr>
+			<p style="color:#848484;font-size:28px;"><u>Part 1: Preparing for efficiency</u></p>
+			<img class="img-fluid" src="images/danceBanner.gif">
+			<p></p>
+			<div>A big aspect of preparing to animate a panel is having a lot of assets ready for you to work with.</div>
+			<div>Look at Egbert celebrating up there. The panel uses the character base, but cleverly switches between poses and layers like “legs apart, legs crossed, hand up, hand forward”, to convey a solid snappy sense of movement.</div>
+			<div>Preparing a big amount of assets is very important in order to make good Sprite Mode animations fast. Having to make 1~3 new assets for every panel is normal, but if you need to make 8 new assets for a simple motion, that’s too much work every time!</div>
+			<div>Imagine if that dancing panel was some unique move, like a diagonal finger sway in a disco. It’d look new and interesting, but it’d take a lot of time and effort to make it look good, while just making a funky little jig in place using punch and run assets was more efficient and equally comedic.</div>
+			<div>To solve this, the answer I go with is “prepare a ton in advance”. For every character I finish spriting, I make sure I have enough layers to do whatever I want when posing the character.</div>
+			<img width="900" src="images/DaveLayers.png">
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Part 2: The bread and the butter</u></p>
+			<img class="img-fluid" src="images/page627_0.gif">
+			<p></p>
+			<div>Sprite Mode is all about keeping a pipeline of panels moving and flowing, with simple tricks used to great effect.</div>
+			<div>The first trick you HAVE to know to make simple and good animations is “<b>Tickback</b>”, a term coined by redditstuck author Bin.</div>
+			<div>A <b>Tickback</b> frame, which is probably called “overshooting” or something by professional animators, is a frame that takes place prior to the final frame of an object moving, and has that object “overshooting” its destination by a bit, or simply moved some pixels from that destination.</div>
+			<div>When you snap your fingers, you can notice there’s a miniscule amount of time where your fingers are a little farther apart than when your hand fully stops afterwards. That’s the real-life equivalent of <b>Tickback</b>.</div>
+			<div>The name tickback, really, is because the frame afterwards shows the object “ticking back” into position.</div>
+			<img class="img-fluid" src="images/tickbackStickman.gif">
+			<p></p>
+			<div>As you can see, the Tickback frames aren’t particularly notable at a glance, but make the motions of the subject more pleasing to follow. The springy bounce adds impact without complexifying the action.</div>
+			<div>Now the question is, when to use tickback?</div>
+			<div>Answer is, most simple actions that would otherwise be muddy and tiring to follow.</div>
+			<div>If you look again at the Egbert panel above, you’ll now notice every item entering a captchalogue card causes it to spring a little.</div>
+			<div>That’s tickback frames, adding some well-needed spice to a very simple event. If the items just flashed into position with no added bumps, it’d be just a bit harder for the viewer to notice where the items went from the ground and to the top, since Egbert is still moving down there.</div>
+			<div>(Egbert also teleports instead of moving long distances, since animating a proper walk from place to place is somewhat of an awkward process, and teleports get the job done.)</div>
+			<p></p>
+			<div>Next principle that’s important to learn is delay. Now, I’d personally say Homestuck itself doesn’t employ this stuff perfectly: Some panels have pacing that I consider bafflingly slow.</div>
+			<div>There’s generally 3 kinds of frames Homestuck uses for different things:</div>
+			<div><b>Static</b>, <b>Hold</b>, and <b>Motion</b>.</div>
+			<div>I just made these up on the spot.</div>
+			<div>Also, I’m gonna get into specific time values here, so write these down in your brain.</div>
+			<p></p>
+			<div>A <b>Static</b> frame, typically <u>1 second or longer</u>, is a frame where nothing moves. “But nothing moves in any still frame!”</div>
+			<div>Well, the difference is that in other frames, the viewer is processing an action.</div>
+			<div><b>Static</b>s are meant to let the viewer digest the current scene, being either before an action or after it. These are mostly going to manifest in the form of the opening frame and the final frame of the panel, before something happened and afterwards.</div>
+			<div>(I don’t think I need to show an example here? It’s just still pictures. You’ve seen ‘em.)</div>
+			<p></p>
+			<div>A <b>Hold</b> frame, ranging anywhere from <u>0,2 to 0,8 seconds</u>, is similar to a static, but is meant to separate parts of an “action string” in a panel, example given below (from <a href="https://mspfa.com/?s=39676&p=34" target="_blank">my comic</a>).</div>
+			<div>These are meant to give a finished action, usually simple, time to begin being processed just enough by the viewer so they can get ready to see the next small action.</div>
+			<div><u>0.5 seconds</u> is the value most commonly used in MSPA, but if you wanna fine tune your panels, play with these intervals a little, try 0.7s or 0.4s. Small things like this can really help a panel flow nicely.</div>
+			<p></p>
+			<div>In this panel, there’s <b>Hold</b> frames after the kick, the records moving out, and finally falling down, followed by the last action of the record tipping. (The initial Static frame was 0.5 seconds long here, which made for a nice accelerating rhythm as the panel went on.)</div>
+			<p></p>
+			<img class="img-fluid" src="images/daveHoldFrames.gif">"
+			<p></p>
+			<div>A <b>Motion</b> frame, almost <u>always 0,05 seconds long</u>, is what the “minimum” length of a frame should be in MSPA animations. This minimum also solidifies the “framerate” of panels at 20 frames per second.</div>
+			<div>From here, any specifics would be down to your own animation understanding: Make things move at discernable speeds, acceleration, nothing I can tell you that professionals can’t.</div>
+			<div>(I haven’t mentioned earlier, but <b>tickback</b> frames should probably always be this long.)</div>
+			<p></p>
+			<div>A smaller thing within <b>motion</b> frames to know when to use is <b>Stun</b> intervals, sometimes as sets of 0.05s frames and sometimes as single 0.1s frames, where an object that’s been in motion recently needs to have a particular impact highlighted, while not stopping motion entirely.</div>
+			<div>This is usually called hitstun in animation, and is a pretty well known principle.</div>
+			<div>In this <u>edited</u> example of <a href="https://www.homestuck.com/story/1582" target="_blank">page 1582 of Homestuck</a>, I extended all <b>stun</b> (and <b>hold</b>) frames to be even longer, to bring out how they break apart this (incredible and exemplary) panel.</div>
+			<p></p>
+			<img class="img-fluid" src="images/page1582_stunFrameExtension.gif">
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Part 3: Accurate MSPA rendering</u></p>
+			<p></p>
+			<div>Alright, this is getting into proper nerd territory Software specifications, file compression et cetera. Some may say this isn’t “Introduction to MSPA animation” material, but this is something I think is really important to at least be aware of.</div>
+			<div>For starters, there’s the 650x450 panel presentation.</div>
+			<div>The vast majority of MSPA panels are in 650x450- Jailbreak used bigger panels, and some pages along history have used bigger panels, usually still 650px wide, just taller, but this principle kinda never breaks.</div>
+			<p></p>
+			<div>To easily export panels cropped into that specific size, use the Slice Tool in photoshop. You can set it to select an automatic specific size, and you’re gonna use that a lot.</div>
+			<p></p>
+			<img class="img-fluid" src="images/Slices.png">
+			<p></p>
+			<div>To properly use this tool, you will need to learn to use the Save For Web menu. (Which is also reached with the shortcut Ctrl-Alt-Shift-S. Thank me later.)</div>
+			<p></p>
+      <div class="row">
+			<div class="col-sm">
+        <p></p>
+          <div>Save for Web is a daunting power tool that saves a ton of time on trying to perfect your GIFs, and if you choose to dedicate time to study it, you can do so much, so fast. But until you do that- or I write a tips ‘n tricks document for it- Let’s cover the basics of this thing.</div>
+          <p></p>
+          <div>To the right is the bulk of the interactable options.</div>
+          <div>You’ll have a few presets there, and none of them are quite what Hussie used for most of Homestuck.</div>
+          <div>The settings pictured here are the general norm.</div>
+          <div>Specifics time!</div>
+          <p></p>
+          <div>The button that currently says “Selective” lists the methods the program chooses what colors get in the gif. If you get some ugly dithering you don’t like, try switching this around with Adaptive and Perceptual.</div>
+          <p></p>
+          <div>The button saying “Pattern” is used to select Dither methods. Dithering, is, basically, using few colors of pixels in specific layouts to trick the eye into seeing more colors than the gif actually has.</div>
+          <div>The other Dithering methods are Diffusion and Noise. The short answer: Noise is practically worthless, and diffusion is graphically inferior in my opinion, but viable.</div>
+          <div>The banner under this paragraph shows the differences- but you may need to lean real close to your monitor, or zoom in an editing program. Just zooming in with a browser will be antialiased- which is our next topic, kind of.</div>
+          <p></p>
+      </div>
+      <div class="col-sm">
+        <img class="img-fluid" src="images/SaveForWebView.png">
+      </div>
+      </div>
+      <br>
+			<img class="img-fluid" src="images/RenderingCollage.png">
+			<p></p>
+			<div>On the process of assembling panels I won’t quite comment, there’s plenty good guides on making MSPA accurate assets that aren’t about animation, but while I’m mentioning exporting, it’s valuable to try and optimize your assets to use low-ish color totals, so minor assets don’t hog up the entire palette when exporting, and cause unwanted dithering.</div>
+			<div>Also, back to save for web, see that tab reading “Image Size”? You can use that to resize your exported images, and with it, the slices.</div>
+			<div>If you make a 1300x900 slice to cover an entire room, and then shrink to 50% in Save for Web, you’ll get something similar to <a href="https://www.homestuck.com/story/4" target="_blank">Page 4 of Homestuck</a>. To have accurate downscaling, use Bicubic Sharper in this menu.</div>
+			<div>If you’re doing the opposite and want to zoom into a 325x225 slice, use Nearest Neighbor to retain pixel sizes.</div>
+		<hr>
+			<p style="color:#848484;font-size:28px;"><u>Part 4: Afterword</u></p>
+			<p></p>
+			<div>After what! I’m not close to done.</div>
+			<div>...</div>
+			<div>But I am done with this page.</div>
+			<div>Please feel free to browse my other specific panel breakdowns, where I go over (and mostly just gush) on some excellent executions of various Homestuck panels. It’s a great process, scrolling through pre-act-6 homestuck, (you know, back when it had good panels,) and finding small tricks and inspirations as I go along. Highly recommended.</div>
+			<p></p>
+			<div>Hopefully this was helpful, thanks for reading.</div>
+		<hr>
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+</body>
+<footer class="container py-5">
+ <div class="row">
+    <div class="col-12 col-md">
+      <img class="logo" src="/img/templogo.png">
+      <small class="d-block mb-3 text-muted">Public Domain 2020 - ∞</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Analysis and Meta</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/meta/analysis.html">Homestuck analysis</a></li>
+        <li><a class="text-muted" href="/meta/stats.html">Homestuck stats</a></li>
+        <li><a class="text-muted" href="/meta/surveys.html">Surveys and censuses</a></li>
+        <li><a class="text-muted" href="/meta/liveblogs.html">Liveblogs</a></li>
+        <li><a class="text-muted" href="/meta/other.html">Other meta</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Music Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/music/references.html">Music references</a></li>
+        <li><a class="text-muted" href="/music/visualizer.html">Reference visualizer</a></li>
+        <li><a class="text-muted" href="/music/sheetmusic/">Sheet music and MIDIs</a></li>
+        <li><a class="text-muted" href="/music/albums.html">Fan albums</a></li>
+        <li><a class="text-muted" href="/music/misc.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Fan Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/resources/cosplay.html">Cosplay guides</a></li>
+        <li><a class="text-muted" href="/resources/roleplaying.html">Roleplaying guides</a></li>
+        <li><a class="text-muted" href="/resources/assets.html">Art assets</a></li>
+        <li><a class="text-muted" href="/resources/other.html">Other resources</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Other</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="/fanworks">Homestuck fanworks</a></li>
+        <li><a class="text-muted" href="/games">Homestuck games</a></li>
+        <li><a class="text-muted" href="/tools">Software and tools</a></li>
+        <li><a class="text-muted" href="/official">Official content</a></li>
+        <li><a class="text-muted" href="/archives.html">Homestuck Archives</a></li>
+        <li><a class="text-muted" href="/about.html">About</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>
