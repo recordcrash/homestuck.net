@@ -3,20 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Are you a new fan? Check this unofficial website out! Fan resources, games and information for the Homestuck webcomic and its games, from Hiveswap to Pesterquest.">
+    <meta name="description" content="Are you a new fan? Check this out! Fan resources, games and information for the Homestuck webcomic and its games, from Hiveswap to Pesterquest.">
     <meta name="Makin" content="">
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://homestuck.net" />
     <meta property="og:site_name" content="HOMESTUCK.NET" />
-    <meta property="og:title" content="HOMESTUCK.NET: the unofficial front page of the Homestuck fandom" />
-    <meta property="og:description" content="Are you a new fan? Check this unofficial website out! Fan resources, games and information for the Homestuck webcomic and its games, from Hiveswap to Pesterquest. ">
+    <meta property="og:title" content="HOMESTUCK.NET: the front page of the Homestuck fandom" />
+    <meta property="og:description" content="Are you a new fan? Check this out! Fan resources, games and information for the Homestuck webcomic and its games, from Hiveswap to Pesterquest. ">
     <meta property="og:keywords" content="homestuck, hiveswap, community, andrew hussie, hussie, resources, games, music, news, information, fandom, fans, pesterquest, friendsim" />
     <meta property="og:image" content="https://homestuck.net/img/homestuck-net-embed.png" />
     <meta property="og:locale" content="en-US" />
 
       <meta name="msapplication-TileColor" content="#00CC00">
       <meta name="theme-color" content="#00CC00">
-    <title>HOMESTUCK.NET: the unofficial front page of the Homestuck fandom</title>
+    <title>HOMESTUCK.NET: the front page of the Homestuck fandom</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -42,8 +42,63 @@
           font-size: 3.5rem;
         }
       }
+
+      .btn-read-homestuck {
+        background-image: url("/img/btn-read-homestuck-gradient.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 0;
+        width: 100%;
+        padding-top: 15.7%;
+        image-rendering: pixelated;
+      }
+      .btn-read-homestuck:hover, .btn-read-homestuck:active {
+        background-image: url("/img/btn-read-homestuck-hover-gradient.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 0;
+        width: 100%;
+        padding-top: 15.7%;
+        image-rendering: pixelated;
+      }
+
+      .logo {
+        margin-top: 10px;
+        image-rendering: pixelated;
+      }
+      .news-marquee {
+        background-color: darkgreen;
+        color: white;
+        font-family:'Courier New', Courier, monospace;
+      }
+      .marquee {
+          height: auto;
+          min-width: fit-content;
+          background-color: darkgreen;
+      }
+      .marquee-content {
+          height: auto;
+          margin: 0;
+          color: white;
+          white-space: nowrap;
+          animation: cssmarquee 80s linear infinite;
+          font-family:'Courier New', Courier, monospace;
+          transform: translateX(10%);
+      }
+      .marquee-content a {
+        color: greenyellow;
+        text-decoration: underline;
+      }
+      @keyframes cssmarquee {
+          0% {
+              transform: translateX(10%);
+          }
+          100% {
+              transform: translateX(-100%);
+          }
+      }
+
     </style>
-    <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
   </head>
   <body>
@@ -63,12 +118,29 @@
   </div>
 </nav>
 
-<div id="mainheader" class="position-relative overflow-hidden p-3 p-md-1 m-md-3 text-center">
-  <div class="col-md-5 p-lg-5 mx-auto">
-    <h1 class="display-4 font-weight-normal"><img class="logo" src= 
-"/img/templogo.png"></h1>
-    <p class="lead font-weight-normal">Archiving the Homestuck fandom, one work at a time!</p>
-    <a class="btn btn-outline-secondary" href="/about.html">Learn More</a>
+<div id="mainheader" class="position-relative overflow-hidden text-center">
+  <div class="marquee">
+    <div class="marquee-content">
+      Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
+      Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
+      Last Homestuck.net update: 4/24/2022 |
+      Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
+      Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
+      Last Homestuck.net update: 4/24/2022 |
+      Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
+      Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
+      Last Homestuck.net update: 4/24/2022 |
+      Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
+      Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
+      Last Homestuck.net update: 4/24/2022 |
+      <!--I told you dog, I told you about marquees!-->
+    </div>
+  </div>
+  <div class="col-md-5 p-lg-3 mx-auto">
+    <h2 class="display-4 font-weight-normal"><img class="logo" src="/img/templogo.png"></h2>
+    <p class="lead font-weight-normal">New to the comic? Click the button for a new reader's guide to make your experience as smooth as possible!</p>
+    <a href="/homestuck.html"><div class="btn-read-homestuck"></div></a>
+    <p class="pt-3 font-italic">Already read it? Check out the resources below</p>
   </div>
 </div>
 
@@ -77,14 +149,14 @@
 <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
   <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
     <div class="my-3 py-3">
-        <h2 class="display-5 nolink"><a href="https://old.reddit.com/r/homestuck">Homestuck Unofficial Reddit</a></h2>
+        <h2 class="display-5 nolink"><a href="https://old.reddit.com/r/homestuck">Homestuck Reddit</a></h2>
       <p class="lead">Forum-style discussions, news, cosplays and fanart</p>
     </div>
       <a href="https://old.reddit.com/r/homestuck"><div id="redditdiv" class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div></a>
   </div>
   <div class="nolink bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-        <h2 class="display-5 nolink"><a href="https://discord.gg/homestuck">Homestuck Unofficial Discord</a></h2>
+        <h2 class="display-5 nolink"><a href="https://discord.gg/homestuck">Homestuck Discord</a></h2>
       <p class="lead">Live chatting about the Homestuck franchise</p>
     </div>
       <a href="https://discord.gg/homestuck"><div id="discorddiv" class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div></a>
@@ -152,8 +224,8 @@
   </div>
   <div class="nolink bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
     <div class="my-3 p-3">
-        <h2 class="display-5 nolink"><a href="/recommendations.html">Fiction Recommendations</a></h2>
-      <p class="lead">Literary recs for the avid Homestuck</p>
+        <h2 class="display-5 nolink"><a href="/recommendations.html">The Shills List</a></h2>
+      <p class="lead">Fiction recommendations for the avid Homestuck</p>
     </div>
       <a href="/recommendations.html"><div id="recsdiv" class="shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div></a>
       </div>
