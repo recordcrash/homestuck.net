@@ -48,13 +48,29 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+        .table-of-contents {
+          float: right;
+          width: 50%;
+          background: #eee;
+          border-radius: 10px;
+          padding: 20px;
+          margin: 16px 0 20px 20px;
+        }
+      }
+      @media (max-width: 767px) {
+        .table-of-contents {
+          background: #eee;
+          border-radius: 10px;
+          padding: 20px;
+          margin-top: 15px;
+        }
       }
     </style>
     <!-- Custom styles for this template -->
     <link href="/css/index.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="site-header sticky-top py-1">
+  <nav class="site-header py-1">
     <div class="container d-flex flex-column flex-md-row justify-content-between">
       <a class="navbar-spiro py-2" href="/index.html" aria-label="Homestuck.net">
       
@@ -72,22 +88,37 @@
   <div class="container">
     <h1 class="my-4">New Reader's Guide to Homestuck</h1>
     <subtitle>A guide for new Homestuck fans—how to read the comic, what Homestuck is, a complete reading order, and more.</subtitle>
+    <nav class="table-of-contents">
+      <h4>Table of Contents:</h4>
+      <ul>
+        <li><a href="#what-is-homestuck">What is Homestuck?</a></li>
+        <li><a href="#how-to-read-homestuck">How to read Homestuck</a></li>
+        <li><a href="#homestuck-in-order">Homestuck in order</a></li>
+        <ul>
+          <li><a href="#recommended-official-homestuck-works">Recommended official Homestuck works</a></li>
+          <li><a href="#previous-mspa-adventures">Previous MS Paint Adventures</a></li>
+          <li><a href="#informational-homestuck-content">Informational Homestuck content</a></li>
+          <li><a href="#official-optional-homestuck-content">Optional official Homestuck works</a></li>
+        </ul>
+        <li><a href="#why-do-people-hate-homestuck">Why do people hate Homestuck?</a></li>
+      </ul>
+    </nav>
     <hr>
-    <h2>What is Homestuck?</h2>
+    <h2 id="what-is-homestuck">What is Homestuck?</h2>
     <p><b>Homestuck</b> is a very long webcomic with a quirky style of narration and presentation that makes it <i>look</i> like an old text adventure game—but really, it’s just a linear story that you read and watch, barring some of the flash games. People call Homestuck a <i>multimedia</i> masterpiece because it’s got musical segments, playable set pieces, cool animations and everything the World Wide Web will allow an artist to put in it.</p>
     <p>The plot of Homestuck is infamously convoluted but boils down to: four kids who know each other online play a video game together, inadvertently causing the apocalypse. To beat the game, they have to interact with the game world’s characters, and with a disgruntled group of internet trolls.</p>
     <img src="/img/what-is-homestuck.png" style="width: 100%; min-height: 40px;"/>
     <hr>
-    <h2>How to read Homestuck</h2>
+    <h2 id="how-to-read-homestuck">How to read Homestuck</h2>
     <p>Most fans use <a href="https://bambosh.github.io/unofficial-homestuck-collection/">the Homestuck Collection</a>, a fan-made downloadable archive app which is endorsed by the author, Andrew Hussie, and which includes almost every bit of content listed below.</p>
     <p>(Why is this? Until 2020, Homestuck used a now-dead technology called Flash to display animated or playable content. When Flash stopped working, the animations and games on the official website were <a href="https://old.reddit.com/r/homestuck/comments/gq94d6/mspaintadventurescom_is_100_dead_now_this_has/"></a>replaced</a> with low-quality YouTube recordings. To restore the comic's Flash features, a couple heroes named Bambosh and GiovanH created a downloadable executable called <a href="https://bambosh.github.io/unofficial-homestuck-collection/">the Homestuck Collection</a>, available for Windows, Mac and Linux computers. If you are a mobile/Chromebook only reader, you have no recourse but to use the half-assed aforementioned official website, <a href="https://homestuck.com/">homestuck.com</a>.)</p> 
     <a href="https://bambosh.github.io/unofficial-homestuck-collection/" alt="Screenshot of The Homestuck Collection" title="The Homestuck Collection, an offline executable"><img src="/img/hs-collection-banner.png" style="width: 100%; min-height: 40px;"></a>
     <hr>
-    <h2>Homestuck in order</h2>
+    <h2 id="homestuck-in-order"2>Homestuck in order</h2>
     <p>If you only care about the webcomic, it’s fairly straightforward. <b>Start with the first page of Homestuck, stop when you reach the credits.</b> But beyond the webcomic, there's much more!</p>
     <p>Most of Homestuck's side-content is non-canon, but provides additional context or tells entertaining standalone stories. Completionists can use this guide and follow my recommended order. You can also use the <a href="/meta/timeline.html">Homestuck Timeline</a> if you absolutely must read everything in the chronological order it was released (but <a href="https://bambosh.github.io/unofficial-homestuck-collection/">the Homestuck Collection</a> also presents most of the non-game content that way, so I recommend that first).</p>
     
-    <h3>Recommended official Homestuck works</h3>
+    <h3 id="recommended-official-homestuck-works">Recommended official Homestuck works</h3>
     <ol>
       <li><b><a href="https://www.homestuck.com/story">Homestuck (2009-2016)</a></b>: The main course. Includes the webcomic up to the credits. Enjoy it with:</li>
       <ol>
@@ -99,20 +130,20 @@
       <li><b><a href="http://homestuck.info/skaianet/">Skaianet Systems (2019)</a></b>: A story released as an easter egg in the source code of an official website. It consists of various scraps of canonical lore about one of the Homestuck villains, narrated like a history book, apparently written as worldbuilding material during the comic’s run but not released at the time. Highly controversial but recommended.</li>
       <li><b><a href="https://www.homestuck.com/epilogues">The Homestuck Epilogues (2019)</a></b>: Official non-canon prose-only sequel to Homestuck. Controversial events and characterization in spades, but I personally recommend it.</li>
     </ol>
-    <h3>Previous MS Paint Adventures</h3>
-    <p>Before Homestuck, Hussie wrote three other webcomics in a similar style. While they tell unrelated stories, Homestuck makes references to all of them over the course of its run.</p>
+    <h3 id="previous-mspa-adventures">Previous MS Paint Adventures</h3>
+    <p>Before Homestuck, Hussie wrote three other webcomics in a similar style. While they tell unrelated stories, Homestuck makes references to all of them over the course of its run. You can read these at any time.</p>
     <ol>
       <li><b><a href="https://www.homestuck.com/jailbreak/1">Jailbreak (2006-2007)</a></b>: The first MSPA webcomic. Short and sweet.</li>
       <li><b><a href="https://www.homestuck.com/bard-quest/1">Bard Quest (2007)</a></b>: Even shorter, left unfinished in favour of…</li>
       <li><b><a href="https://www.homestuck.com/problem-sleuth/1">Problem Sleuth (2008-2009)</a></b>: A much more substantial complete webcomic, excellent in its own right and highly recommended. Starts out as an adventure-game-like parody of hardboiled detective noir fiction, but the situation escalates wildly past that premise.</li>
     </ol>
-    <h3>Informational Homestuck content</h3>
+    <h3 id="informational-homestuck-content">Informational Homestuck content</h3>
     <p>These aren't stories, but rather official social media accounts containing canonical facts and information not revealed within the webcomic:</p>
     <ol>
       <li><b><a href="/official/formspring/">Author Formspring (2010-2011)</a></b>: Andrew Hussie’s formspring, with a focus on revealing minor details about the webcomic and explaining major ones at length.</li>
       <li><b><a href="/official/tumblr/">Author Tumblr (2011-2013)</a></b>: Andrew Hussie’s tumblr, similar to the above but shorter in size.</li>
     </ol>
-    <h3>Official but optional</h3>
+    <h3 id="official-optional-homestuck-content">Optional official Homestuck works</h3>
     <p>I don’t strictly recommend reading all of these, and in some cases like Namco High I actively recommend against it, but for the curious:</p>
     <ol>
       <li><b><a href="https://namcohigh.klonoa.org/">Namco High (2013)</a></b>: Visual novel directed by Hussie. Only here because it has three non-canonical Homestuck routes. In my opinion, the most avoidable thing on this list.</li>
@@ -125,7 +156,7 @@
     </ol>
     <p>Besides these, there are a bunch of high quality unofficial fanworks. Since a summary would be perennially out of date, I recommend just asking the <a href="https://old.reddit.com/r/homestuck">Homestuck Subreddit</a> or the <a href="https://discord.gg/homestuck">Homestuck Discord</a> for recommendations.</p>
     <hr>
-    <h2>Why do people hate Homestuck?</h2>
+    <h2 id="why-do-people-hate-homestuck">Why do people hate Homestuck?</h2>
     <p>You may have heard Homestuck fans were so bad they got entire hotels and conventions banning them. These claims have never been verified, but it’s true that the fandom has been historically quite annoying. I’m going to try to explain why. Take this with a grain of salt—these are only my personal opinions and beliefs.</p>
     <p>Homestuck was an obscure webcomic appealing mainly to Computer Science nerds and Andrew Hussie’s previous fanbase until it reached Act 5 Act 1: Hivebent, or The Part With The Trolls, in 2010. The trolls were twelve characters with strong personalities and a simple, recognizable, easily replicable visual template (custom blood colors, horns, zodiac signs on simple clothing).</p>
     <p>Overnight, the makeup of the Homestuck fandom changed. Hordes of teens took over anime conventions, dressing up as the troll who was just like them. Poorly sealed gray body paint, an alien romance system and intentionally abrasive personalities were the perfect trifecta of annoyance to the average con-goer. The recognizable designs pointed people to Homestuck, people got sick of hearing about it, and the hate began to fester. I believe this is the seed of the terrible reputation Homestuck fans get, even when tweens moved on to greener pastures around 2014 as the comic went through endless pauses in content.</p>
