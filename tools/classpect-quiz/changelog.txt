@@ -1,0 +1,8 @@
+CHANGELOG
+Version 2.0/Jun 6 2022: Ported to Homestuck.net now that the original is dead,
+added more up to date communities to the fandom section and new art. Also, 
+made the code more readable in case anyone is interested in that.
+Version 1.4/Jul 24 2012: Added five new questions, added some new options and
+messed with wording on a lot of bits.  Also made some of the more "moderate"
+classes show up more.
+Version 1.0/Jul 23 2012: Made the test! (It had ten questions.)
