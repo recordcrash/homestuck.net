@@ -1,5 +1,5 @@
 CHANGELOG
-Version 2.0/Jun 6 2022: Ported to Homestuck.net now that the original is dead,
+Version 2.0/Jun 5 2022: Ported to Homestuck.net now that the original is dead,
 added more up to date communities to the fandom section and new art. Also, 
 made the code more readable in case anyone is interested in that.
 Version 1.4/Jul 24 2012: Added five new questions, added some new options and

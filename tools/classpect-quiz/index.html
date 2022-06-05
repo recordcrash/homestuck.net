@@ -6,7 +6,7 @@
     <meta name="description" content="The first popular fandom quiz for determining your Homestuck Classpect, or heroic SBURB title. Made by RLabs in 2012 and updated in 2022.">
     <meta name="Makin" content="">
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://homestuck.net/tools/classpect-quiz" />
+    <meta property="og:url" content="https://homestuck.net/tools/classpect-quiz/" />
     <meta property="og:site_name" content="HOMESTUCK.NET" />
     <meta property="og:title" content="Homestuck Classpect Quiz" /> 
     <meta property="og:description" content="The first popular fandom quiz for determining your Homestuck Classpect, or heroic SBURB title. Made by RLabs in 2012 and updated in 2022.">
@@ -35,7 +35,7 @@
       }
         
       body {
-        background-image: url("classpect-quiz/godtierbig.gif");
+        background-image: url("godtierbig.gif");
         background-repeat: repeat;
         background-attachment: fixed;
         background-position: center;
@@ -79,7 +79,7 @@
       body {
         font-family: "Ubuntu Light", "Trebuchet MS Light", sans-serif;
         font-size: 1em;
-        background-image: url("classpect-quiz/godtierbig.gif");
+        background-image: url("godtierbig.gif");
         background-color: #00ffff;
         margin-bottom: 0;
       }
@@ -158,7 +158,7 @@
       <h5>a quiz by <a href="http://rlabs.tumblr.com/">RLabs</a></h5>
       <p>If you've ever wondered what your Sburb title would be, you've come to the right place! Answer the sixteen questions as accurately as you can. It seems that you get better results if you come up with an answer to the question before looking at the choices.</p>
       <p>All classes and aspects in this test are canon. The descriptions you receive for them are a bit less canonical, however, due to the lack of information about many of them.  If something doesn't look like you've seen it before in the comic, it's almost certainly based on the personalities/actions of the characters in the comic with that aspect.  Note that sharing a title with a character doesn't mean you're necessarily identical to that character; you're simply likely to respond similarly in certain situations. Some of the outfits are wrong and <span class="strikethrough">I'll probably update those someday maybe</span> are left intact for historical purposes.</p>
-      <p>God tier images used are credit to Andrew Hussie, original art by <a href="https://www.deviantart.com/spectral-ninja/art/Homestuck-Classpect-Chart-NOW-REALLY-MORE-Updated-670933083">multiple artists</a>. Changelog <a href="classpect-quiz/changelog.txt">here</a>.</p>
+      <p>God tier images used are credit to Andrew Hussie, original art by <a href="https://www.deviantart.com/spectral-ninja/art/Homestuck-Classpect-Chart-NOW-REALLY-MORE-Updated-670933083">multiple artists</a>. Changelog <a href="changelog.txt">here</a>.</p>
     <form name="quiz" class="form" action="javascript:check();">
       <p>Q0: Would you be bothered if you got a class of the wrong gender? (note: this question only determines which classes you can get)</p>
       <input type="radio" name="genderstuff" value="0" checked="checked">No, I don't care if I get a masculine or a feminine class!<br>
@@ -593,7 +593,7 @@
             }
 
     document.getElementById("dropdown").innerHTML = "<h2>You are the <font color='" + aspectColors[youraspect] + "'>" + yourclass + " of " + youraspect + "!</h2>";
-    document.getElementById("dropdown").innerHTML += "<img src='classpect-quiz/images/" + yourclass + "Of" + youraspect + ".png' class='center'/>";
+    document.getElementById("dropdown").innerHTML += "<img src='images/" + yourclass + "Of" + youraspect + ".png' class='center'/>";
     if(typeof thisExists[yourclass + youraspect] != "undefined") {
       document.getElementById("dropdown").innerHTML += "<h3>(Shared with "+thisExists[yourclass + youraspect]+")</h3>"; //characters with this title
     }
