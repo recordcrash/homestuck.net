@@ -127,16 +127,16 @@
     <div class="marquee-content">
       Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
       Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
-      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master">4/24/2022</a> |
+      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">4/24/2022</span></a> |
       Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
       Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
-      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master">4/24/2022</a> |
+      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">4/24/2022</span></a> |
       Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
       Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
-      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master">4/24/2022</a> |
+      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">4/24/2022</span></a> |
       Last official Homestuck activity: <a href="/updates.html">9/3/2021</a> | 
       Last official content release: <a href="/homestuck.html">12/25/2020</a> | 
-      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master">4/24/2022</a> |
+      Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">4/24/2022</span></a> |
       <!--I told you dog, I told you about marquees!-->
     </div>
   </div>
@@ -284,5 +284,19 @@
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script></body>
+<script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script></body>
+<script>
+  // fetch latest commit date from recordcrash repository "homestuck.net"
+  fetch("https://api.github.com/repos/recordcrash/homestuck.net/commits/master")
+    .then(response => response.json())
+    .then(data => {
+      // edit all elements with the class 'github-commit-date'
+      document.querySelectorAll(".github-commit-date").forEach(function(element) {
+        // set the text of the element to the date of the latest commit
+        const date = new Date(data.commit.author.date);
+        // set only the date part
+        element.textContent = date.toLocaleDateString();
+      });
+    });
+</script>
 </html>
