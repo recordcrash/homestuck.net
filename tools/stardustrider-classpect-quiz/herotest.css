@@ -1,0 +1,134 @@
+
+body {
+  background-color: #F8F8F8;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 15px;
+  color:#222222;
+}
+
+.quizsheet {
+	padding:3px;
+}
+
+.quizsheet tr td {
+	padding:4px 8px 4px 8px;
+}
+
+.picker {
+	padding:6px 12px 6px 12px;
+}
+
+.row1 {
+	background-color:#EEEEEE;
+}
+.row2 {
+	background-color:#E2E2E2;
+}
+
+span.right {
+	float:right;
+}
+
+table.debugtable {
+	border-collapse: collapse;
+	border:1px solid black;
+	table-layout: fixed;
+}
+
+table.debugtable tr td {
+	border:1px solid #CCCCCC;
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	position:relative;
+}
+
+.numcell {
+	width:30px;
+	text-align:center;
+}
+div.debugpos {
+	position:absolute;
+	top:-2px;
+	left:1px;
+	font-size:8px;
+	color:#CCCCCC;
+}
+
+td input[type=radio] {
+	display:inline-block;
+	background-color:#FF0000;
+	cursor:pointer;
+	border:1px solid black;
+	padding:4px 5px 0px 5px;
+	margin:0;
+}
+
+.unpicked {
+	background-color:#FFCCCC;
+}
+
+.picked {
+    /*background: #dcdcdc;
+    background: -moz-linear-gradient(left, #e0e0e0 0%, #f0f0f0 50%, #e0e0e0 100%);
+    background: -webkit-linear-gradient(left, #e0e0e0 0%,#f0f0f0 50%,#e0e0e0 100%);
+    background: linear-gradient(to right, #e0e0e0 0%,#f0f0f0 50%,#e0e0e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcdcdc', endColorstr='#dcdcdc',GradientType=1 );*/
+}
+
+#resultbox {
+	margin: 30px 5px 0px 10px;
+}
+
+#tooltip {
+    display:none;
+    position:absolute;
+    width:0px;
+    height:0px;
+
+    left:50%;
+    top:50%;
+}
+
+#tooltiptext {
+    position:absolute;
+    background-color:#EEEEEE;
+    border:1px solid #AAAAAA;
+    padding:3px 5px 3px 5px;
+    bottom:8px;
+    text-align:center;
+    font-size:11px;
+    white-space: nowrap;
+
+    -ms-transform: translate(-50%,0); /* IE 9 */
+    -webkit-transform: translate(-50%,0); /* Safari */
+    transform: translate(-50%,0);
+
+    z-index:3;
+}
+
+#tooltiparrow {
+ 	width: 0;
+ 	height: 0;
+ 	border-left: 6px solid transparent;
+ 	border-right: 6px solid transparent;
+ 	border-top: 8px solid #AAAAAA;
+ 	position:absolute;
+    left:-6px;
+    bottom:0px;
+}
+
+#tooltiparrow2 {
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 8px solid #EEEEEE;
+	position:absolute;
+    left:-6px;
+    bottom:2px;
+    z-index:5;
+}

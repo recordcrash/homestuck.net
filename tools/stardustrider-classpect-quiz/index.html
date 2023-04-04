@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Classpects</title>
+
+		<script src="excel-formula.js"></script>
+		<script type="application/dart" src="herotest.dart"></script>
+		<script async src="dart.js"></script>
+		
+		<link rel="stylesheet" href="herotest.css">
+		<link id="sheet" rel="external" href="Heroic Title Test 0.6.xlsx">
+	</head>
+	<body>
+		<h1>Classpect Quiz</h1>
+		<h2 id="version"></h2>
+		<p>Derived directly from a spreadsheet posted on 4Chan's Homestuck thread.<br/>All quiz content comes straight from the sheet, so any spelling issues aren't mine.</p>
+		<h3>Rate yourself from 0-10 in each category based on how true you consider it, where 0 doesn't match you at all and 10 is a perfect fit.</h3>
+		<p>Make sure to select something for every row or the result won't be accurate!</p>
+		<div id="main"></div>
+		<br/>
+		<div>
+			Optional switch for gender aligned classes (most accurate on all):
+			<form>
+				<input type="radio" name="gender" id="gender_either" value="either" checked="checked"/><label for="gender_either">All classes</label><br/>
+				<input type="radio" name="gender" id="gender_female" value="female"/><label for="gender_female">No male only classes</label><br/>
+				<input type="radio" name="gender" id="gender_male" value="male"/><label for="gender_male">No female only classes</label>
+			</form>
+		</div>		
+		<div id="resultbox">
+			<h3>Your classpect is:</h3>
+			<h2 id="result"></h2>
+		</div>
+		<br/>
+		<br/>
+		__________
+		<br/>
+		<p>This page directly loads the spreadsheet and converts it to javascript on page load.<br/>Excel formulae are converted to javascript and run just like they are in the sheet, so it might be a little slow.</p>
+		<p>This means that if the anon who made the sheet ever makes a new version, this can be updated very easily.<br/>(It also means I don't actually know how the sheet works! The general concept would work for <em>any</em> spreadsheet.)</p>
+		<p>You can download the exact sheet used to make the page <a id="download" href="">right here</a>!
+		<div id="tooltip">
+			<div id="tooltiptext">Tooltip</div>
+			<div id="tooltiparrow"></div>
+			<div id="tooltiparrow2"></div>
+		</div>
+	</body>
+</html>
