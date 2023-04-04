@@ -1,5 +1,4 @@
 # TODO
-- Meta: Anne's theories
 - Tabletop: Marquise's FLARP
 - Tabletop: Homestuck Monopoly
 - Tabletop: Subgrubs and Snazzards latest version in one file 
@@ -8,3 +7,4 @@
 - Music: Albums: William -> Willow Ascenzo
 - Liveblogs: Video liveblogs
 - Liveblogs: Thewertsearch
+- Better README
