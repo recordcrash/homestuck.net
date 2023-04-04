@@ -1,5 +1,4 @@
 # TODO
-- Resources: SCURV guide to flash https://shut-up.neocities.org/blog/spages
 - Cosplay resources: Multiple broken links
     - Cheap Troll Horns (wrong link)
     - Another tutorial with a more human-looking result (https://www.deviantart.com/zelendur/art/Grub-Plushie-Sewing-Tutorial-PART-I-428333454), not archived?
