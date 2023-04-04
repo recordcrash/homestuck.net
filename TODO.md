@@ -1,13 +1,4 @@
 # TODO
-- Cosplay resources: Multiple broken links
-    - Cheap Troll Horns (wrong link)
-    - Another tutorial with a more human-looking result (https://www.deviantart.com/zelendur/art/Grub-Plushie-Sewing-Tutorial-PART-I-428333454), not archived?
-    - Derse/Prospit lap quilts. archived at https://web.archive.org/web/20150907002321/https://darthbuttercup.tumblr.com/post/30164159543/how-to-make-the-derseprospit-lap-quilt
-    - Terezi's boxers tutorial (local archived?)
-    - Dirk's pvc shades https://web.archive.org/web/20210120130950/https://819sute.tumblr.com/post/37568438589/how-to-make-detachable-dirkbro-shades-using-pvc
-    - Cheaper troll fin tutorial https://web.archive.org/web/20210120132805/https://cosmicseawitch.tumblr.com/post/54932035821/ear-fin-tutorial
-    - the other, out of foam (broken link https://www.deviantart.com/polterrgeist/art/Mituna-helmet-tutorial-523926188)
-    - rufioh's vest https://mustwatchathat.tumblr.com/post/53846014744/so-this-anon-asked-me-about-the-best-of-my
 - Games: Mark Overseer Project as dead. Link Discord to mention project to bring it back up.
 - Meta: Anne's theories
 - Tabletop: Marquise's FLARP
