@@ -1,6 +1,4 @@
 # TODO
-- Official twitters: Mention Hussie wiped his, etc.
-- Archives: Disambiguation with TUHC. Link to better videos archive. https://www.dropbox.com/sh/752ix0j9mqhhvf9/AACGYQw6M6pUFtqnHWw0dbGUa?dl=0
 - Resources: https://homestuck.net/resources/booru/ and remove old assets page, mention how to upload psds.
 - Resources: SCURV guide to flash https://shut-up.neocities.org/blog/spages
 - Cosplay resources: Multiple broken links
@@ -19,7 +17,6 @@
 - Tabletop: Subgrubs and Snazzards latest version in one file 
 - Tools: Fix 4chan stardustrider quiz
 - Games: Tabletop: Maybe relink Subgrubs & Snazzards.
-- Archive: Turn the section headers into links.
 - Music: Albums: William -> Willow Ascenzo
 - Liveblogs: Video liveblogs
 - Liveblogs: Thewertsearch
