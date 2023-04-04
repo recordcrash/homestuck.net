@@ -1,5 +1,4 @@
 # TODO
-- Games: Mark Overseer Project as dead. Link Discord to mention project to bring it back up.
 - Meta: Anne's theories
 - Tabletop: Marquise's FLARP
 - Tabletop: Homestuck Monopoly
