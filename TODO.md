@@ -1,6 +1,4 @@
 # TODO
-- Tabletop: Marquise's FLARP
-- Tabletop: Homestuck Monopoly
 - Tabletop: Subgrubs and Snazzards latest version in one file 
 - Tools: Fix 4chan stardustrider quiz
 - Games: Tabletop: Maybe relink Subgrubs & Snazzards.
