@@ -1,5 +1,4 @@
 # TODO
-- Resources: https://homestuck.net/resources/booru/ and remove old assets page, mention how to upload psds.
 - Resources: SCURV guide to flash https://shut-up.neocities.org/blog/spages
 - Cosplay resources: Multiple broken links
     - Cheap Troll Horns (wrong link)
