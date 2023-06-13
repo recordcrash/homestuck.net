@@ -1,0 +1,94 @@
+openapi: 3.0.3
+info:
+  title: The Shills List API
+  version: 1.0.0
+  description: The Shills List API
+servers:
+  - url: https://homestuck.net/api
+paths:
+  /works:
+    get:
+      summary: Get a list of all works in the Shills List
+      operationId: getWorks
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Work'
+  /works/{work_id}:
+    get:
+      summary: Get details for a specific work in the Shills List
+      operationId: getWorkById
+      parameters:
+        - in: path
+          name: work_id
+          required: true
+          schema:
+            type: integer
+          description: The ID of the work to retrieve
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Work'
+  /reviews:
+    get:
+      summary: Get a list of all work reviews by users of the Shills List
+      operationId: getReviews
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Review'
+components:
+  schemas:
+    Work:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        author:
+          type: string
+        summary:
+          type: string
+        created:
+          type: string
+          format: date-time
+      required:
+        - id
+        - title
+        - author
+        - summary
+        - created
+    Review:
+      type: object
+      properties:
+        id:
+          type: integer
+        readername:
+          type: string
+        workid:
+          type: integer
+        review:
+          type: string
+        created:
+          type: string
+          format: date-time
+      required:
+        - id
+        - readername
+        - workid
+        - review
+        - created
