@@ -1,0 +1,5 @@
+The Homestuck.net API and its developer take your privacy very seriously. It uses no third-party analytics or advertising frameworks. The Homestuck.net API logs no information on you and has no interest in doing such.
+
+The Homestuck.net API includes the Shills List API. The same applies.
+
+**The Homestuck.net API does not collect, transmit, distribute or sell your data.**
