@@ -1,15 +1,15 @@
 {
   "schema_version": "v1",
-  "name_for_human": "Shills List: Best Free Internet Works",
-  "name_for_model": "shills-list",
-  "description_for_human": "Plugin for accessing the Shills, a list of all the best obscure and unappreciated works that you can reach from a computer. You can see a list of the works, as well as metadata and reviews.",
-  "description_for_model": "Plugin for accessing the Shills, a list of all the best obscure and unappreciated works that you can reach from a computer. You can see a list of the works, as well as metadata and reviews.",
+  "name_for_human": "The Shills List",
+  "name_for_model": "shills_list",
+  "description_for_human": "Access the Shills List, a collection of obscure and unappreciated works. Includes the full list, metadata, and reviews.",
+  "description_for_model": "Access the Shills List, a collection of obscure and unappreciated works. Includes the full list, metadata, and reviews.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "http://homestuck.net/.well-known/shills-list-openapi-schema.yaml",
+    "url": "https://homestuck.net/.well-known/shills-list-openapi-schema.yaml",
     "is_user_authenticated": false
   },
   "logo_url": "https://homestuck.net/favicon.png",
