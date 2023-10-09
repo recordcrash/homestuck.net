@@ -1,6 +1,4 @@
 # TODO
-- lumiRadio
-- Rose lalonde huptopband
 - Homestuck: The Webcomic: The Game templates (twitter dms)
 - Homestuck Samples (https://drive.google.com/drive/folders/1xQXQRN1UANCADnP02CCQZcO2ydhOBz0R)
 - Add yark name to monopoly credit
