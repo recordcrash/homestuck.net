@@ -1,2 +1,2 @@
 # TODO
-- News site?
+- Check AMP issues?
