@@ -52,11 +52,7 @@
         border-radius: 5px;
       }
 
-      .content-center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -70,6 +66,11 @@
           padding: 20px;
           margin: 16px 0 20px 20px;
         }
+        .content-center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
       }
       @media (max-width: 767px) {
         .table-of-contents {
@@ -77,6 +78,12 @@
           border-radius: 10px;
           padding: 20px;
           margin-top: 15px;
+        }
+        .content-center {
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          flex-wrap: wrap;
         }
       }
     </style>
