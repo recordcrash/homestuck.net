@@ -70,7 +70,7 @@
         margin-top: 10px;
         image-rendering: pixelated;
       }
-      .news-marquee {
+      /* .news-marquee {
         background-color: darkgreen;
         color: white;
         font-family:'Courier New', Courier, monospace;
@@ -100,6 +100,10 @@
           100% {
               transform: translateX(-100%);
           }
+      } */
+      .logo-meta-container {
+        margin-top: 10px;
+        margin-bottom: 20px;
       }
 
     </style>
@@ -123,7 +127,7 @@
 </nav>
 
 <div id="mainheader" class="position-relative overflow-hidden text-center">
-  <div class="marquee">
+  <!-- <div class="marquee">
     <div class="marquee-content">
       Last official Homestuck activity: <a href="/updates.html">10/9/2023</a> | 
       Last official content release: <a href="/homestuck.html#recommended-official-homestuck-works">10/8/2023</a> | 
@@ -137,11 +141,13 @@
       Last official Homestuck activity: <a href="/updates.html">10/9/2023</a> | 
       Last official content release: <a href="/homestuck.html#recommended-official-homestuck-works">10/8/2023</a> | 
       Last Homestuck.net update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">10/9/2023</span></a> |
-      <!--I warned you about marquees, I told you dog!-->
     </div>
-  </div>
+  </div> -->
   <div class="col-md-5 p-lg-3 mx-auto">
-    <h2 class="display-4 font-weight-normal"><img class="logo" src="/img/templogo.png"></h2>
+    <div class="logo-meta-container">
+      <h2 class="display-4 font-weight-normal"><img class="logo" src="/img/templogo.png"></h2>
+      <subtitle><i>Last website update: <a href="https://github.com/recordcrash/homestuck.net/commits/master"><span class="github-commit-date">10/9/2023</span></a></i></subtitle>
+    </div>
     <p class="lead font-weight-normal">New to the comic? Click the button for a new reader's guide to make your experience as smooth as possible!</p>
     <a href="/homestuck.html"><div class="btn-read-homestuck"></div></a>
     <p class="pt-3 font-italic">Already read it? Check out the resources below</p>
