@@ -1,3 +1,3 @@
 # TODO
-- lordbuss_mageofrage domiciles/data structures and other tabletop
+- Ukrainian translation?
 - Check AMP issues?
