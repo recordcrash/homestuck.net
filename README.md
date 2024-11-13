@@ -64,7 +64,6 @@ The Homestuck.net project has the following file structure (some unimportant fil
 ├── tools/                  # Folder for the tools section of Homestuck.net
 ├── about.html              # About page of the website
 ├── archives.html           # Page for the Homestuck Archive, the torrent with raw fanworks
-├── collection.html         # Page for the Unofficial Homestuck Collection
 ├── companion.html          # Page for Homestuck Companion, the book commentary browser extension
 ├── contact.html            # Contact page for the Homestuck.net project
 ├── homestuck.html          # Page for new fans, that explains what Homestuck is and how to read it
