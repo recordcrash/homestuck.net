@@ -79,23 +79,19 @@
         <div class="row"><div class="col-md-12">
             <h3>What is this?</h3>
             <p>Pesterchum is an Instant Messaging client copying the look and feel of clients from Andrew Hussie's webcomic Homestuck.</p>
-            <p>The last official version of the program is 3.41, and after the original developer dropped support in 2021, the fan community picked it up and began hosting fanservers and making alternate executables. The earliest effort and the one this page mostly refers to is the desktop Windows, macOS and Linux version (2.5.3). There's a full listing of fanmade versions at <a href="https://www.pesterchum.xyz">pesterchum.xyz</a>.</p>
-            <p>As of 2023, there's a new online client that can be accessed from any browser. There's also a downloadable Godot version that plans to support all platforms at once, mobile included. Currently it's missing things like animated emotes, message sounds, saved pesterlogs and a few other details. There's also of course Chumdroid, the original Android port. As you can see, there are a <b>LOT</b> of options.</p>
-            <h3>How do I use it?</h3>
-            <ul>
-              <li>Online: Click <a href="https://pesterchum.online" title="Pesterchum Online">here</a> to access pesterchum.online.</li>
-              <li>Windows: Click <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases" title="Pesterchum for Windows">here</a> to download Pesterchum, then install.</li>
-              <li>Mac: Click <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases" title="Pesterchum for Windows">here</a> to download Pesterchum, find the Mac build, then install.</li>
-              <li>Linux: Click <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases" title="Pesterchum for Windows">here</a> to download Pesterchum, choose one of the Linux64 builds, then install.</li>
-              <li>Android: Click <a href="https://pesterchum.xyz/chumdroid_alt1.apk">here</a> to download Chumdroid, a 2013 Pesterchum port for Android, updated in 2021 (though still buggy) to work with the new server.</li>
-              <li>All platforms (Godot, alpha): Click <a href="https://gitlab.com/mocchapi/pesterchum-godot/-/releases/alpha_8">here</a> to download Pesterchum, find your build then install. iOS users can also use the <a href="https://lisanne.gay/pesterchum/run">online Godot version</a>, but at that point you might be better off using the first option in this list.</li>
-            </ul>
+            <p>The original version of Pesterchum ended development at version 3.41, and after developer ghostDunk dropped support in 2021, the fan community picked it up and began hosting fanservers and making alternate executables and websites.</p>
+            <p>There's a full listing of versions at <a href="https://www.pesterchum.xyz">pesterchum.xyz</a>, but there are basically three big approaches, most of which use the same servers internally (so they're intercompatible):</p>
+            <p>
+              <ul>
+                <li><b>Pesterchum</b>: An active continuation of the original version that kept adding features on top, like image embeds. Latest version is 2.7.0, released March 2025. Supports <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases/download/v2.7.0/PesterchumAlt.-2.7.0-win64-Windows10+.zip">Windows</a> and <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases/download/v2.7.0/PesterchumAlt.-2.7.0-linux64-glibc2.39+.tar.xz">Linux</a>, with <a href="https://github.com/Dpeta/pesterchum-alt-servers/releases/download/v2.5.3/PesterchumAlt.-2.5.3-macosx11+.zip">Mac</a> stuck in an older version. Most of the information on this page applies to it. Notably doesn't support the web.</li>
+                <li><b>Pesterchum Online</b>: A pure <a href="https://pesterchum.online/">web</a> edition of Pesterchum. The easiest way to use Pesterchum on any platform, though it last updated in June 2024 and is missing many flavor-features from the original, like quirks, timeline selection, emote menus, random chat, etc.</li>
+                <li><b>Pesterchum Godot</b>: A version coded in the Godot game engine. Though it tries to support all platforms except iOS, it's a work in progress also last updated June 2024 and missing animated emotes and pesterlog archiving. A good effort, but unless you're an <a href="https://mega.nz/file/Fd9AUa4R#u2ptf1wCre_QnhFNRLzw7cTSyROnsgXqfgQaqziZ0IM">Android</a> user you should go with the other options on this list.</li>
+              </ul>
+            </p>
             <h3>Pesterchum Rules</h3>
-            <p>Pesterchum used to have an official server with its own rules, but as of 2023 that's no longer the case. However, I think they're good rules to follow regardless, and the fanserver admins might ban you if you don't follow them.</p>
-            <p>The old list of rules is available <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">here</a>.</p>
+            <p>Admins might ban you if you don't follow <a href="https://www.pesterchum.xyz/pesterchum-rules/">these rules</a>.</p>
             <h3>Frequently Asked Questions</h3>
-            <p>Q: The server isn't found (error 10060)<br>A: As of 2021, the first server for Pesterchum went down. You have two options - either replace irc.mindfang.org in the config files with the new server's URL (pesterchum.xyz) or download the new versions of the programs that let you select new fanservers, which will be your only option for Chumdroid and the best option for Windows.</p>
-            <p>Q: Pesterchum doesn't open!<br>A: Post in the <a href="https://forum.homestuck.xyz/viewtopic.php?f=7&t=467">official thread</a> and someone will help you out.</p>
+            <p>Q: Pesterchum doesn't open!<br>A: Post on the <a href="https://discord.gg/eKbP6pvUmZ">pesterchum.xyz Discord</a> and someone will help you out.</p>
             <p>Q: When I run Pesterchum, it starts loading but then quits and nothing happens!<br>
             A: Make sure your default profile is in the profiles directory (go to your local app directory; you can get there by typing %LOCALAPPDATA% in your file explorer address bar). If it isn't, check your pesterchum backup directory for it. If it's not there, you'll have to go into pesterchum.js file and remove your profile as the default.</p>
             <p>Q: How do I change my themes??<br>A: "Options" under the "Client" menu.</p>
@@ -103,6 +99,7 @@
             <p>Q: I keep getting the error message "The application has failed to start because the application configuration is incorrect"!<br>A: Try downloading and installing both <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26347">Microsoft Visual C++ 2005</a> and <a href="https://www.microsoft.com/en-us/download/details.aspx?id=26368">2008 SP1</a>.</p>
             <p>Q: I opened up PC, closed it, and now it says my user name is taken!<br>A: The "X" doesn't close the program, just minimizes it to your system tray. To exit the program you must go to Client -> Exit.</p>
             <h3>How do I use it?</h3>
+            <p>Most of this information applies to 3.41 and might be outdated, reach out at homestucknet@protonmail.com if you can provide a newer version.</p>
             <h5>Creating a profile</h5>
             <p>If this is your first time running Pesterchum 3.41, you need to create a new profile. Just type in your chum handle in the box and click the color swatch to pick your color. Check the "Set This Profile As Default" checkbox to make this your default profile.</p>
             <img title="Pesterchum 3.41" class="img-fluid rounded mb-5 mb-md-3" src="/img/tools/pesterchum-tutorial-1.png">
