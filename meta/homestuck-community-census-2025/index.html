@@ -81,7 +81,7 @@
     <div class="container">
 
         <!-- Page Heading -->
-        <h1 class="mt-4">Homestuck Community Census 2025: Results and Analysis</h1>
+        <h1 id="top" class="mt-4">Homestuck Community Census 2025: Results and Analysis</h1>
         <div class="text-center"><img class="center img-fluid rounded mb-3 mb-md-0 thumbnail" src="/img/meta/homestuck-community-census-2025.png" alt="Homestuck Community Census 2025: Results and Analysis"></div>
         <a href="#results">Skip to results</a>
         <h3>What is this?</h3>
@@ -96,26 +96,29 @@
         <p>One important bias that this analysis doesn't take into account is survivorship. Fans who don't like the current state of the franchise have likely left already. This is a fandom on life support, and the statistics will reflect that.</p>
         <hr>
         <h1 id="results">Results and Analysis</h1>
-        <h2>Demographics</h2>
+        <h2 id="demographics">Demographics</h2>
         <p>This section of the analysis focuses on Homestuck fans' personal data, like age, gender, etc.</p>
         <img loading="lazy" src="census_age.png" alt="Homestuck Community Census 2025: How old are you? responses" class="img-fluid">
         <img loading="lazy" src="census_gender_identity.png" alt="Homestuck Community Census 2025: What gender are you? responses" class="img-fluid">
+        The two graphs below are <a href="https://en.wikipedia.org/wiki/UpSet_plot">UpSet plots</a>, for those who have never seen one before.
         <img loading="lazy" src="census_identity.png" alt="Homestuck Community Census 2025: General identity responses" class="img-fluid">
         <img loading="lazy" src="census_ethnicity.png" alt="Homestuck Community Census 2025: What ethnicity are you? responses" class="img-fluid">
         <img loading="lazy" src="census_country.png" alt="Homestuck Community Census 2025: Where do you live? responses" class="img-fluid">
         <img loading="lazy" src="census_relationship.png" alt="Homestuck Community Census 2025: What's your relationship status?" class="img-fluid">
         <img loading="lazy" src="census_orientation.png" alt="Homestuck Community Census 2025: What's your orientation?" class="img-fluid">
+        The question below had more granularity in the original question (see <a href="#all-results">All results</a> section)
         <img loading="lazy" src="census_employed.png" alt="Homestuck Community Census 2025: Are you employed?" class="img-fluid">
         <img loading="lazy" src="census_fields.png" alt="Homestuck Community Census 2025: What's your area of study/work?" class="img-fluid">
         <img loading="lazy" src="census_politics.png" alt="Homestuck Community Census 2025: Political Compass" class="img-fluid">
         <hr>
-        <h2>Homestuck</h2>
+        <h2 id="homestuck">Homestuck</h2>
         <p>This section focuses on Homestuck fans' opinions and reactions to the work itself, as well as some rare and highly dangerous market research.</p>
         <img loading="lazy" src="census_dates.png" alt="Homestuck Community Census 2025: When did you find/last read Homestuck?" class="img-fluid">
         <img loading="lazy" src="census_whence_homestuck.png" alt="Homestuck Community Census 2025: Where did you find Homestuck?" class="img-fluid">
         <img loading="lazy" src="census_platforms.png" alt="Homestuck Community Census 2025: How did you read Homestuck?" class="img-fluid">
         <img loading="lazy" src="census_fanness.png" alt="Homestuck Community Census 2025: How hardcore a fan are you?" class="img-fluid">
         <img loading="lazy" src="census_characters.png" alt="Homestuck Community Census 2025: What's your favorite/least favorite characters?" class="img-fluid">
+        Note the ships to right are an example, the top ship of the category <i>not already in the Top 3</i>.
         <img loading="lazy" src="census_shipping.png" alt="Homestuck Community Census 2025: Shipping" class="img-fluid">
         <img loading="lazy" src="census_favorite_act.png" alt="Homestuck Community Census 2025: What's your favorite act" class="img-fluid">
         <img loading="lazy" src="census_franchiselets.png" alt="Homestuck Community Census 2025: Completion of Homestuck and the franchise" class="img-fluid">
@@ -123,13 +126,15 @@
         <img loading="lazy" src="census_merch.png" alt="Homestuck Community Census 2025: Merch, would you buy..." class="img-fluid">
         <img loading="lazy" src="census_merch_wishlist.png" alt="Homestuck Community Census 2025: Merch wishlist" class="img-fluid">
         <hr>
-        <h2>Homestuck fandom and fanwork</h2>
+        <h2 id="fanwork">Homestuck fandom and fanwork</h2>
         <p>This section focuses on fanwork creation and the shape of roleplaying by Homestuck fans.</p>
+        Note that "Never" and "Never created or consumed" were the same answer at different points in time, before it got clarified.
         <img loading="lazy" src="census_fancreation.png" alt="Homestuck Community Census 2025: Which type of fanworks do you create?" class="img-fluid">
         <img loading="lazy" src="census_fanwork.png" alt="Homestuck Community Census 2025: What's your favorite fanwork?" class="img-fluid">
+        Maybe "modal SBURB player" would be more accurate below.
         <img loading="lazy" src="census_sburb.png" alt="Homestuck Community Census 2025: SBURB stuff" class="img-fluid">
         <hr>
-        <h2>Data analysis</h2>
+        <h2 id="data-analysis">Data analysis</h2>
         <p>This section contains some basic analysis of correlations and such. It's not as complex as it could be, but we ran out of time and knowledge to do more. Might come back to this in the future.</p>
         <p>First, we calculated correlations between boolean variables (yes/no), categorical variables (like blood) and numeric variables (like age). Beyond the comorbities already known by science (transgender people are more often autistic than cisgender people, for example) we found some funny, strong and statistically significant (n>1000+p<0.00001) correlations:</p>
         <ul>
@@ -157,7 +162,7 @@
         </ul>
         <p>The platform/method data is less apt for this kind of analysis, despite the wide sweeps. We'd expect Teens to read Homestuck on phones more often, maybe. It's pretty funny that we also get some Caliborn/Calliope parallels there. Obviously a lot of this could be noise, but we see some clear patterns.</p>
         <hr>
-        <h3>All results</h3>
+        <h3 id="all-results">All results</h3>
         <p>This section has a bunch of tables with the raw numbers for every single question, beyond the summary of the interesting ones above. Feel free to skip this unless you're really curious.</p>
         <details>
             <summary>Click to show all question/answer tables</summary>
@@ -13084,6 +13089,8 @@
             <li>Add depression and anxiety to the identity question specifically.</li>
             <li>Drop the character arc questions, they basically got the same results as favorite character.</li>
             <li>Use a "better political compass" that people claim exist.</li>
+            <li>Add "in middle school/in high school/in college" granularity to the employment question.</li>
+            <li>No "Current fanwork" question, just have people mention all their favorites then word cloud them.</li>
             <!--<li>Remove "asexual" and keep "aromantic".</li> people kept misunderstanding the purpose of this one and I'm not sure anyway -->
             <li>More generic areas of work that allow for "warehouse work" for example.</li>
             <li>Add "physically disabled" to the identity questions.</li>
