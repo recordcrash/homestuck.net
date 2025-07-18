@@ -183,6 +183,11 @@
     background-repeat: no-repeat; 
 }
 
+#collectiondiv{
+    background-image: url("/img/tools/visual-mods.png");
+    background-repeat: no-repeat; 
+}
+
 #fansdiv{
     background-image: url("/img/music/fanalbums.jpg");
     background-repeat: no-repeat; 
