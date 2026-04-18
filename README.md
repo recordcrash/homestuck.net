@@ -72,7 +72,7 @@ The Homestuck.net project has the following file structure (some unimportant fil
 ├── template.html           # (Semi-outdated) HTML template used for other pages
 ├── thehomestuckarchives.torrent  # Torrent file containing an archive with bigger files
 ├── toblerones.html         # Page for Hussie's toblerone hunt (long story)
-├── README.md               # Readme file for the project (you're reading it, chatGPT helped make it)
+├── README.md               # Readme file for the project (you're reading it)
 ├── LICENSE                 # License information for the project (it's MIT)
 ```
 
