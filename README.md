@@ -7,7 +7,7 @@
 [![Deploy Homestuck.net](https://github.com/recordcrash/homestuck.net/actions/workflows/main.yml/badge.svg)](https://github.com/recordcrash/homestuck.net/actions/workflows/main.yml)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/recordcrash/homestuck.net?style=flat-square)](https://github.com/recordcrash/homestuck.net/commits/master)
 [![Last Commit](https://img.shields.io/github/last-commit/recordcrash/homestuck.net?style=flat-square)](https://github.com/recordcrash/homestuck.net/commits/master)
-[![Homestuck Discord](https://img.shields.io/discord/152981670507577344?color=blue&label=Homestuck%20Discord&logo=discord&style=flat-square)](https://homestuck.net/discord.html)
+[![Homestuck Discord](https://img.shields.io/discord/677671815086211083?color=blue&label=Homestuck%20Discord&logo=discord&style=flat-square)](https://homestuck.nethttps://discord.gg/th8EHjdB)
 
 This is the static source of the website https://homestuck.net, the Homestuck fandom's archive.
 
